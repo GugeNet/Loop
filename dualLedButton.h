@@ -11,12 +11,13 @@ class DualLedButton : public Button {
         GPIO redGpio, greenGpio;
 
     public:
-        static DualLedButton New(Pin pin, uint32_t shortTime, uint32_t longTime, Pin redLedPin, Pin greenLedPin);
-        DualLedButton(Pin pin, uint32_t shortTime, uint32_t longTime, Pin redLedPin, Pin greenLedPin);
+        static DualLedButton New(Pin pin, uint32_t shortTime, uint32_t longTime, Pin greenLedPin, Pin redLedPin);
+        DualLedButton(Pin pin, uint32_t shortTime, uint32_t longTime, Pin greenLedPin, Pin redLedPin);
 
         void Off();
         void Red();
         void Green();
+        void Color(int color);
 };
 
 

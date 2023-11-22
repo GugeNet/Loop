@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 1
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 1
   44              	.LBE5:
   12:track.cpp     **** }
   45              		.loc 1 12 1 view .LVU6
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 2
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s 			page 2
 
 
   46 000c 7047     		bx	lr
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 1
   90              		.loc 1 11 11 view .LVU16
   91              	.LBE9:
   92              	.LBE10:
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 3
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s 			page 3
 
 
   93              	.LBE6:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 1
  141              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
  142              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
  143              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 4
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s 			page 4
 
 
  144              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
@@ -208,17 +208,17 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 1
  168              		.file 47 "track.h"
  169              		.file 48 "<built-in>"
  170              		.file 49 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 5
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 track.cpp
-C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:17     .text._ZN5TrackC2EiP13DualLedButton:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC2EiP13DualLedButton
-C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC1EiP13DualLedButton
-C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:53     .text._ZN5Track3NewEiP13DualLedButton:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:61     .text._ZN5Track3NewEiP13DualLedButton:00000000 _ZN5Track3NewEiP13DualLedButton
-C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:100    .text._ZN5Track5AudioEPKfPfjS2_:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:108    .text._ZN5Track5AudioEPKfPfjS2_:00000000 _ZN5Track5AudioEPKfPfjS2_
+C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s:17     .text._ZN5TrackC2EiP13DualLedButton:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC2EiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC1EiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s:53     .text._ZN5Track3NewEiP13DualLedButton:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s:61     .text._ZN5Track3NewEiP13DualLedButton:00000000 _ZN5Track3NewEiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s:100    .text._ZN5Track5AudioEPKfPfjS2_:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccXY95Q3.s:108    .text._ZN5Track5AudioEPKfPfjS2_:00000000 _ZN5Track5AudioEPKfPfjS2_
 
 NO UNDEFINED SYMBOLS

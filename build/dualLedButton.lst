@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -34,7 +34,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
    3:dualLedButton.cpp **** #include "button.h"
    4:dualLedButton.cpp **** #include "dualLedButton.h"
    5:dualLedButton.cpp **** 
-   6:dualLedButton.cpp **** DualLedButton::DualLedButton(Pin pin, uint32_t shortTime, uint32_t longTime, Pin redLedPin, Pin gre
+   6:dualLedButton.cpp **** DualLedButton::DualLedButton(Pin pin, uint32_t shortTime, uint32_t longTime, Pin greenLedPin, Pin r
   30              		.loc 1 6 1 view -0
   31              		.cfi_startproc
   32              		@ args = 8, pretend = 0, frame = 8
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
    2:../DaisyExamples/libDaisy/src/per/gpio.h **** #ifndef DSY_GPIO_H
    3:../DaisyExamples/libDaisy/src/per/gpio.h **** #define DSY_GPIO_H
    4:../DaisyExamples/libDaisy/src/per/gpio.h **** #include "daisy_core.h"
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 2
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 2
 
 
    5:../DaisyExamples/libDaisy/src/per/gpio.h **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
   59:../DaisyExamples/libDaisy/src/per/gpio.h ****     {
   60:../DaisyExamples/libDaisy/src/per/gpio.h ****         Pin   pin;
   61:../DaisyExamples/libDaisy/src/per/gpio.h ****         Mode  mode;
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 3
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 3
 
 
   62:../DaisyExamples/libDaisy/src/per/gpio.h ****         Pull  pull;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
   17:../DaisyExamples/libDaisy/src/daisy_core.h **** 
   18:../DaisyExamples/libDaisy/src/daisy_core.h **** /** @addtogroup utility
   19:../DaisyExamples/libDaisy/src/daisy_core.h ****     @{
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 4
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 4
 
 
   20:../DaisyExamples/libDaisy/src/daisy_core.h **** */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
   74:../DaisyExamples/libDaisy/src/daisy_core.h **** /** 
   75:../DaisyExamples/libDaisy/src/daisy_core.h ****     Converts unsigned 8-bit to float
   76:../DaisyExamples/libDaisy/src/daisy_core.h ****     \param x Number to be scaled.
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 5
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 5
 
 
   77:../DaisyExamples/libDaisy/src/daisy_core.h ****     \return Scaled number.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  131:../DaisyExamples/libDaisy/src/daisy_core.h ****     x = x >= FBIPMAX ? FBIPMAX : x;
  132:../DaisyExamples/libDaisy/src/daisy_core.h ****     return (int32_t)(x * F2S16_SCALE);
  133:../DaisyExamples/libDaisy/src/daisy_core.h **** }
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 6
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 6
 
 
  134:../DaisyExamples/libDaisy/src/daisy_core.h **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  188:../DaisyExamples/libDaisy/src/daisy_core.h ****     DSY_GPIOG, /**< & */
  189:../DaisyExamples/libDaisy/src/daisy_core.h ****     DSY_GPIOH, /**< & */
  190:../DaisyExamples/libDaisy/src/daisy_core.h ****     DSY_GPIOI, /**< & */
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 7
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 7
 
 
  191:../DaisyExamples/libDaisy/src/daisy_core.h ****     DSY_GPIOJ, /**< & */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  245:../DaisyExamples/libDaisy/src/daisy_core.h ****     PORTA, /**< Port A */
  246:../DaisyExamples/libDaisy/src/daisy_core.h ****     PORTB, /**< Port B */
  247:../DaisyExamples/libDaisy/src/daisy_core.h ****     PORTC, /**< Port C */
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 8
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 8
 
 
  248:../DaisyExamples/libDaisy/src/daisy_core.h ****     PORTD, /**< Port D */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
   99              	.LBB69:
  100              	.LBB64:
  101              	.LBB59:
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 9
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 9
 
 
  102              	.LBB56:
@@ -518,7 +518,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  136              	.LBE81:
  137              	.LBE84:
  138              		.loc 1 9 17 view .LVU17
- 139 002e 0899     		ldr	r1, [sp, #32]
+ 139 002e 0999     		ldr	r1, [sp, #36]
  140              	.LBB85:
  141              	.LBB65:
  142              	.LBB60:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  154              	.LBI71:
   68:../DaisyExamples/libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
  155              		.loc 2 68 9 view .LVU21
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 10
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 10
 
 
  156              	.LBB79:
@@ -583,7 +583,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  191 0042 04F13800 		add	r0, r4, #56
  192 0046 2B46     		mov	r3, r5
  193 0048 0122     		movs	r2, #1
- 194 004a 0999     		ldr	r1, [sp, #36]
+ 194 004a 0899     		ldr	r1, [sp, #32]
  195 004c 0095     		str	r5, [sp]
  196 004e FFF7FEFF 		bl	_ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
  197              	.LVL7:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  205              		.loc 1 11 1 view .LVU32
  206              		.cfi_endproc
  207              	.LFE4789:
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 11
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 11
 
 
  209              		.global	_ZN13DualLedButtonC1EN5daisy3PinEmmS1_S1_
@@ -615,7 +615,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  221              	.LVL8:
  222              	.LFB4791:
   12:dualLedButton.cpp **** 
-  13:dualLedButton.cpp **** DualLedButton DualLedButton::New(Pin pin, uint32_t shortTime, uint32_t longTime, Pin redLedPin, Pin
+  13:dualLedButton.cpp **** DualLedButton DualLedButton::New(Pin pin, uint32_t shortTime, uint32_t longTime, Pin greenLedPin, P
   14:dualLedButton.cpp **** {
  223              		.loc 1 14 1 is_stmt 1 view -0
  224              		.cfi_startproc
@@ -653,12 +653,12 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  255              	.LBE109:
  256              		.loc 1 14 1 view .LVU37
  257 000c ADF80C10 		strh	r1, [sp, #12]	@ movhi
-  15:dualLedButton.cpp ****     return DualLedButton(pin, shortTime, longTime, redLedPin, greenLedPin);
+  15:dualLedButton.cpp ****     return DualLedButton(pin, shortTime, longTime, greenLedPin, redLedPin);
  258              		.loc 1 15 5 is_stmt 1 view .LVU38
  259              	.LVL9:
  260              		.loc 1 15 5 is_stmt 0 view .LVU39
  261 0010 BDF83010 		ldrh	r1, [sp, #48]
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 12
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 12
 
 
  262 0014 ADF81810 		strh	r1, [sp, #24]	@ movhi
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  312              	.LBB143:
  313              	.LBB125:
  314              		.loc 2 74 12 view .LVU50
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 13
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 13
 
 
  315 0026 4FF60B71 		movw	r1, #65291
@@ -754,7 +754,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  342              	.LBE145:
    9:dualLedButton.cpp ****     greenGpio.Init(greenLedPin, GPIO::Mode::OUTPUT);
  343              		.loc 1 9 17 view .LVU56
- 344 003c 0699     		ldr	r1, [sp, #24]
+ 344 003c 0799     		ldr	r1, [sp, #28]
  345              	.LBB146:
  346              	.LBB141:
  347              	.LBB138:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  362              	.LBB139:
  363              	.LBB137:
  364              	.LBB135:
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 14
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 14
 
 
   69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
@@ -801,7 +801,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  378 004a 04F13800 		add	r0, r4, #56
  379 004e 2B46     		mov	r3, r5
  380 0050 0122     		movs	r2, #1
- 381 0052 0799     		ldr	r1, [sp, #28]
+ 381 0052 0699     		ldr	r1, [sp, #24]
  382 0054 0095     		str	r5, [sp]
  383 0056 FFF7FEFF 		bl	_ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
  384              	.LVL13:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  412              		.cfi_startproc
  413              		@ args = 0, pretend = 0, frame = 0
  414              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 15
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 15
 
 
   20:dualLedButton.cpp ****     redGpio.Write(false);
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  461              		@ args = 0, pretend = 0, frame = 0
  462              		@ frame_needed = 0, uses_anonymous_args = 0
   26:dualLedButton.cpp ****     redGpio.Write(true);
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 16
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 16
 
 
  463              		.loc 1 26 5 view .LVU79
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  510              		@ frame_needed = 0, uses_anonymous_args = 0
   32:dualLedButton.cpp ****     redGpio.Write(false);
  511              		.loc 1 32 5 view .LVU90
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 17
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 17
 
 
   31:dualLedButton.cpp ****     redGpio.Write(false);
@@ -982,7 +982,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  527              		.loc 1 33 20 is_stmt 0 view .LVU96
  528 000c 04F13800 		add	r0, r4, #56
  529 0010 0121     		movs	r1, #1
-  34:dualLedButton.cpp **** }...
+  34:dualLedButton.cpp **** }
  530              		.loc 1 34 1 view .LVU97
  531 0012 BDE81040 		pop	{r4, lr}
  532              		.cfi_restore 14
@@ -997,70 +997,144 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 1
  539              		.loc 1 33 20 view .LVU99
  540              		.cfi_endproc
  541              	.LFE4794:
- 543 001a 00BF     		.text
- 544              	.Letext0:
- 545              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
- 546              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
- 547              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
- 548              		.file 7 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
- 549              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
- 550              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 551              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
- 552              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
- 553              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
- 554              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
- 555              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
- 556              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
- 557              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
- 558              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
- 559              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
- 560              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
- 561              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
- 562              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
- 563              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 18
+ 543 001a 00BF     		.section	.text._ZN13DualLedButton5ColorEi,"ax",%progbits
+ 544              		.align	1
+ 545              		.p2align 2,,3
+ 546              		.global	_ZN13DualLedButton5ColorEi
+ 547              		.syntax unified
+ 548              		.thumb
+ 549              		.thumb_func
+ 550              		.fpu fpv5-d16
+ 552              	_ZN13DualLedButton5ColorEi:
+ 553              	.LVL29:
+ 554              	.LFB4795:
+  35:dualLedButton.cpp **** 
+  36:dualLedButton.cpp **** void DualLedButton::Color(int color)
+  37:dualLedButton.cpp **** {
+ 555              		.loc 1 37 1 is_stmt 1 view -0
+ 556              		.cfi_startproc
+ 557              		@ args = 0, pretend = 0, frame = 0
+ 558              		@ frame_needed = 0, uses_anonymous_args = 0
+  38:dualLedButton.cpp ****     redGpio.Write(color == 1);
+ 559              		.loc 1 38 5 view .LVU101
+  37:dualLedButton.cpp ****     redGpio.Write(color == 1);
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 18
 
 
- 564              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
- 565              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
- 566              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
- 567              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
- 568              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
- 569              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
- 570              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 571              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
- 572              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 573              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
- 574              		.file 33 "../DaisyExamples/libDaisy/src/util/wav_format.h"
- 575              		.file 34 "../DaisyExamples/libDaisy/src/dev/max11300.h"
- 576              		.file 35 "../DaisyExamples/libDaisy/src/daisy_seed.h"
- 577              		.file 36 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
- 578              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
- 579              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
- 580              		.file 39 "../DaisyExamples/DaisySP/Source/Control/adenv.h"
- 581              		.file 40 "../DaisyExamples/DaisySP/Source/Utility/dsp.h"
- 582              		.file 41 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
- 583              		.file 42 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
- 584              		.file 43 "button.h"
- 585              		.file 44 "dualLedButton.h"
- 586              		.file 45 "<built-in>"
- 587              		.file 46 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cctWaFFG.s 			page 19
+ 560              		.loc 1 37 1 is_stmt 0 view .LVU102
+ 561 0000 38B5     		push	{r3, r4, r5, lr}
+ 562              		.cfi_def_cfa_offset 16
+ 563              		.cfi_offset 3, -16
+ 564              		.cfi_offset 4, -12
+ 565              		.cfi_offset 5, -8
+ 566              		.cfi_offset 14, -4
+  37:dualLedButton.cpp ****     redGpio.Write(color == 1);
+ 567              		.loc 1 37 1 view .LVU103
+ 568 0002 0D46     		mov	r5, r1
+ 569              		.loc 1 38 18 view .LVU104
+ 570 0004 A1F10101 		sub	r1, #1
+ 571              	.LVL30:
+  37:dualLedButton.cpp ****     redGpio.Write(color == 1);
+ 572              		.loc 1 37 1 view .LVU105
+ 573 0008 0446     		mov	r4, r0
+ 574              		.loc 1 38 18 view .LVU106
+ 575 000a 2430     		adds	r0, r0, #36
+ 576              	.LVL31:
+ 577              		.loc 1 38 18 view .LVU107
+ 578 000c B1FA81F1 		clz	r1, r1
+ 579 0010 4909     		lsrs	r1, r1, #5
+ 580 0012 FFF7FEFF 		bl	_ZN5daisy4GPIO5WriteEb
+ 581              	.LVL32:
+  39:dualLedButton.cpp ****     greenGpio.Write(color == 2);
+ 582              		.loc 1 39 5 is_stmt 1 view .LVU108
+ 583              		.loc 1 39 20 is_stmt 0 view .LVU109
+ 584 0016 A5F10201 		sub	r1, r5, #2
+ 585 001a 04F13800 		add	r0, r4, #56
+ 586 001e B1FA81F1 		clz	r1, r1
+  40:dualLedButton.cpp **** }...
+ 587              		.loc 1 40 1 view .LVU110
+ 588 0022 BDE83840 		pop	{r3, r4, r5, lr}
+ 589              		.cfi_restore 14
+ 590              		.cfi_restore 5
+ 591              		.cfi_restore 4
+ 592              		.cfi_restore 3
+ 593              		.cfi_def_cfa_offset 0
+ 594              	.LVL33:
+  39:dualLedButton.cpp ****     greenGpio.Write(color == 2);
+ 595              		.loc 1 39 20 view .LVU111
+ 596 0026 4909     		lsrs	r1, r1, #5
+ 597 0028 FFF7FEBF 		b	_ZN5daisy4GPIO5WriteEb
+ 598              	.LVL34:
+  39:dualLedButton.cpp ****     greenGpio.Write(color == 2);
+ 599              		.loc 1 39 20 view .LVU112
+ 600              		.cfi_endproc
+ 601              	.LFE4795:
+ 603              		.text
+ 604              	.Letext0:
+ 605              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 606              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 607              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 608              		.file 7 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 609              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 610              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 611              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 19
+
+
+ 612              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 613              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 614              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 615              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 616              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 617              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 618              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 619              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 620              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 621              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 622              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 623              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 624              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 625              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
+ 626              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 627              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 628              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 629              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 630              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 631              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 632              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 633              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 634              		.file 33 "../DaisyExamples/libDaisy/src/util/wav_format.h"
+ 635              		.file 34 "../DaisyExamples/libDaisy/src/dev/max11300.h"
+ 636              		.file 35 "../DaisyExamples/libDaisy/src/daisy_seed.h"
+ 637              		.file 36 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 638              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 639              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 640              		.file 39 "../DaisyExamples/DaisySP/Source/Control/adenv.h"
+ 641              		.file 40 "../DaisyExamples/DaisySP/Source/Utility/dsp.h"
+ 642              		.file 41 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 643              		.file 42 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 644              		.file 43 "button.h"
+ 645              		.file 44 "dualLedButton.h"
+ 646              		.file 45 "<built-in>"
+ 647              		.file 46 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s 			page 20
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 dualLedButton.cpp
-C:\Users\papag\AppData\Local\Temp\cctWaFFG.s:17     .text._ZN13DualLedButtonC2EN5daisy3PinEmmS1_S1_:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cctWaFFG.s:26     .text._ZN13DualLedButtonC2EN5daisy3PinEmmS1_S1_:00000000 _ZN13DualLedButtonC2EN5daisy3PinEmmS1_S1_
-C:\Users\papag\AppData\Local\Temp\cctWaFFG.s:26     .text._ZN13DualLedButtonC2EN5daisy3PinEmmS1_S1_:00000000 _ZN13DualLedButtonC1EN5daisy3PinEmmS1_S1_
-C:\Users\papag\AppData\Local\Temp\cctWaFFG.s:212    .text._ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cctWaFFG.s:220    .text._ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_:00000000 _ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_
-C:\Users\papag\AppData\Local\Temp\cctWaFFG.s:400    .text._ZN13DualLedButton3OffEv:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cctWaFFG.s:408    .text._ZN13DualLedButton3OffEv:00000000 _ZN13DualLedButton3OffEv
-C:\Users\papag\AppData\Local\Temp\cctWaFFG.s:448    .text._ZN13DualLedButton3RedEv:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cctWaFFG.s:456    .text._ZN13DualLedButton3RedEv:00000000 _ZN13DualLedButton3RedEv
-C:\Users\papag\AppData\Local\Temp\cctWaFFG.s:496    .text._ZN13DualLedButton5GreenEv:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cctWaFFG.s:504    .text._ZN13DualLedButton5GreenEv:00000000 _ZN13DualLedButton5GreenEv
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:17     .text._ZN13DualLedButtonC2EN5daisy3PinEmmS1_S1_:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:26     .text._ZN13DualLedButtonC2EN5daisy3PinEmmS1_S1_:00000000 _ZN13DualLedButtonC2EN5daisy3PinEmmS1_S1_
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:26     .text._ZN13DualLedButtonC2EN5daisy3PinEmmS1_S1_:00000000 _ZN13DualLedButtonC1EN5daisy3PinEmmS1_S1_
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:212    .text._ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:220    .text._ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_:00000000 _ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:400    .text._ZN13DualLedButton3OffEv:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:408    .text._ZN13DualLedButton3OffEv:00000000 _ZN13DualLedButton3OffEv
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:448    .text._ZN13DualLedButton3RedEv:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:456    .text._ZN13DualLedButton3RedEv:00000000 _ZN13DualLedButton3RedEv
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:496    .text._ZN13DualLedButton5GreenEv:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:504    .text._ZN13DualLedButton5GreenEv:00000000 _ZN13DualLedButton5GreenEv
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:544    .text._ZN13DualLedButton5ColorEi:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc0s97Yd.s:552    .text._ZN13DualLedButton5ColorEi:00000000 _ZN13DualLedButton5ColorEi
 
 UNDEFINED SYMBOLS
 _ZN6ButtonC2EN5daisy3PinEmm

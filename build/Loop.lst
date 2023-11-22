@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   34              		@ link register save eliminated.
   35              	.LBB89:
   36              	.LBI89:
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 2
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 2
 
 
   37              		.file 2 "../DaisyExamples/libDaisy/src/sys/system.h"
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   54:../DaisyExamples/libDaisy/src/sys/system.h **** 
   55:../DaisyExamples/libDaisy/src/sys/system.h ****         SysClkFreq cpu_freq;
   56:../DaisyExamples/libDaisy/src/sys/system.h ****         bool       use_dcache;
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 3
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 3
 
 
   57:../DaisyExamples/libDaisy/src/sys/system.h ****         bool       use_icache;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   27:../DaisyExamples/libDaisy/src/hid/usb.h **** 
   28:../DaisyExamples/libDaisy/src/hid/usb.h ****     /** Specified which of the two USB Peripherals to initialize. */
   29:../DaisyExamples/libDaisy/src/hid/usb.h ****     enum UsbPeriph
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 4
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 4
 
 
   30:../DaisyExamples/libDaisy/src/hid/usb.h ****     {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   36:../DaisyExamples/libDaisy/src/per/adc.h ****         MUX_SEL_0,    /**< & */
   37:../DaisyExamples/libDaisy/src/per/adc.h ****         MUX_SEL_1,    /**< & */
   38:../DaisyExamples/libDaisy/src/per/adc.h ****         MUX_SEL_2,    /**< & */
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 5
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 5
 
 
   39:../DaisyExamples/libDaisy/src/per/adc.h ****         MUX_SEL_LAST, /**< & */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   93:../DaisyExamples/libDaisy/src/per/adc.h ****     ~AdcHandle() {}
   50              		.loc 4 93 5 is_stmt 1 view .LVU5
   51              		.loc 4 93 5 is_stmt 0 view .LVU6
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 6
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 6
 
 
   52              	.LBE91:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   51:../DaisyExamples/libDaisy/src/hid/audio.h ****     };
   52:../DaisyExamples/libDaisy/src/hid/audio.h **** 
   53:../DaisyExamples/libDaisy/src/hid/audio.h ****     enum class Result
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 7
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 7
 
 
   54:../DaisyExamples/libDaisy/src/hid/audio.h ****     {
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   68              		.p2align 2,,3
   69              		.global	_Z13AudioCallbackPKfPfj
   70              		.syntax unified
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 8
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 8
 
 
   71              		.thumb
@@ -462,7 +462,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   32:Loop.cpp      **** 
   33:Loop.cpp      **** static DualLedButton dualLedBtns[] = {
   34:Loop.cpp      ****     DualLedButton::New(D20, shortClick, longClick, D22, D21),
-  35:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D23, D25),
+  35:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D25, D23),
   36:Loop.cpp      ****     DualLedButton::New(D27, shortClick, longClick, D26, D28),
   37:Loop.cpp      ****     DualLedButton::New( D8, shortClick, longClick, D7, D9)
   38:Loop.cpp      **** };
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   48:Loop.cpp      **** static Button clearBtn = Button::New(D14, shortClick, longClick);
   49:Loop.cpp      **** 
   50:Loop.cpp      **** void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 9
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 9
 
 
   51:Loop.cpp      ****                    AudioHandle::InterleavingOutputBuffer out,
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
  122              	.L4:
   57:Loop.cpp      ****     {
   58:Loop.cpp      ****         memcpy((i + 1) * size + ram, ram, sizeof(float) * size);
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 10
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 10
 
 
  123              		.loc 6 58 9 discriminator 2 view .LVU23
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   67:Loop.cpp      **** 
   68:Loop.cpp      ****     //state = UpdateMainState(record, clear, remainingTime);
   69:Loop.cpp      **** 
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 11
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 11
 
 
   70:Loop.cpp      ****     for(int i = 0; i < 4; i++)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
  209              		.thumb
  210              		.thumb_func
  211              		.fpu fpv5-d16
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 12
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 12
 
 
  213              	main:
@@ -668,153 +668,265 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   80:Loop.cpp      **** {
  215              		.loc 6 80 1 is_stmt 1 view -0
  216              		.cfi_startproc
- 217              		@ Volatile: function does not return.
- 218              		@ args = 0, pretend = 0, frame = 0
- 219              		@ frame_needed = 0, uses_anonymous_args = 0
+ 217              		@ args = 0, pretend = 0, frame = 0
+ 218              		@ frame_needed = 0, uses_anonymous_args = 0
   81:Loop.cpp      ****     // Initialize Hardware
   82:Loop.cpp      ****     hw.Init();
- 220              		.loc 6 82 5 view .LVU50
+ 219              		.loc 6 82 5 view .LVU50
   80:Loop.cpp      ****     // Initialize Hardware
- 221              		.loc 6 80 1 is_stmt 0 view .LVU51
- 222 0000 00B5     		push	{lr}
- 223              		.cfi_def_cfa_offset 4
- 224              		.cfi_offset 14, -4
- 225              		.loc 6 82 12 view .LVU52
- 226 0002 0021     		movs	r1, #0
+ 220              		.loc 6 80 1 is_stmt 0 view .LVU51
+ 221 0000 00B5     		push	{lr}
+ 222              		.cfi_def_cfa_offset 4
+ 223              		.cfi_offset 14, -4
+ 224              		.loc 6 82 12 view .LVU52
+ 225 0002 0021     		movs	r1, #0
   80:Loop.cpp      ****     // Initialize Hardware
- 227              		.loc 6 80 1 view .LVU53
- 228 0004 83B0     		sub	sp, sp, #12
- 229              		.cfi_def_cfa_offset 16
- 230              		.loc 6 82 12 view .LVU54
- 231 0006 1448     		ldr	r0, .L19
- 232 0008 FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
- 233              	.LVL13:
+ 226              		.loc 6 80 1 view .LVU53
+ 227 0004 83B0     		sub	sp, sp, #12
+ 228              		.cfi_def_cfa_offset 16
+ 229              		.loc 6 82 12 view .LVU54
+ 230 0006 2148     		ldr	r0, .L14
+ 231 0008 FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
+ 232              	.LVL13:
   83:Loop.cpp      **** 
   84:Loop.cpp      ****     loopTrig.Init(D15, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
- 234              		.loc 6 84 5 is_stmt 1 view .LVU55
- 235              		.loc 6 84 18 is_stmt 0 view .LVU56
- 236 000c 0022     		movs	r2, #0
- 237 000e 1349     		ldr	r1, .L19+4
- 238 0010 0223     		movs	r3, #2
- 239 0012 1348     		ldr	r0, .L19+8
- 240 0014 0968     		ldr	r1, [r1]
- 241 0016 0092     		str	r2, [sp]
- 242 0018 FFF7FEFF 		bl	_ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
- 243              	.LVL14:
+ 233              		.loc 6 84 5 is_stmt 1 view .LVU55
+ 234              		.loc 6 84 18 is_stmt 0 view .LVU56
+ 235 000c 0022     		movs	r2, #0
+ 236 000e 2049     		ldr	r1, .L14+4
+ 237 0010 0223     		movs	r3, #2
+ 238 0012 2048     		ldr	r0, .L14+8
+ 239 0014 0968     		ldr	r1, [r1]
+ 240 0016 0092     		str	r2, [sp]
+ 241 0018 FFF7FEFF 		bl	_ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
+ 242              	.LVL14:
   85:Loop.cpp      **** 
   86:Loop.cpp      ****     hw.SetAudioBlockSize(4);
- 244              		.loc 6 86 5 is_stmt 1 view .LVU57
- 245              		.loc 6 86 25 is_stmt 0 view .LVU58
- 246 001c 0421     		movs	r1, #4
- 247 001e 0E48     		ldr	r0, .L19
- 248 0020 FFF7FEFF 		bl	_ZN5daisy9DaisySeed17SetAudioBlockSizeEj
- 249              	.LVL15:
- 250              	.L13:
+ 243              		.loc 6 86 5 is_stmt 1 view .LVU57
+ 244              		.loc 6 86 25 is_stmt 0 view .LVU58
+ 245 001c 0421     		movs	r1, #4
+ 246 001e 1B48     		ldr	r0, .L14
+ 247 0020 FFF7FEFF 		bl	_ZN5daisy9DaisySeed17SetAudioBlockSizeEj
+ 248              	.LVL15:
+ 249              	.L12:
   87:Loop.cpp      **** 
-  88:Loop.cpp      ****     while(1) {
- 251              		.loc 6 88 5 is_stmt 1 view .LVU59
+  88:Loop.cpp      ****     //hw.StartAudio(AudioCallback);
   89:Loop.cpp      **** 
-  90:Loop.cpp      ****         if(recordBtn.Check())
- 252              		.loc 6 90 9 view .LVU60
- 253              		.loc 6 90 27 is_stmt 0 view .LVU61
- 254 0024 0F48     		ldr	r0, .L19+12
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 13
+  90:Loop.cpp      ****     while(1) {
+ 250              		.loc 6 90 5 is_stmt 1 view .LVU59
+ 251              	.LBB95:
+  91:Loop.cpp      **** 
+  92:Loop.cpp      ****         uint32_t now = System::GetNow();
+ 252              		.loc 6 92 9 view .LVU60
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 13
 
 
- 255 0026 FFF7FEFF 		bl	_ZN6Button5CheckEv
- 256              	.LVL16:
- 257              		.loc 6 90 9 view .LVU62
- 258 002a 0028     		cmp	r0, #0
- 259 002c FAD0     		beq	.L13
-  91:Loop.cpp      ****         {
-  92:Loop.cpp      **** 
-  93:Loop.cpp      ****             dualLedBtns[0].Off();
- 260              		.loc 6 93 13 is_stmt 1 view .LVU63
- 261              		.loc 6 93 31 is_stmt 0 view .LVU64
- 262 002e 0E48     		ldr	r0, .L19+16
- 263 0030 FFF7FEFF 		bl	_ZN13DualLedButton3OffEv
- 264              	.LVL17:
-  94:Loop.cpp      **** 
-  95:Loop.cpp      ****             System::Delay(500);
- 265              		.loc 6 95 13 is_stmt 1 view .LVU65
- 266              		.loc 6 95 26 is_stmt 0 view .LVU66
- 267 0034 4FF4FA70 		mov	r0, #500
- 268 0038 FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
- 269              	.LVL18:
-  96:Loop.cpp      **** 
-  97:Loop.cpp      **** 
-  98:Loop.cpp      ****             if(recordBtn.GetPressed())
- 270              		.loc 6 98 13 is_stmt 1 view .LVU67
- 271              		.loc 6 98 36 is_stmt 0 view .LVU68
- 272 003c 0948     		ldr	r0, .L19+12
- 273 003e FFF7FEFF 		bl	_ZN6Button10GetPressedEv
- 274              	.LVL19:
-  99:Loop.cpp      ****                 dualLedBtns[0].Red();
- 275              		.loc 6 99 17 is_stmt 1 view .LVU69
-  98:Loop.cpp      ****                 dualLedBtns[0].Red();
- 276              		.loc 6 98 36 is_stmt 0 view .LVU70
- 277 0042 0346     		mov	r3, r0
- 278              		.loc 6 99 35 view .LVU71
- 279 0044 0848     		ldr	r0, .L19+16
-  98:Loop.cpp      ****                 dualLedBtns[0].Red();
- 280              		.loc 6 98 13 view .LVU72
- 281 0046 13B1     		cbz	r3, .L14
- 282              		.loc 6 99 35 view .LVU73
- 283 0048 FFF7FEFF 		bl	_ZN13DualLedButton3RedEv
+ 253              		.loc 6 92 38 is_stmt 0 view .LVU61
+ 254 0024 FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
+ 255              	.LVL16:
+  93:Loop.cpp      **** 
+  94:Loop.cpp      ****         for(int i = 0; i < 4; i++)
+ 256              		.loc 6 94 9 is_stmt 1 view .LVU62
+ 257              	.LBB96:
+ 258              		.loc 6 94 26 view .LVU63
+  95:Loop.cpp      ****             dualLedBtns[i].Off();
+ 259              		.loc 6 95 13 view .LVU64
+ 260              		.loc 6 95 31 is_stmt 0 view .LVU65
+ 261 0028 1B48     		ldr	r0, .L14+12
+ 262 002a FFF7FEFF 		bl	_ZN13DualLedButton3OffEv
+ 263              	.LVL17:
+  94:Loop.cpp      ****             dualLedBtns[i].Off();
+ 264              		.loc 6 94 9 is_stmt 1 view .LVU66
+  94:Loop.cpp      ****             dualLedBtns[i].Off();
+ 265              		.loc 6 94 26 view .LVU67
+ 266              		.loc 6 95 13 view .LVU68
+ 267              		.loc 6 95 31 is_stmt 0 view .LVU69
+ 268 002e 1B48     		ldr	r0, .L14+16
+ 269 0030 FFF7FEFF 		bl	_ZN13DualLedButton3OffEv
+ 270              	.LVL18:
+  94:Loop.cpp      ****             dualLedBtns[i].Off();
+ 271              		.loc 6 94 9 is_stmt 1 view .LVU70
+  94:Loop.cpp      ****             dualLedBtns[i].Off();
+ 272              		.loc 6 94 26 view .LVU71
+ 273              		.loc 6 95 13 view .LVU72
+ 274              		.loc 6 95 31 is_stmt 0 view .LVU73
+ 275 0034 1A48     		ldr	r0, .L14+20
+ 276 0036 FFF7FEFF 		bl	_ZN13DualLedButton3OffEv
+ 277              	.LVL19:
+  94:Loop.cpp      ****             dualLedBtns[i].Off();
+ 278              		.loc 6 94 9 is_stmt 1 view .LVU74
+  94:Loop.cpp      ****             dualLedBtns[i].Off();
+ 279              		.loc 6 94 26 view .LVU75
+ 280              		.loc 6 95 13 view .LVU76
+ 281              		.loc 6 95 31 is_stmt 0 view .LVU77
+ 282 003a 1A48     		ldr	r0, .L14+24
+ 283 003c FFF7FEFF 		bl	_ZN13DualLedButton3OffEv
  284              	.LVL20:
- 285 004c EAE7     		b	.L13
- 286              	.L14:
- 100:Loop.cpp      ****             else
- 101:Loop.cpp      ****                 dualLedBtns[0].Green();
- 287              		.loc 6 101 17 is_stmt 1 view .LVU74
- 288              		.loc 6 101 37 is_stmt 0 view .LVU75
- 289 004e 0648     		ldr	r0, .L19+16
- 290 0050 FFF7FEFF 		bl	_ZN13DualLedButton5GreenEv
- 291              	.LVL21:
- 292 0054 E6E7     		b	.L13
- 293              	.L20:
- 294 0056 00BF     		.align	2
- 295              	.L19:
- 296 0058 00000000 		.word	.LANCHOR4
- 297 005c 00000000 		.word	.LANCHOR5
- 298 0060 00000000 		.word	.LANCHOR6
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 14
+  94:Loop.cpp      ****             dualLedBtns[i].Off();
+ 285              		.loc 6 94 9 is_stmt 1 view .LVU78
+  94:Loop.cpp      ****             dualLedBtns[i].Off();
+ 286              		.loc 6 94 26 view .LVU79
+ 287              	.LBE96:
+  96:Loop.cpp      **** 
+  97:Loop.cpp      ****         System::Delay(500);
+ 288              		.loc 6 97 9 view .LVU80
+ 289              		.loc 6 97 22 is_stmt 0 view .LVU81
+ 290 0040 4FF4FA70 		mov	r0, #500
+ 291 0044 FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
+ 292              	.LVL21:
+  98:Loop.cpp      **** 
+  99:Loop.cpp      ****         for(int i = 0; i < 4; i++)
+ 293              		.loc 6 99 9 is_stmt 1 view .LVU82
+ 294              	.LBB97:
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 14
 
 
- 299 0064 00000000 		.word	.LANCHOR1
- 300 0068 00000000 		.word	.LANCHOR7
- 301              		.cfi_endproc
- 302              	.LFE4789:
- 304              		.section	.text.startup._GLOBAL__sub_I__Z13AudioCallbackPKfPfj,"ax",%progbits
- 305              		.align	1
- 306              		.p2align 2,,3
- 307              		.syntax unified
- 308              		.thumb
- 309              		.thumb_func
- 310              		.fpu fpv5-d16
- 312              	_GLOBAL__sub_I__Z13AudioCallbackPKfPfj:
- 313              	.LFB5349:
- 102:Loop.cpp      ****         }
+ 295              		.loc 6 99 26 view .LVU83
+ 100:Loop.cpp      ****             dualLedBtns[i].Green();
+ 296              		.loc 6 100 13 view .LVU84
+ 297              		.loc 6 100 33 is_stmt 0 view .LVU85
+ 298 0048 1348     		ldr	r0, .L14+12
+ 299 004a FFF7FEFF 		bl	_ZN13DualLedButton5GreenEv
+ 300              	.LVL22:
+  99:Loop.cpp      ****             dualLedBtns[i].Green();
+ 301              		.loc 6 99 9 is_stmt 1 view .LVU86
+  99:Loop.cpp      ****             dualLedBtns[i].Green();
+ 302              		.loc 6 99 26 view .LVU87
+ 303              		.loc 6 100 13 view .LVU88
+ 304              		.loc 6 100 33 is_stmt 0 view .LVU89
+ 305 004e 1348     		ldr	r0, .L14+16
+ 306 0050 FFF7FEFF 		bl	_ZN13DualLedButton5GreenEv
+ 307              	.LVL23:
+  99:Loop.cpp      ****             dualLedBtns[i].Green();
+ 308              		.loc 6 99 9 is_stmt 1 view .LVU90
+  99:Loop.cpp      ****             dualLedBtns[i].Green();
+ 309              		.loc 6 99 26 view .LVU91
+ 310              		.loc 6 100 13 view .LVU92
+ 311              		.loc 6 100 33 is_stmt 0 view .LVU93
+ 312 0054 1248     		ldr	r0, .L14+20
+ 313 0056 FFF7FEFF 		bl	_ZN13DualLedButton5GreenEv
+ 314              	.LVL24:
+  99:Loop.cpp      ****             dualLedBtns[i].Green();
+ 315              		.loc 6 99 9 is_stmt 1 view .LVU94
+  99:Loop.cpp      ****             dualLedBtns[i].Green();
+ 316              		.loc 6 99 26 view .LVU95
+ 317              		.loc 6 100 13 view .LVU96
+ 318              		.loc 6 100 33 is_stmt 0 view .LVU97
+ 319 005a 1248     		ldr	r0, .L14+24
+ 320 005c FFF7FEFF 		bl	_ZN13DualLedButton5GreenEv
+ 321              	.LVL25:
+  99:Loop.cpp      ****             dualLedBtns[i].Green();
+ 322              		.loc 6 99 9 is_stmt 1 view .LVU98
+  99:Loop.cpp      ****             dualLedBtns[i].Green();
+ 323              		.loc 6 99 26 view .LVU99
+ 324              	.LBE97:
+ 101:Loop.cpp      **** 
+ 102:Loop.cpp      ****         System::Delay(500);
+ 325              		.loc 6 102 9 view .LVU100
+ 326              		.loc 6 102 22 is_stmt 0 view .LVU101
+ 327 0060 4FF4FA70 		mov	r0, #500
+ 328 0064 FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
+ 329              	.LVL26:
  103:Loop.cpp      **** 
- 104:Loop.cpp      ****     }
- 105:Loop.cpp      **** }
- 314              		.loc 6 105 1 is_stmt 1 view -0
- 315              		.cfi_startproc
- 316              		@ args = 0, pretend = 0, frame = 0
- 317              		@ frame_needed = 0, uses_anonymous_args = 0
- 318              	.LBB121:
- 319              	.LBI121:
- 320              		.loc 6 105 1 view .LVU77
- 321              	.LVL22:
- 322              	.LBB122:
- 323              	.LBB123:
- 324              	.LBI123:
+ 104:Loop.cpp      ****         for(int i = 0; i < 4; i++)
+ 330              		.loc 6 104 9 is_stmt 1 view .LVU102
+ 331              	.LBB98:
+ 332              		.loc 6 104 26 view .LVU103
+ 105:Loop.cpp      ****             dualLedBtns[i].Red();
+ 333              		.loc 6 105 13 view .LVU104
+ 334              		.loc 6 105 31 is_stmt 0 view .LVU105
+ 335 0068 0B48     		ldr	r0, .L14+12
+ 336 006a FFF7FEFF 		bl	_ZN13DualLedButton3RedEv
+ 337              	.LVL27:
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 15
+
+
+ 104:Loop.cpp      ****             dualLedBtns[i].Red();
+ 338              		.loc 6 104 9 is_stmt 1 view .LVU106
+ 104:Loop.cpp      ****             dualLedBtns[i].Red();
+ 339              		.loc 6 104 26 view .LVU107
+ 340              		.loc 6 105 13 view .LVU108
+ 341              		.loc 6 105 31 is_stmt 0 view .LVU109
+ 342 006e 0B48     		ldr	r0, .L14+16
+ 343 0070 FFF7FEFF 		bl	_ZN13DualLedButton3RedEv
+ 344              	.LVL28:
+ 104:Loop.cpp      ****             dualLedBtns[i].Red();
+ 345              		.loc 6 104 9 is_stmt 1 view .LVU110
+ 104:Loop.cpp      ****             dualLedBtns[i].Red();
+ 346              		.loc 6 104 26 view .LVU111
+ 347              		.loc 6 105 13 view .LVU112
+ 348              		.loc 6 105 31 is_stmt 0 view .LVU113
+ 349 0074 0A48     		ldr	r0, .L14+20
+ 350 0076 FFF7FEFF 		bl	_ZN13DualLedButton3RedEv
+ 351              	.LVL29:
+ 104:Loop.cpp      ****             dualLedBtns[i].Red();
+ 352              		.loc 6 104 9 is_stmt 1 view .LVU114
+ 104:Loop.cpp      ****             dualLedBtns[i].Red();
+ 353              		.loc 6 104 26 view .LVU115
+ 354              		.loc 6 105 13 view .LVU116
+ 355              		.loc 6 105 31 is_stmt 0 view .LVU117
+ 356 007a 0A48     		ldr	r0, .L14+24
+ 357 007c FFF7FEFF 		bl	_ZN13DualLedButton3RedEv
+ 358              	.LVL30:
+ 104:Loop.cpp      ****             dualLedBtns[i].Red();
+ 359              		.loc 6 104 9 is_stmt 1 view .LVU118
+ 104:Loop.cpp      ****             dualLedBtns[i].Red();
+ 360              		.loc 6 104 26 view .LVU119
+ 361              	.LBE98:
+ 106:Loop.cpp      **** 
+ 107:Loop.cpp      ****         System::Delay(500);
+ 362              		.loc 6 107 9 view .LVU120
+ 363              		.loc 6 107 22 is_stmt 0 view .LVU121
+ 364 0080 4FF4FA70 		mov	r0, #500
+ 365 0084 FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
+ 366              	.LVL31:
+ 367              	.LBE95:
+  90:Loop.cpp      **** 
+ 368              		.loc 6 90 5 is_stmt 1 view .LVU122
+ 369 0088 CCE7     		b	.L12
+ 370              	.L15:
+ 371 008a 00BF     		.align	2
+ 372              	.L14:
+ 373 008c 00000000 		.word	.LANCHOR4
+ 374 0090 00000000 		.word	.LANCHOR5
+ 375 0094 00000000 		.word	.LANCHOR6
+ 376 0098 00000000 		.word	.LANCHOR7
+ 377 009c 4C000000 		.word	.LANCHOR7+76
+ 378 00a0 98000000 		.word	.LANCHOR7+152
+ 379 00a4 E4000000 		.word	.LANCHOR7+228
+ 380              		.cfi_endproc
+ 381              	.LFE4789:
+ 383              		.section	.text.startup._GLOBAL__sub_I__Z13AudioCallbackPKfPfj,"ax",%progbits
+ 384              		.align	1
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 16
+
+
+ 385              		.p2align 2,,3
+ 386              		.syntax unified
+ 387              		.thumb
+ 388              		.thumb_func
+ 389              		.fpu fpv5-d16
+ 391              	_GLOBAL__sub_I__Z13AudioCallbackPKfPfj:
+ 392              	.LFB5349:
+ 108:Loop.cpp      ****     }
+ 109:Loop.cpp      **** }
+ 393              		.loc 6 109 1 view -0
+ 394              		.cfi_startproc
+ 395              		@ args = 0, pretend = 0, frame = 0
+ 396              		@ frame_needed = 0, uses_anonymous_args = 0
+ 397              	.LBB125:
+ 398              	.LBI125:
+ 399              		.loc 6 109 1 view .LVU124
+ 400              	.LVL32:
+ 401              	.LBB126:
+ 402              	.LBB127:
+ 403              	.LBI127:
   21:../DaisyExamples/libDaisy/src/daisy_seed.h ****     ~DaisySeed() {}
- 325              		.loc 1 21 5 view .LVU78
- 326              	.LBB124:
- 327              	.LBB125:
- 328              	.LBI125:
- 329              		.file 7 "../DaisyExamples/libDaisy/src/per/qspi.h"
+ 404              		.loc 1 21 5 view .LVU125
+ 405              	.LBB128:
+ 406              	.LBB129:
+ 407              	.LBI129:
+ 408              		.file 7 "../DaisyExamples/libDaisy/src/per/qspi.h"
    1:../DaisyExamples/libDaisy/src/per/qspi.h **** #ifndef DSY_QSPI
    2:../DaisyExamples/libDaisy/src/per/qspi.h **** #define DSY_QSPI /**< Macro */
    3:../DaisyExamples/libDaisy/src/per/qspi.h **** 
@@ -838,9 +950,6 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   21:../DaisyExamples/libDaisy/src/per/qspi.h **** /** @addtogroup serial
   22:../DaisyExamples/libDaisy/src/per/qspi.h **** @{
   23:../DaisyExamples/libDaisy/src/per/qspi.h **** */
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 15
-
-
   24:../DaisyExamples/libDaisy/src/per/qspi.h **** 
   25:../DaisyExamples/libDaisy/src/per/qspi.h **** /** 
   26:../DaisyExamples/libDaisy/src/per/qspi.h ****  Driver for QSPI peripheral to interface with external flash memory. \n 
@@ -849,6 +958,9 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   29:../DaisyExamples/libDaisy/src/per/qspi.h **** */
   30:../DaisyExamples/libDaisy/src/per/qspi.h **** class QSPIHandle
   31:../DaisyExamples/libDaisy/src/per/qspi.h **** {
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 17
+
+
   32:../DaisyExamples/libDaisy/src/per/qspi.h ****   public:
   33:../DaisyExamples/libDaisy/src/per/qspi.h ****     enum Result
   34:../DaisyExamples/libDaisy/src/per/qspi.h ****     {
@@ -898,9 +1010,6 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   78:../DaisyExamples/libDaisy/src/per/qspi.h ****             MODE_LAST,
   79:../DaisyExamples/libDaisy/src/per/qspi.h ****         };
   80:../DaisyExamples/libDaisy/src/per/qspi.h **** 
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 16
-
-
   81:../DaisyExamples/libDaisy/src/per/qspi.h ****         //SCK,  CE# (active low)
   82:../DaisyExamples/libDaisy/src/per/qspi.h ****         struct
   83:../DaisyExamples/libDaisy/src/per/qspi.h ****         {
@@ -909,6 +1018,9 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   86:../DaisyExamples/libDaisy/src/per/qspi.h ****             dsy_gpio_pin io2; /**< & */
   87:../DaisyExamples/libDaisy/src/per/qspi.h ****             dsy_gpio_pin io3; /**< & */
   88:../DaisyExamples/libDaisy/src/per/qspi.h ****             dsy_gpio_pin clk; /**< & */
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 18
+
+
   89:../DaisyExamples/libDaisy/src/per/qspi.h ****             dsy_gpio_pin ncs; /**< & */
   90:../DaisyExamples/libDaisy/src/per/qspi.h ****         } pin_config;
   91:../DaisyExamples/libDaisy/src/per/qspi.h **** 
@@ -958,9 +1070,6 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
  135:../DaisyExamples/libDaisy/src/per/qspi.h ****         Erases the area specified on the chip.
  136:../DaisyExamples/libDaisy/src/per/qspi.h ****         Erasures will happen by 4K, 32K or 64K increments.
  137:../DaisyExamples/libDaisy/src/per/qspi.h ****         Smallest erase possible is 4kB at a time. (on IS25LP*)
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 17
-
-
  138:../DaisyExamples/libDaisy/src/per/qspi.h ****         \param start_addr Address to begin erasing from
  139:../DaisyExamples/libDaisy/src/per/qspi.h ****         \param end_addr  Address to stop erasing at
  140:../DaisyExamples/libDaisy/src/per/qspi.h ****         \return Result::OK or Result::ERR
@@ -969,6 +1078,9 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
  143:../DaisyExamples/libDaisy/src/per/qspi.h **** 
  144:../DaisyExamples/libDaisy/src/per/qspi.h ****     /**  
  145:../DaisyExamples/libDaisy/src/per/qspi.h ****          Erases a single sector of the chip.  
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 19
+
+
  146:../DaisyExamples/libDaisy/src/per/qspi.h ****         TODO: Document the size of this function. 
  147:../DaisyExamples/libDaisy/src/per/qspi.h ****         \param address Address of sector to erase
  148:../DaisyExamples/libDaisy/src/per/qspi.h ****         \return Result::OK or Result::ERR
@@ -990,97 +1102,94 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
  164:../DaisyExamples/libDaisy/src/per/qspi.h ****     void* GetData(uint32_t offset = 0);
  165:../DaisyExamples/libDaisy/src/per/qspi.h **** 
  166:../DaisyExamples/libDaisy/src/per/qspi.h ****     QSPIHandle() : pimpl_(nullptr) {}
- 330              		.loc 7 166 5 view .LVU79
- 331              	.LBE125:
- 332              	.LBE124:
- 333              	.LBE123:
- 334              	.LBE122:
- 335              	.LBE121:
- 336              		.loc 6 105 1 is_stmt 0 view .LVU80
- 337 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
- 338              		.cfi_def_cfa_offset 28
- 339              		.cfi_offset 4, -28
- 340              		.cfi_offset 5, -24
- 341              		.cfi_offset 6, -20
- 342              		.cfi_offset 7, -16
- 343              		.cfi_offset 8, -12
- 344              		.cfi_offset 9, -8
- 345              		.cfi_offset 14, -4
- 346              	.LBB165:
- 347              	.LBB163:
- 348              	.LBB143:
- 349              	.LBB141:
- 350              	.LBB130:
- 351              	.LBB126:
- 352              	.LBB127:
- 353              		.loc 7 166 34 view .LVU81
- 354 0004 4148     		ldr	r0, .L23
- 355 0006 0024     		movs	r4, #0
- 356              	.LBE127:
- 357              	.LBE126:
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 18
+ 409              		.loc 7 166 5 view .LVU126
+ 410              	.LBE129:
+ 411              	.LBE128:
+ 412              	.LBE127:
+ 413              	.LBE126:
+ 414              	.LBE125:
+ 415              		.loc 6 109 1 is_stmt 0 view .LVU127
+ 416 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
+ 417              		.cfi_def_cfa_offset 28
+ 418              		.cfi_offset 4, -28
+ 419              		.cfi_offset 5, -24
+ 420              		.cfi_offset 6, -20
+ 421              		.cfi_offset 7, -16
+ 422              		.cfi_offset 8, -12
+ 423              		.cfi_offset 9, -8
+ 424              		.cfi_offset 14, -4
+ 425              	.LBB169:
+ 426              	.LBB167:
+ 427              	.LBB147:
+ 428              	.LBB145:
+ 429              	.LBB134:
+ 430              	.LBB130:
+ 431              	.LBB131:
+ 432              		.loc 7 166 34 view .LVU128
+ 433 0004 4148     		ldr	r0, .L18
+ 434 0006 0024     		movs	r4, #0
+ 435              	.LBE131:
+ 436              	.LBE130:
+ 437              	.LBE134:
+ 438              	.LBE145:
+ 439              	.LBE147:
+ 440              	.LBE167:
+ 441              	.LBE169:
+ 442              		.loc 6 109 1 view .LVU129
+ 443 0008 83B0     		sub	sp, sp, #12
+ 444              		.cfi_def_cfa_offset 40
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 20
 
 
- 358              	.LBE130:
- 359              	.LBE141:
- 360              	.LBE143:
- 361              	.LBE163:
- 362              	.LBE165:
- 363              		.loc 6 105 1 view .LVU82
- 364 0008 83B0     		sub	sp, sp, #12
- 365              		.cfi_def_cfa_offset 40
- 366              	.LBB166:
- 367              	.LBB164:
+ 445              	.LBB170:
+ 446              	.LBB168:
   19:Loop.cpp      **** 
- 368              		.loc 6 19 18 view .LVU83
- 369 000a 414A     		ldr	r2, .L23+4
- 370 000c 4149     		ldr	r1, .L23+8
- 371              	.LBB144:
- 372              	.LBB142:
- 373              	.LBB131:
- 374              	.LBB129:
- 375              	.LBB128:
- 376              		.loc 7 166 34 view .LVU84
- 377 000e 0460     		str	r4, [r0]
- 378              	.LVL23:
- 379              		.loc 7 166 34 view .LVU85
- 380              	.LBE128:
- 381              	.LBE129:
- 382              	.LBE131:
- 383              	.LBB132:
- 384              	.LBI132:
+ 447              		.loc 6 19 18 view .LVU130
+ 448 000a 414A     		ldr	r2, .L18+4
+ 449 000c 4149     		ldr	r1, .L18+8
+ 450              	.LBB148:
+ 451              	.LBB146:
+ 452              	.LBB135:
+ 453              	.LBB133:
+ 454              	.LBB132:
+ 455              		.loc 7 166 34 view .LVU131
+ 456 000e 0460     		str	r4, [r0]
+ 457              	.LVL33:
+ 458              		.loc 7 166 34 view .LVU132
+ 459              	.LBE132:
+ 460              	.LBE133:
+ 461              	.LBE135:
+ 462              	.LBB136:
+ 463              	.LBI136:
   95:../DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 385              		.loc 5 95 5 is_stmt 1 view .LVU86
- 386              	.LBB133:
- 387              	.LBB134:
+ 464              		.loc 5 95 5 is_stmt 1 view .LVU133
+ 465              	.LBB137:
+ 466              	.LBB138:
   95:../DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 388              		.loc 5 95 35 is_stmt 0 view .LVU87
- 389 0010 4461     		str	r4, [r0, #20]
- 390              	.LVL24:
+ 467              		.loc 5 95 35 is_stmt 0 view .LVU134
+ 468 0010 4461     		str	r4, [r0, #20]
+ 469              	.LVL34:
   95:../DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 391              		.loc 5 95 35 view .LVU88
- 392              	.LBE134:
- 393              	.LBE133:
- 394              	.LBE132:
- 395              	.LBB135:
- 396              	.LBI135:
+ 470              		.loc 5 95 35 view .LVU135
+ 471              	.LBE138:
+ 472              	.LBE137:
+ 473              	.LBE136:
+ 474              	.LBB139:
+ 475              	.LBI139:
   92:../DaisyExamples/libDaisy/src/per/adc.h ****     ~AdcHandle() {}
- 397              		.loc 4 92 5 is_stmt 1 view .LVU89
+ 476              		.loc 4 92 5 is_stmt 1 view .LVU136
   92:../DaisyExamples/libDaisy/src/per/adc.h ****     ~AdcHandle() {}
- 398              		.loc 4 92 5 is_stmt 0 view .LVU90
- 399              	.LBE135:
- 400              	.LBB136:
- 401              	.LBI136:
- 402              		.file 8 "../DaisyExamples/libDaisy/src/per/dac.h"
+ 477              		.loc 4 92 5 is_stmt 0 view .LVU137
+ 478              	.LBE139:
+ 479              	.LBB140:
+ 480              	.LBI140:
+ 481              		.file 8 "../DaisyExamples/libDaisy/src/per/dac.h"
    1:../DaisyExamples/libDaisy/src/per/dac.h **** #pragma once
    2:../DaisyExamples/libDaisy/src/per/dac.h **** #ifndef DSY_DAC_H
    3:../DaisyExamples/libDaisy/src/per/dac.h **** #define DSY_DAC_H
    4:../DaisyExamples/libDaisy/src/per/dac.h **** 
    5:../DaisyExamples/libDaisy/src/per/dac.h **** #include "daisy_core.h"
    6:../DaisyExamples/libDaisy/src/per/dac.h **** 
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 19
-
-
    7:../DaisyExamples/libDaisy/src/per/dac.h **** namespace daisy
    8:../DaisyExamples/libDaisy/src/per/dac.h **** {
    9:../DaisyExamples/libDaisy/src/per/dac.h **** /** @brief DAC handle for Built-in DAC Peripheral 
@@ -1089,6 +1198,9 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   12:../DaisyExamples/libDaisy/src/per/dac.h ****  ** For now only Normal Mode is supported,
   13:../DaisyExamples/libDaisy/src/per/dac.h ****  ** Sample and hold mode provides reduced power consumption, but requires a bit more setup.
   14:../DaisyExamples/libDaisy/src/per/dac.h ****  **
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 21
+
+
   15:../DaisyExamples/libDaisy/src/per/dac.h ****  ** For now connecting the DAC through other internal peripherals is also not supported.
   16:../DaisyExamples/libDaisy/src/per/dac.h ****  **
   17:../DaisyExamples/libDaisy/src/per/dac.h ****  ** Since the DAC channels have dedicated pins we don't need to pass in a pin config like with
@@ -1138,9 +1250,6 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   61:../DaisyExamples/libDaisy/src/per/dac.h **** 
   62:../DaisyExamples/libDaisy/src/per/dac.h ****     /** Sets whether the DAC output is buffered for higher drive ability. */
   63:../DaisyExamples/libDaisy/src/per/dac.h ****     enum class BufferState
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 20
-
-
   64:../DaisyExamples/libDaisy/src/per/dac.h ****     {
   65:../DaisyExamples/libDaisy/src/per/dac.h ****         ENABLED,
   66:../DaisyExamples/libDaisy/src/per/dac.h ****         DISABLED,
@@ -1149,6 +1258,9 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   69:../DaisyExamples/libDaisy/src/per/dac.h ****     /** Configuration structure for initializing the DAC structure. */
   70:../DaisyExamples/libDaisy/src/per/dac.h ****     struct Config
   71:../DaisyExamples/libDaisy/src/per/dac.h ****     {
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 22
+
+
   72:../DaisyExamples/libDaisy/src/per/dac.h ****         /** Target Samplerate in Hz used to configure the internal 
   73:../DaisyExamples/libDaisy/src/per/dac.h ****          ** timebase for DMA mode. Does nothing in POLLING mode.
   74:../DaisyExamples/libDaisy/src/per/dac.h ****          ** If the value is 0 at Init time this will default to 48000Hz 
@@ -1162,45 +1274,42 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   82:../DaisyExamples/libDaisy/src/per/dac.h ****     };
   83:../DaisyExamples/libDaisy/src/per/dac.h **** 
   84:../DaisyExamples/libDaisy/src/per/dac.h ****     DacHandle() : pimpl_(nullptr) {}
- 403              		.loc 8 84 5 is_stmt 1 view .LVU91
- 404              	.LBB137:
- 405              	.LBB138:
- 406              		.loc 8 84 33 is_stmt 0 view .LVU92
- 407 0012 0462     		str	r4, [r0, #32]
- 408              	.LVL25:
- 409              		.loc 8 84 33 view .LVU93
- 410              	.LBE138:
- 411              	.LBE137:
- 412              	.LBE136:
- 413              	.LBB139:
- 414              	.LBI139:
+ 482              		.loc 8 84 5 is_stmt 1 view .LVU138
+ 483              	.LBB141:
+ 484              	.LBB142:
+ 485              		.loc 8 84 33 is_stmt 0 view .LVU139
+ 486 0012 0462     		str	r4, [r0, #32]
+ 487              	.LVL35:
+ 488              		.loc 8 84 33 view .LVU140
+ 489              	.LBE142:
+ 490              	.LBE141:
+ 491              	.LBE140:
+ 492              	.LBB143:
+ 493              	.LBI143:
   40:../DaisyExamples/libDaisy/src/hid/usb.h **** 
- 415              		.loc 3 40 5 is_stmt 1 view .LVU94
+ 494              		.loc 3 40 5 is_stmt 1 view .LVU141
   40:../DaisyExamples/libDaisy/src/hid/usb.h **** 
- 416              		.loc 3 40 5 is_stmt 0 view .LVU95
- 417              	.LBE139:
- 418              	.LBB140:
- 419              	.LBI140:
+ 495              		.loc 3 40 5 is_stmt 0 view .LVU142
+ 496              	.LBE143:
+ 497              	.LBB144:
+ 498              	.LBI144:
   77:../DaisyExamples/libDaisy/src/sys/system.h ****     ~System() {}
- 420              		.loc 2 77 5 is_stmt 1 view .LVU96
+ 499              		.loc 2 77 5 is_stmt 1 view .LVU143
   77:../DaisyExamples/libDaisy/src/sys/system.h ****     ~System() {}
- 421              		.loc 2 77 5 is_stmt 0 view .LVU97
- 422              	.LBE140:
- 423              	.LBE142:
- 424              	.LBE144:
+ 500              		.loc 2 77 5 is_stmt 0 view .LVU144
+ 501              	.LBE144:
+ 502              	.LBE146:
+ 503              	.LBE148:
   19:Loop.cpp      **** 
- 425              		.loc 6 19 18 view .LVU98
- 426 0014 FFF7FEFF 		bl	__aeabi_atexit
- 427              	.LVL26:
- 428              	.LBB145:
- 429              	.LBI145:
- 430              		.file 9 "../DaisyExamples/libDaisy/src/per/gpio.h"
+ 504              		.loc 6 19 18 view .LVU145
+ 505 0014 FFF7FEFF 		bl	__aeabi_atexit
+ 506              	.LVL36:
+ 507              	.LBB149:
+ 508              	.LBI149:
+ 509              		.file 9 "../DaisyExamples/libDaisy/src/per/gpio.h"
    1:../DaisyExamples/libDaisy/src/per/gpio.h **** #pragma once
    2:../DaisyExamples/libDaisy/src/per/gpio.h **** #ifndef DSY_GPIO_H
    3:../DaisyExamples/libDaisy/src/per/gpio.h **** #define DSY_GPIO_H
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 21
-
-
    4:../DaisyExamples/libDaisy/src/per/gpio.h **** #include "daisy_core.h"
    5:../DaisyExamples/libDaisy/src/per/gpio.h **** 
    6:../DaisyExamples/libDaisy/src/per/gpio.h **** #ifdef __cplusplus
@@ -1209,6 +1318,9 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
    9:../DaisyExamples/libDaisy/src/per/gpio.h **** {
   10:../DaisyExamples/libDaisy/src/per/gpio.h **** /** @brief General Purpose I/O control 
   11:../DaisyExamples/libDaisy/src/per/gpio.h ****  *  @details peripheral control over a single GPIO
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 23
+
+
   12:../DaisyExamples/libDaisy/src/per/gpio.h ****  *  @ingroup peripheral
   13:../DaisyExamples/libDaisy/src/per/gpio.h ****  *   
   14:../DaisyExamples/libDaisy/src/per/gpio.h ****  *  Button Input (with internal Pullup resistor)
@@ -1258,9 +1370,6 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   58:../DaisyExamples/libDaisy/src/per/gpio.h ****     struct Config
   59:../DaisyExamples/libDaisy/src/per/gpio.h ****     {
   60:../DaisyExamples/libDaisy/src/per/gpio.h ****         Pin   pin;
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 22
-
-
   61:../DaisyExamples/libDaisy/src/per/gpio.h ****         Mode  mode;
   62:../DaisyExamples/libDaisy/src/per/gpio.h ****         Pull  pull;
   63:../DaisyExamples/libDaisy/src/per/gpio.h ****         Speed speed;
@@ -1269,23 +1378,26 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   66:../DaisyExamples/libDaisy/src/per/gpio.h ****          *  an input, with no pullup. 
   67:../DaisyExamples/libDaisy/src/per/gpio.h ****          */
   68:../DaisyExamples/libDaisy/src/per/gpio.h ****         Config()
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 24
+
+
   69:../DaisyExamples/libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
   70:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
   71:../DaisyExamples/libDaisy/src/per/gpio.h ****         }
   72:../DaisyExamples/libDaisy/src/per/gpio.h ****     };
   73:../DaisyExamples/libDaisy/src/per/gpio.h **** 
   74:../DaisyExamples/libDaisy/src/per/gpio.h ****     GPIO() {}
- 431              		.loc 9 74 5 is_stmt 1 view .LVU99
- 432              	.LBB146:
- 433              	.LBB147:
- 434              	.LBI147:
+ 510              		.loc 9 74 5 is_stmt 1 view .LVU146
+ 511              	.LBB150:
+ 512              	.LBB151:
+ 513              	.LBI151:
   68:../DaisyExamples/libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
- 435              		.loc 9 68 9 view .LVU100
- 436              	.LBB148:
- 437              	.LBB149:
- 438              	.LBB150:
- 439              	.LBI150:
- 440              		.file 10 "../DaisyExamples/libDaisy/src/daisy_core.h"
+ 514              		.loc 9 68 9 view .LVU147
+ 515              	.LBB152:
+ 516              	.LBB153:
+ 517              	.LBB154:
+ 518              	.LBI154:
+ 519              		.file 10 "../DaisyExamples/libDaisy/src/daisy_core.h"
    1:../DaisyExamples/libDaisy/src/daisy_core.h **** #pragma once
    2:../DaisyExamples/libDaisy/src/daisy_core.h **** #ifndef DSY_CORE_HW_H
    3:../DaisyExamples/libDaisy/src/daisy_core.h **** #define DSY_CORE_HW_H /**< & */
@@ -1318,9 +1430,6 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   30:../DaisyExamples/libDaisy/src/daisy_core.h **** */
   31:../DaisyExamples/libDaisy/src/daisy_core.h **** #define DTCM_MEM_SECTION __attribute__((section(".dtcmram_bss")))
   32:../DaisyExamples/libDaisy/src/daisy_core.h **** 
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 23
-
-
   33:../DaisyExamples/libDaisy/src/daisy_core.h **** #define FBIPMAX 0.999985f             /**< close to 1.0f-LSB at 16 bit */
   34:../DaisyExamples/libDaisy/src/daisy_core.h **** #define FBIPMIN (-FBIPMAX)            /**< - (1 - LSB) */
   35:../DaisyExamples/libDaisy/src/daisy_core.h **** #define U82F_SCALE 0.0078740f         /**< 1 / 127 */
@@ -1329,6 +1438,9 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   38:../DaisyExamples/libDaisy/src/daisy_core.h **** #define F2S8_SCALE 127.0f             /**< (2 ** 7) - 1 */
   39:../DaisyExamples/libDaisy/src/daisy_core.h **** #define S162F_SCALE 3.0517578125e-05f /**< 1 / (2** 15) */
   40:../DaisyExamples/libDaisy/src/daisy_core.h **** #define F2S16_SCALE 32767.0f          /**< (2 ** 15) - 1 */
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 25
+
+
   41:../DaisyExamples/libDaisy/src/daisy_core.h **** #define F2S24_SCALE 8388608.0f        /**< 2 ** 23 */
   42:../DaisyExamples/libDaisy/src/daisy_core.h **** #define S242F_SCALE 1.192092896e-07f  /**< 1 / (2 ** 23) */
   43:../DaisyExamples/libDaisy/src/daisy_core.h **** #define S24SIGN 0x800000              /**< 2 ** 23 */
@@ -1378,9 +1490,6 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   87:../DaisyExamples/libDaisy/src/daisy_core.h **** FORCE_INLINE uint8_t f2u8(float x)
   88:../DaisyExamples/libDaisy/src/daisy_core.h **** {
   89:../DaisyExamples/libDaisy/src/daisy_core.h ****     x = x <= FBIPMIN ? FBIPMIN : x;
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 24
-
-
   90:../DaisyExamples/libDaisy/src/daisy_core.h ****     x = x >= FBIPMAX ? FBIPMAX : x;
   91:../DaisyExamples/libDaisy/src/daisy_core.h ****     return (uint8_t)((x * F2U8_SCALE) + F2U8_SCALE);
   92:../DaisyExamples/libDaisy/src/daisy_core.h **** }
@@ -1389,6 +1498,9 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
   95:../DaisyExamples/libDaisy/src/daisy_core.h **** /** 
   96:../DaisyExamples/libDaisy/src/daisy_core.h ****     Converts Signed 8-bit to float
   97:../DaisyExamples/libDaisy/src/daisy_core.h ****     \param x Number to be scaled.
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 26
+
+
   98:../DaisyExamples/libDaisy/src/daisy_core.h ****     \return Scaled number.
   99:../DaisyExamples/libDaisy/src/daisy_core.h **** */
  100:../DaisyExamples/libDaisy/src/daisy_core.h **** FORCE_INLINE float s82f(int8_t x)
@@ -1438,9 +1550,6 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
  144:../DaisyExamples/libDaisy/src/daisy_core.h ****     Converts float to Signed 24-bit
  145:../DaisyExamples/libDaisy/src/daisy_core.h ****  */
  146:../DaisyExamples/libDaisy/src/daisy_core.h **** FORCE_INLINE int32_t f2s24(float x)
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 25
-
-
  147:../DaisyExamples/libDaisy/src/daisy_core.h **** {
  148:../DaisyExamples/libDaisy/src/daisy_core.h ****     x = x <= FBIPMIN ? FBIPMIN : x;
  149:../DaisyExamples/libDaisy/src/daisy_core.h ****     x = x >= FBIPMAX ? FBIPMAX : x;
@@ -1449,6 +1558,9 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
  152:../DaisyExamples/libDaisy/src/daisy_core.h **** 
  153:../DaisyExamples/libDaisy/src/daisy_core.h **** /**
  154:../DaisyExamples/libDaisy/src/daisy_core.h ****     Converts Signed 32-bit to float
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 27
+
+
  155:../DaisyExamples/libDaisy/src/daisy_core.h ****  */
  156:../DaisyExamples/libDaisy/src/daisy_core.h **** FORCE_INLINE float s322f(int32_t x)
  157:../DaisyExamples/libDaisy/src/daisy_core.h **** {
@@ -1498,9 +1610,6 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
  201:../DaisyExamples/libDaisy/src/daisy_core.h ****  * 
  202:../DaisyExamples/libDaisy/src/daisy_core.h ****  *  Please use Pin struct instead.
  203:../DaisyExamples/libDaisy/src/daisy_core.h ****  */
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 26
-
-
  204:../DaisyExamples/libDaisy/src/daisy_core.h **** typedef struct
  205:../DaisyExamples/libDaisy/src/daisy_core.h **** {
  206:../DaisyExamples/libDaisy/src/daisy_core.h ****     dsy_gpio_port port; /**< & */
@@ -1509,6 +1618,9 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
  209:../DaisyExamples/libDaisy/src/daisy_core.h **** 
  210:../DaisyExamples/libDaisy/src/daisy_core.h **** /** Helper for creating pins from port/pin combos easily
  211:../DaisyExamples/libDaisy/src/daisy_core.h ****  * 
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 28
+
+
  212:../DaisyExamples/libDaisy/src/daisy_core.h ****  *  The dsy_gpio_pin struct should no longer be used, and is only available for
  213:../DaisyExamples/libDaisy/src/daisy_core.h ****  *  backwards compatability.
  214:../DaisyExamples/libDaisy/src/daisy_core.h ****  * 
@@ -1558,9 +1670,6 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
  258:../DaisyExamples/libDaisy/src/daisy_core.h **** 
  259:../DaisyExamples/libDaisy/src/daisy_core.h **** /** @brief representation of hardware port/pin combination */
  260:../DaisyExamples/libDaisy/src/daisy_core.h **** struct Pin
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 27
-
-
  261:../DaisyExamples/libDaisy/src/daisy_core.h **** {
  262:../DaisyExamples/libDaisy/src/daisy_core.h ****     GPIOPort port;
  263:../DaisyExamples/libDaisy/src/daisy_core.h ****     uint8_t  pin;
@@ -1569,506 +1678,509 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 1
  266:../DaisyExamples/libDaisy/src/daisy_core.h ****      *  @param pt GPIOPort between PA, and PK corresponding to STM32 Port.
  267:../DaisyExamples/libDaisy/src/daisy_core.h ****      *  @param pn pin number in range of 0-15
  268:../DaisyExamples/libDaisy/src/daisy_core.h ****     */
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 29
+
+
  269:../DaisyExamples/libDaisy/src/daisy_core.h ****     constexpr Pin(const GPIOPort pt, const uint8_t pn) : port(pt), pin(pn) {}
  270:../DaisyExamples/libDaisy/src/daisy_core.h **** 
  271:../DaisyExamples/libDaisy/src/daisy_core.h ****     /** @brief Basic Constructor creates an invalid Pin object */
  272:../DaisyExamples/libDaisy/src/daisy_core.h ****     constexpr Pin() : port(PORTX), pin(255) {}
- 441              		.loc 10 272 15 view .LVU101
- 442              		.loc 10 272 15 is_stmt 0 view .LVU102
- 443              	.LBE150:
- 444              	.LBE149:
- 445              	.LBE148:
- 446              	.LBE147:
- 447              	.LBE146:
- 448              	.LBE145:
-  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D23, D25),
- 449              		.loc 6 34 60 view .LVU103
- 450 0018 3F4A     		ldr	r2, .L23+12
- 451 001a 404B     		ldr	r3, .L23+16
- 452 001c 1088     		ldrh	r0, [r2]
- 453 001e 404D     		ldr	r5, .L23+20
- 454 0020 ADF80400 		strh	r0, [sp, #4]	@ movhi
- 455              	.LBB160:
- 456              	.LBB157:
- 457              		.loc 9 74 12 view .LVU104
- 458 0024 4FF60B70 		movw	r0, #65291
- 459 0028 3E4A     		ldr	r2, .L23+24
- 460              	.LBE157:
- 461              	.LBE160:
+ 520              		.loc 10 272 15 view .LVU148
+ 521              		.loc 10 272 15 is_stmt 0 view .LVU149
+ 522              	.LBE154:
+ 523              	.LBE153:
+ 524              	.LBE152:
+ 525              	.LBE151:
+ 526              	.LBE150:
+ 527              	.LBE149:
+  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D25, D23),
+ 528              		.loc 6 34 60 view .LVU150
+ 529 0018 3F4A     		ldr	r2, .L18+12
+ 530 001a 404B     		ldr	r3, .L18+16
+ 531 001c 1088     		ldrh	r0, [r2]
+ 532 001e 404D     		ldr	r5, .L18+20
+ 533 0020 ADF80400 		strh	r0, [sp, #4]	@ movhi
+ 534              	.LBB164:
+ 535              	.LBB161:
+ 536              		.loc 9 74 12 view .LVU151
+ 537 0024 4FF60B70 		movw	r0, #65291
+ 538 0028 3E4A     		ldr	r2, .L18+24
+ 539              	.LBE161:
+ 540              	.LBE164:
   35:Loop.cpp      ****     DualLedButton::New(D27, shortClick, longClick, D26, D28),
- 462              		.loc 6 35 60 view .LVU105
- 463 002a 05F14C09 		add	r9, r5, #76
-  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D23, D25),
- 464              		.loc 6 34 60 view .LVU106
- 465 002e 1B88     		ldrh	r3, [r3]
+ 541              		.loc 6 35 60 view .LVU152
+ 542 002a 05F14C09 		add	r9, r5, #76
+  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D25, D23),
+ 543              		.loc 6 34 60 view .LVU153
+ 544 002e 1B88     		ldrh	r3, [r3]
   36:Loop.cpp      ****     DualLedButton::New( D8, shortClick, longClick, D7, D9)
- 466              		.loc 6 36 60 view .LVU107
- 467 0030 05F19808 		add	r8, r5, #152
-  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D23, D25),
- 468              		.loc 6 34 60 view .LVU108
- 469 0034 3C49     		ldr	r1, .L23+28
+ 545              		.loc 6 36 60 view .LVU154
+ 546 0030 05F19808 		add	r8, r5, #152
+  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D25, D23),
+ 547              		.loc 6 34 60 view .LVU155
+ 548 0034 3C49     		ldr	r1, .L18+28
   37:Loop.cpp      **** };
- 470              		.loc 6 37 58 view .LVU109
- 471 0036 05F1E407 		add	r7, r5, #228
-  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D23, D25),
- 472              		.loc 6 34 60 view .LVU110
- 473 003a ADF80030 		strh	r3, [sp]	@ movhi
- 474 003e 4FF4C873 		mov	r3, #400
- 475              	.LBB161:
- 476              	.LBB158:
- 477              	.LBB155:
- 478              	.LBB153:
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 28
+ 549              		.loc 6 37 58 view .LVU156
+ 550 0036 05F1E407 		add	r7, r5, #228
+  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D25, D23),
+ 551              		.loc 6 34 60 view .LVU157
+ 552 003a ADF80030 		strh	r3, [sp]	@ movhi
+ 553 003e 4FF4C873 		mov	r3, #400
+ 554              	.LBB165:
+ 555              	.LBB162:
+ 556              	.LBB159:
+ 557              	.LBB157:
+ 558              	.LBB155:
+  69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
+ 559              		.loc 9 69 73 view .LVU158
+ 560 0042 D460     		str	r4, [r2, #12]
+ 561              	.LVL37:
+  69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
+ 562              		.loc 9 69 73 view .LVU159
+ 563              	.LBE155:
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 30
 
 
- 479              	.LBB151:
-  69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
- 480              		.loc 9 69 73 view .LVU111
- 481 0042 D460     		str	r4, [r2, #12]
- 482              	.LVL27:
-  69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
- 483              		.loc 9 69 73 view .LVU112
- 484              	.LBE151:
- 485              	.LBE153:
- 486              	.LBE155:
- 487              		.loc 9 74 12 view .LVU113
- 488 0044 1060     		str	r0, [r2]
- 489              	.LBE158:
- 490              	.LBE161:
-  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D23, D25),
- 491              		.loc 6 34 60 view .LVU114
- 492 0046 2846     		mov	r0, r5
- 493 0048 0968     		ldr	r1, [r1]
+ 564              	.LBE157:
+ 565              	.LBE159:
+ 566              		.loc 9 74 12 view .LVU160
+ 567 0044 1060     		str	r0, [r2]
+ 568              	.LBE162:
+ 569              	.LBE165:
+  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D25, D23),
+ 570              		.loc 6 34 60 view .LVU161
+ 571 0046 2846     		mov	r0, r5
+ 572 0048 0968     		ldr	r1, [r1]
   41:Loop.cpp      ****     Track::New(1, &dualLedBtns[1]),
- 494              		.loc 6 41 34 view .LVU115
- 495 004a 384E     		ldr	r6, .L23+32
- 496              	.LBB162:
- 497              	.LBB159:
- 498              	.LBB156:
- 499              	.LBB154:
- 500              	.LBB152:
+ 573              		.loc 6 41 34 view .LVU162
+ 574 004a 384E     		ldr	r6, .L18+32
+ 575              	.LBB166:
+ 576              	.LBB163:
+ 577              	.LBB160:
+ 578              	.LBB158:
+ 579              	.LBB156:
   69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
- 501              		.loc 9 69 73 view .LVU116
- 502 004c C2E90144 		strd	r4, r4, [r2, #4]
- 503              	.LBE152:
- 504              	.LBE154:
- 505              	.LBE156:
- 506              	.LBE159:
- 507              	.LBE162:
-  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D23, D25),
- 508              		.loc 6 34 60 view .LVU117
- 509 0050 3222     		movs	r2, #50
- 510 0052 FFF7FEFF 		bl	_ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_
- 511              	.LVL28:
+ 580              		.loc 9 69 73 view .LVU163
+ 581 004c C2E90144 		strd	r4, r4, [r2, #4]
+ 582              	.LBE156:
+ 583              	.LBE158:
+ 584              	.LBE160:
+ 585              	.LBE163:
+ 586              	.LBE166:
+  34:Loop.cpp      ****     DualLedButton::New(D24, shortClick, longClick, D25, D23),
+ 587              		.loc 6 34 60 view .LVU164
+ 588 0050 3222     		movs	r2, #50
+ 589 0052 FFF7FEFF 		bl	_ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_
+ 590              	.LVL38:
   35:Loop.cpp      ****     DualLedButton::New(D27, shortClick, longClick, D26, D28),
- 512              		.loc 6 35 60 view .LVU118
- 513 0056 364A     		ldr	r2, .L23+36
- 514 0058 364B     		ldr	r3, .L23+40
- 515 005a 4846     		mov	r0, r9
- 516 005c 1288     		ldrh	r2, [r2]
- 517 005e ADF80420 		strh	r2, [sp, #4]	@ movhi
- 518 0062 1A88     		ldrh	r2, [r3]
- 519 0064 4FF4C873 		mov	r3, #400
- 520 0068 ADF80020 		strh	r2, [sp]	@ movhi
- 521 006c 324A     		ldr	r2, .L23+44
- 522 006e 1168     		ldr	r1, [r2]
- 523 0070 3222     		movs	r2, #50
- 524 0072 FFF7FEFF 		bl	_ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_
- 525              	.LVL29:
+ 591              		.loc 6 35 60 view .LVU165
+ 592 0056 364A     		ldr	r2, .L18+36
+ 593 0058 364B     		ldr	r3, .L18+40
+ 594 005a 4846     		mov	r0, r9
+ 595 005c 1288     		ldrh	r2, [r2]
+ 596 005e ADF80420 		strh	r2, [sp, #4]	@ movhi
+ 597 0062 1A88     		ldrh	r2, [r3]
+ 598 0064 4FF4C873 		mov	r3, #400
+ 599 0068 ADF80020 		strh	r2, [sp]	@ movhi
+ 600 006c 324A     		ldr	r2, .L18+44
+ 601 006e 1168     		ldr	r1, [r2]
+ 602 0070 3222     		movs	r2, #50
+ 603 0072 FFF7FEFF 		bl	_ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_
+ 604              	.LVL39:
   36:Loop.cpp      ****     DualLedButton::New( D8, shortClick, longClick, D7, D9)
- 526              		.loc 6 36 60 view .LVU119
- 527 0076 314B     		ldr	r3, .L23+48
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 29
+ 605              		.loc 6 36 60 view .LVU166
+ 606 0076 314B     		ldr	r3, .L18+48
+ 607 0078 4046     		mov	r0, r8
+ 608 007a 3222     		movs	r2, #50
+ 609 007c 1968     		ldr	r1, [r3]
+ 610 007e 304B     		ldr	r3, .L18+52
+ 611 0080 1B88     		ldrh	r3, [r3]
+ 612 0082 ADF80430 		strh	r3, [sp, #4]	@ movhi
+ 613 0086 2F4B     		ldr	r3, .L18+56
+ 614 0088 1B88     		ldrh	r3, [r3]
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 31
 
 
- 528 0078 4046     		mov	r0, r8
- 529 007a 3222     		movs	r2, #50
- 530 007c 1968     		ldr	r1, [r3]
- 531 007e 304B     		ldr	r3, .L23+52
- 532 0080 1B88     		ldrh	r3, [r3]
- 533 0082 ADF80430 		strh	r3, [sp, #4]	@ movhi
- 534 0086 2F4B     		ldr	r3, .L23+56
- 535 0088 1B88     		ldrh	r3, [r3]
- 536 008a ADF80030 		strh	r3, [sp]	@ movhi
- 537 008e 4FF4C873 		mov	r3, #400
- 538 0092 FFF7FEFF 		bl	_ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_
- 539              	.LVL30:
+ 615 008a ADF80030 		strh	r3, [sp]	@ movhi
+ 616 008e 4FF4C873 		mov	r3, #400
+ 617 0092 FFF7FEFF 		bl	_ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_
+ 618              	.LVL40:
   37:Loop.cpp      **** };
- 540              		.loc 6 37 58 view .LVU120
- 541 0096 2C4B     		ldr	r3, .L23+60
- 542 0098 3846     		mov	r0, r7
- 543 009a 3222     		movs	r2, #50
- 544 009c 1B88     		ldrh	r3, [r3]
- 545 009e ADF80430 		strh	r3, [sp, #4]	@ movhi
- 546 00a2 2A4B     		ldr	r3, .L23+64
- 547 00a4 1B88     		ldrh	r3, [r3]
- 548 00a6 ADF80030 		strh	r3, [sp]	@ movhi
- 549 00aa 294B     		ldr	r3, .L23+68
- 550 00ac 1968     		ldr	r1, [r3]
- 551 00ae 4FF4C873 		mov	r3, #400
- 552 00b2 FFF7FEFF 		bl	_ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_
- 553              	.LVL31:
+ 619              		.loc 6 37 58 view .LVU167
+ 620 0096 2C4B     		ldr	r3, .L18+60
+ 621 0098 3846     		mov	r0, r7
+ 622 009a 3222     		movs	r2, #50
+ 623 009c 1B88     		ldrh	r3, [r3]
+ 624 009e ADF80430 		strh	r3, [sp, #4]	@ movhi
+ 625 00a2 2A4B     		ldr	r3, .L18+64
+ 626 00a4 1B88     		ldrh	r3, [r3]
+ 627 00a6 ADF80030 		strh	r3, [sp]	@ movhi
+ 628 00aa 294B     		ldr	r3, .L18+68
+ 629 00ac 1968     		ldr	r1, [r3]
+ 630 00ae 4FF4C873 		mov	r3, #400
+ 631 00b2 FFF7FEFF 		bl	_ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_
+ 632              	.LVL41:
   41:Loop.cpp      ****     Track::New(1, &dualLedBtns[1]),
- 554              		.loc 6 41 34 view .LVU121
- 555 00b6 2146     		mov	r1, r4
- 556 00b8 2A46     		mov	r2, r5
- 557 00ba 3046     		mov	r0, r6
- 558 00bc FFF7FEFF 		bl	_ZN5Track3NewEiP13DualLedButton
- 559              	.LVL32:
+ 633              		.loc 6 41 34 view .LVU168
+ 634 00b6 2146     		mov	r1, r4
+ 635 00b8 2A46     		mov	r2, r5
+ 636 00ba 3046     		mov	r0, r6
+ 637 00bc FFF7FEFF 		bl	_ZN5Track3NewEiP13DualLedButton
+ 638              	.LVL42:
   42:Loop.cpp      ****     Track::New(2, &dualLedBtns[2]),
- 560              		.loc 6 42 34 view .LVU122
- 561 00c0 4A46     		mov	r2, r9
- 562 00c2 06F10C00 		add	r0, r6, #12
- 563 00c6 0121     		movs	r1, #1
- 564 00c8 FFF7FEFF 		bl	_ZN5Track3NewEiP13DualLedButton
- 565              	.LVL33:
+ 639              		.loc 6 42 34 view .LVU169
+ 640 00c0 4A46     		mov	r2, r9
+ 641 00c2 06F10C00 		add	r0, r6, #12
+ 642 00c6 0121     		movs	r1, #1
+ 643 00c8 FFF7FEFF 		bl	_ZN5Track3NewEiP13DualLedButton
+ 644              	.LVL43:
   43:Loop.cpp      ****     Track::New(3, &dualLedBtns[3]),
- 566              		.loc 6 43 34 view .LVU123
- 567 00cc 4246     		mov	r2, r8
- 568 00ce 06F11800 		add	r0, r6, #24
- 569 00d2 0221     		movs	r1, #2
- 570 00d4 FFF7FEFF 		bl	_ZN5Track3NewEiP13DualLedButton
- 571              	.LVL34:
+ 645              		.loc 6 43 34 view .LVU170
+ 646 00cc 4246     		mov	r2, r8
+ 647 00ce 06F11800 		add	r0, r6, #24
+ 648 00d2 0221     		movs	r1, #2
+ 649 00d4 FFF7FEFF 		bl	_ZN5Track3NewEiP13DualLedButton
+ 650              	.LVL44:
   44:Loop.cpp      **** };
- 572              		.loc 6 44 34 view .LVU124
- 573 00d8 3A46     		mov	r2, r7
- 574 00da 06F12400 		add	r0, r6, #36
- 575 00de 0321     		movs	r1, #3
- 576 00e0 FFF7FEFF 		bl	_ZN5Track3NewEiP13DualLedButton
- 577              	.LVL35:
+ 651              		.loc 6 44 34 view .LVU171
+ 652 00d8 3A46     		mov	r2, r7
+ 653 00da 06F12400 		add	r0, r6, #36
+ 654 00de 0321     		movs	r1, #3
+ 655 00e0 FFF7FEFF 		bl	_ZN5Track3NewEiP13DualLedButton
+ 656              	.LVL45:
   47:Loop.cpp      **** static Button clearBtn = Button::New(D14, shortClick, longClick);
- 578              		.loc 6 47 65 view .LVU125
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 30
-
-
- 579 00e4 1B49     		ldr	r1, .L23+72
- 580 00e6 4FF4C873 		mov	r3, #400
- 581 00ea 3222     		movs	r2, #50
- 582 00ec 0968     		ldr	r1, [r1]
- 583 00ee 1A48     		ldr	r0, .L23+76
- 584 00f0 FFF7FEFF 		bl	_ZN6Button3NewEN5daisy3PinEmm
- 585              	.LVL36:
+ 657              		.loc 6 47 65 view .LVU172
+ 658 00e4 1B49     		ldr	r1, .L18+72
+ 659 00e6 4FF4C873 		mov	r3, #400
+ 660 00ea 3222     		movs	r2, #50
+ 661 00ec 0968     		ldr	r1, [r1]
+ 662 00ee 1A48     		ldr	r0, .L18+76
+ 663 00f0 FFF7FEFF 		bl	_ZN6Button3NewEN5daisy3PinEmm
+ 664              	.LVL46:
   48:Loop.cpp      **** 
- 586              		.loc 6 48 64 view .LVU126
- 587 00f4 1949     		ldr	r1, .L23+80
- 588 00f6 4FF4C873 		mov	r3, #400
- 589 00fa 3222     		movs	r2, #50
- 590 00fc 0968     		ldr	r1, [r1]
- 591 00fe 1848     		ldr	r0, .L23+84
- 592 0100 FFF7FEFF 		bl	_ZN6Button3NewEN5daisy3PinEmm
- 593              	.LVL37:
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 32
+
+
+ 665              		.loc 6 48 64 view .LVU173
+ 666 00f4 1949     		ldr	r1, .L18+80
+ 667 00f6 4FF4C873 		mov	r3, #400
+ 668 00fa 3222     		movs	r2, #50
+ 669 00fc 0968     		ldr	r1, [r1]
+ 670 00fe 1848     		ldr	r0, .L18+84
+ 671 0100 FFF7FEFF 		bl	_ZN6Button3NewEN5daisy3PinEmm
+ 672              	.LVL47:
   48:Loop.cpp      **** 
- 594              		.loc 6 48 64 view .LVU127
- 595              	.LBE164:
- 596              	.LBE166:
- 597              		.loc 6 105 1 view .LVU128
- 598 0104 03B0     		add	sp, sp, #12
- 599              		.cfi_def_cfa_offset 28
- 600              		@ sp needed
- 601 0106 BDE8F083 		pop	{r4, r5, r6, r7, r8, r9, pc}
- 602              	.L24:
- 603 010a 00BF     		.align	2
- 604              	.L23:
- 605 010c 00000000 		.word	.LANCHOR4
- 606 0110 00000000 		.word	__dso_handle
- 607 0114 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
- 608 0118 00000000 		.word	.LANCHOR9
- 609 011c 00000000 		.word	.LANCHOR10
- 610 0120 00000000 		.word	.LANCHOR7
- 611 0124 00000000 		.word	.LANCHOR6
- 612 0128 00000000 		.word	.LANCHOR8
- 613 012c 00000000 		.word	.LANCHOR3
- 614 0130 00000000 		.word	.LANCHOR12
- 615 0134 00000000 		.word	.LANCHOR13
- 616 0138 00000000 		.word	.LANCHOR11
- 617 013c 00000000 		.word	.LANCHOR14
- 618 0140 00000000 		.word	.LANCHOR15
- 619 0144 00000000 		.word	.LANCHOR16
- 620 0148 00000000 		.word	.LANCHOR18
- 621 014c 00000000 		.word	.LANCHOR19
- 622 0150 00000000 		.word	.LANCHOR17
- 623 0154 00000000 		.word	.LANCHOR20
- 624 0158 00000000 		.word	.LANCHOR1
- 625 015c 00000000 		.word	.LANCHOR21
- 626 0160 00000000 		.word	.LANCHOR2
- 627              		.cfi_endproc
- 628              	.LFE5349:
- 630              		.section	.init_array,"aw",%init_array
- 631              		.align	2
- 632 0000 00000000 		.word	_GLOBAL__sub_I__Z13AudioCallbackPKfPfj(target1)
- 633              		.section	.bss._ZL11dualLedBtns,"aw",%nobits
- 634              		.align	2
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 31
+ 673              		.loc 6 48 64 view .LVU174
+ 674              	.LBE168:
+ 675              	.LBE170:
+ 676              		.loc 6 109 1 view .LVU175
+ 677 0104 03B0     		add	sp, sp, #12
+ 678              		.cfi_def_cfa_offset 28
+ 679              		@ sp needed
+ 680 0106 BDE8F083 		pop	{r4, r5, r6, r7, r8, r9, pc}
+ 681              	.L19:
+ 682 010a 00BF     		.align	2
+ 683              	.L18:
+ 684 010c 00000000 		.word	.LANCHOR4
+ 685 0110 00000000 		.word	__dso_handle
+ 686 0114 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
+ 687 0118 00000000 		.word	.LANCHOR9
+ 688 011c 00000000 		.word	.LANCHOR10
+ 689 0120 00000000 		.word	.LANCHOR7
+ 690 0124 00000000 		.word	.LANCHOR6
+ 691 0128 00000000 		.word	.LANCHOR8
+ 692 012c 00000000 		.word	.LANCHOR3
+ 693 0130 00000000 		.word	.LANCHOR12
+ 694 0134 00000000 		.word	.LANCHOR13
+ 695 0138 00000000 		.word	.LANCHOR11
+ 696 013c 00000000 		.word	.LANCHOR14
+ 697 0140 00000000 		.word	.LANCHOR15
+ 698 0144 00000000 		.word	.LANCHOR16
+ 699 0148 00000000 		.word	.LANCHOR18
+ 700 014c 00000000 		.word	.LANCHOR19
+ 701 0150 00000000 		.word	.LANCHOR17
+ 702 0154 00000000 		.word	.LANCHOR20
+ 703 0158 00000000 		.word	.LANCHOR1
+ 704 015c 00000000 		.word	.LANCHOR21
+ 705 0160 00000000 		.word	.LANCHOR2
+ 706              		.cfi_endproc
+ 707              	.LFE5349:
+ 709              		.section	.init_array,"aw",%init_array
+ 710              		.align	2
+ 711 0000 00000000 		.word	_GLOBAL__sub_I__Z13AudioCallbackPKfPfj(target1)
+ 712              		.section	.bss._ZL11dualLedBtns,"aw",%nobits
+ 713              		.align	2
+ 714              		.set	.LANCHOR7,. + 0
+ 717              	_ZL11dualLedBtns:
+ 718 0000 00000000 		.space	304
+ 718      00000000 
+ 718      00000000 
+ 718      00000000 
+ 718      00000000 
+ 719              		.section	.bss._ZL2hw,"aw",%nobits
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 33
 
 
- 635              		.set	.LANCHOR7,. + 0
- 638              	_ZL11dualLedBtns:
- 639 0000 00000000 		.space	304
- 639      00000000 
- 639      00000000 
- 639      00000000 
- 639      00000000 
- 640              		.section	.bss._ZL2hw,"aw",%nobits
- 641              		.align	2
- 642              		.set	.LANCHOR4,. + 0
- 645              	_ZL2hw:
- 646 0000 00000000 		.space	60
- 646      00000000 
- 646      00000000 
- 646      00000000 
- 646      00000000 
- 647              		.section	.bss._ZL5start,"aw",%nobits
- 648              		.align	2
- 649              		.set	.LANCHOR0,. + 0
- 652              	_ZL5start:
- 653 0000 00000000 		.space	4
- 654              		.section	.bss._ZL6tracks,"aw",%nobits
- 655              		.align	2
- 656              		.set	.LANCHOR3,. + 0
- 659              	_ZL6tracks:
- 660 0000 00000000 		.space	48
- 660      00000000 
- 660      00000000 
- 660      00000000 
- 660      00000000 
- 661              		.section	.bss._ZL8clearBtn,"aw",%nobits
- 662              		.align	2
- 663              		.set	.LANCHOR2,. + 0
- 666              	_ZL8clearBtn:
- 667 0000 00000000 		.space	36
- 667      00000000 
- 667      00000000 
- 667      00000000 
- 667      00000000 
- 668              		.section	.bss._ZL8loopTrig,"aw",%nobits
- 669              		.align	2
- 670              		.set	.LANCHOR6,. + 0
- 673              	_ZL8loopTrig:
- 674 0000 00000000 		.space	20
- 674      00000000 
- 674      00000000 
- 674      00000000 
- 674      00000000 
- 675              		.section	.bss._ZL9recordBtn,"aw",%nobits
- 676              		.align	2
- 677              		.set	.LANCHOR1,. + 0
- 680              	_ZL9recordBtn:
- 681 0000 00000000 		.space	36
- 681      00000000 
- 681      00000000 
- 681      00000000 
- 681      00000000 
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 32
-
-
- 682              		.section	.rodata._ZN5daisy4seedL2D7E,"a"
- 683              		.align	2
- 684              		.set	.LANCHOR19,. + 0
- 687              	_ZN5daisy4seedL2D7E:
- 688 0000 06       		.byte	6
- 689 0001 0A       		.byte	10
- 690              		.section	.rodata._ZN5daisy4seedL2D8E,"a"
- 691              		.align	2
- 692              		.set	.LANCHOR17,. + 0
- 695              	_ZN5daisy4seedL2D8E:
- 696 0000 06       		.byte	6
- 697 0001 0B       		.byte	11
- 698              		.section	.rodata._ZN5daisy4seedL2D9E,"a"
- 699              		.align	2
- 700              		.set	.LANCHOR18,. + 0
- 703              	_ZN5daisy4seedL2D9E:
- 704 0000 01       		.byte	1
- 705 0001 04       		.byte	4
- 706              		.section	.rodata._ZN5daisy4seedL3D13E,"a"
- 707              		.align	2
- 708              		.set	.LANCHOR20,. + 0
- 711              	_ZN5daisy4seedL3D13E:
- 712 0000 01       		.byte	1
- 713 0001 06       		.byte	6
- 714              		.section	.rodata._ZN5daisy4seedL3D14E,"a"
- 715              		.align	2
- 716              		.set	.LANCHOR21,. + 0
- 719              	_ZN5daisy4seedL3D14E:
- 720 0000 01       		.byte	1
- 721 0001 07       		.byte	7
- 722              		.section	.rodata._ZN5daisy4seedL3D15E,"a"
- 723              		.align	2
- 724              		.set	.LANCHOR5,. + 0
- 727              	_ZN5daisy4seedL3D15E:
- 728 0000 02       		.byte	2
- 729 0001 00       		.byte	0
- 730              		.section	.rodata._ZN5daisy4seedL3D20E,"a"
- 731              		.align	2
- 732              		.set	.LANCHOR8,. + 0
- 735              	_ZN5daisy4seedL3D20E:
- 736 0000 02       		.byte	2
- 737 0001 01       		.byte	1
- 738              		.section	.rodata._ZN5daisy4seedL3D21E,"a"
- 739              		.align	2
- 740              		.set	.LANCHOR9,. + 0
- 743              	_ZN5daisy4seedL3D21E:
- 744 0000 02       		.byte	2
- 745 0001 04       		.byte	4
- 746              		.section	.rodata._ZN5daisy4seedL3D22E,"a"
- 747              		.align	2
- 748              		.set	.LANCHOR10,. + 0
- 751              	_ZN5daisy4seedL3D22E:
- 752 0000 00       		.byte	0
- 753 0001 05       		.byte	5
- 754              		.section	.rodata._ZN5daisy4seedL3D23E,"a"
+ 720              		.align	2
+ 721              		.set	.LANCHOR4,. + 0
+ 724              	_ZL2hw:
+ 725 0000 00000000 		.space	60
+ 725      00000000 
+ 725      00000000 
+ 725      00000000 
+ 725      00000000 
+ 726              		.section	.bss._ZL5start,"aw",%nobits
+ 727              		.align	2
+ 728              		.set	.LANCHOR0,. + 0
+ 731              	_ZL5start:
+ 732 0000 00000000 		.space	4
+ 733              		.section	.bss._ZL6tracks,"aw",%nobits
+ 734              		.align	2
+ 735              		.set	.LANCHOR3,. + 0
+ 738              	_ZL6tracks:
+ 739 0000 00000000 		.space	48
+ 739      00000000 
+ 739      00000000 
+ 739      00000000 
+ 739      00000000 
+ 740              		.section	.bss._ZL8clearBtn,"aw",%nobits
+ 741              		.align	2
+ 742              		.set	.LANCHOR2,. + 0
+ 745              	_ZL8clearBtn:
+ 746 0000 00000000 		.space	36
+ 746      00000000 
+ 746      00000000 
+ 746      00000000 
+ 746      00000000 
+ 747              		.section	.bss._ZL8loopTrig,"aw",%nobits
+ 748              		.align	2
+ 749              		.set	.LANCHOR6,. + 0
+ 752              	_ZL8loopTrig:
+ 753 0000 00000000 		.space	20
+ 753      00000000 
+ 753      00000000 
+ 753      00000000 
+ 753      00000000 
+ 754              		.section	.bss._ZL9recordBtn,"aw",%nobits
  755              		.align	2
- 756              		.set	.LANCHOR13,. + 0
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 33
+ 756              		.set	.LANCHOR1,. + 0
+ 759              	_ZL9recordBtn:
+ 760 0000 00000000 		.space	36
+ 760      00000000 
+ 760      00000000 
+ 760      00000000 
+ 760      00000000 
+ 761              		.section	.rodata._ZN5daisy4seedL2D7E,"a"
+ 762              		.align	2
+ 763              		.set	.LANCHOR19,. + 0
+ 766              	_ZN5daisy4seedL2D7E:
+ 767 0000 06       		.byte	6
+ 768 0001 0A       		.byte	10
+ 769              		.section	.rodata._ZN5daisy4seedL2D8E,"a"
+ 770              		.align	2
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 34
 
 
- 759              	_ZN5daisy4seedL3D23E:
- 760 0000 00       		.byte	0
- 761 0001 04       		.byte	4
- 762              		.section	.rodata._ZN5daisy4seedL3D24E,"a"
- 763              		.align	2
- 764              		.set	.LANCHOR11,. + 0
- 767              	_ZN5daisy4seedL3D24E:
- 768 0000 00       		.byte	0
- 769 0001 01       		.byte	1
- 770              		.section	.rodata._ZN5daisy4seedL3D25E,"a"
- 771              		.align	2
- 772              		.set	.LANCHOR12,. + 0
- 775              	_ZN5daisy4seedL3D25E:
- 776 0000 0000     		.space	2
- 777              		.section	.rodata._ZN5daisy4seedL3D26E,"a"
+ 771              		.set	.LANCHOR17,. + 0
+ 774              	_ZN5daisy4seedL2D8E:
+ 775 0000 06       		.byte	6
+ 776 0001 0B       		.byte	11
+ 777              		.section	.rodata._ZN5daisy4seedL2D9E,"a"
  778              		.align	2
- 779              		.set	.LANCHOR16,. + 0
- 782              	_ZN5daisy4seedL3D26E:
- 783 0000 03       		.byte	3
- 784 0001 0B       		.byte	11
- 785              		.section	.rodata._ZN5daisy4seedL3D27E,"a"
+ 779              		.set	.LANCHOR18,. + 0
+ 782              	_ZN5daisy4seedL2D9E:
+ 783 0000 01       		.byte	1
+ 784 0001 04       		.byte	4
+ 785              		.section	.rodata._ZN5daisy4seedL3D13E,"a"
  786              		.align	2
- 787              		.set	.LANCHOR14,. + 0
- 790              	_ZN5daisy4seedL3D27E:
- 791 0000 06       		.byte	6
- 792 0001 09       		.byte	9
- 793              		.section	.rodata._ZN5daisy4seedL3D28E,"a"
+ 787              		.set	.LANCHOR20,. + 0
+ 790              	_ZN5daisy4seedL3D13E:
+ 791 0000 01       		.byte	1
+ 792 0001 06       		.byte	6
+ 793              		.section	.rodata._ZN5daisy4seedL3D14E,"a"
  794              		.align	2
- 795              		.set	.LANCHOR15,. + 0
- 798              	_ZN5daisy4seedL3D28E:
- 799 0000 00       		.byte	0
- 800 0001 02       		.byte	2
- 801              		.text
- 802              	.Letext0:
- 803              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
- 804              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
- 805              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
- 806              		.file 14 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
- 807              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
- 808              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 809              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
- 810              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
- 811              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
- 812              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
- 813              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
- 814              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
- 815              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
- 816              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
- 817              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
- 818              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
- 819              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
- 820              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
- 821              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
- 822              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
- 823              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
- 824              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
- 825              		.file 33 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 34
+ 795              		.set	.LANCHOR21,. + 0
+ 798              	_ZN5daisy4seedL3D14E:
+ 799 0000 01       		.byte	1
+ 800 0001 07       		.byte	7
+ 801              		.section	.rodata._ZN5daisy4seedL3D15E,"a"
+ 802              		.align	2
+ 803              		.set	.LANCHOR5,. + 0
+ 806              	_ZN5daisy4seedL3D15E:
+ 807 0000 02       		.byte	2
+ 808 0001 00       		.byte	0
+ 809              		.section	.rodata._ZN5daisy4seedL3D20E,"a"
+ 810              		.align	2
+ 811              		.set	.LANCHOR8,. + 0
+ 814              	_ZN5daisy4seedL3D20E:
+ 815 0000 02       		.byte	2
+ 816 0001 01       		.byte	1
+ 817              		.section	.rodata._ZN5daisy4seedL3D21E,"a"
+ 818              		.align	2
+ 819              		.set	.LANCHOR9,. + 0
+ 822              	_ZN5daisy4seedL3D21E:
+ 823 0000 02       		.byte	2
+ 824 0001 04       		.byte	4
+ 825              		.section	.rodata._ZN5daisy4seedL3D22E,"a"
+ 826              		.align	2
+ 827              		.set	.LANCHOR10,. + 0
+ 830              	_ZN5daisy4seedL3D22E:
+ 831 0000 00       		.byte	0
+ 832 0001 05       		.byte	5
+ 833              		.section	.rodata._ZN5daisy4seedL3D23E,"a"
+ 834              		.align	2
+ 835              		.set	.LANCHOR12,. + 0
+ 838              	_ZN5daisy4seedL3D23E:
+ 839 0000 00       		.byte	0
+ 840 0001 04       		.byte	4
+ 841              		.section	.rodata._ZN5daisy4seedL3D24E,"a"
+ 842              		.align	2
+ 843              		.set	.LANCHOR11,. + 0
+ 846              	_ZN5daisy4seedL3D24E:
+ 847 0000 00       		.byte	0
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 35
 
 
- 826              		.file 34 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
- 827              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
- 828              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 829              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
- 830              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 831              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
- 832              		.file 40 "../DaisyExamples/libDaisy/src/per/tim.h"
- 833              		.file 41 "../DaisyExamples/libDaisy/src/per/sai.h"
- 834              		.file 42 "../DaisyExamples/libDaisy/src/util/wav_format.h"
- 835              		.file 43 "../DaisyExamples/libDaisy/src/dev/max11300.h"
- 836              		.file 44 "../DaisyExamples/libDaisy/src/dev/sdram.h"
- 837              		.file 45 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
- 838              		.file 46 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
- 839              		.file 47 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
- 840              		.file 48 "../DaisyExamples/DaisySP/Source/Control/adenv.h"
- 841              		.file 49 "../DaisyExamples/DaisySP/Source/Utility/dsp.h"
- 842              		.file 50 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
- 843              		.file 51 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
- 844              		.file 52 "button.h"
- 845              		.file 53 "dualLedButton.h"
- 846              		.file 54 "track.h"
- 847              		.file 55 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
- 848              		.file 56 "<built-in>"
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 35
+ 848 0001 01       		.byte	1
+ 849              		.section	.rodata._ZN5daisy4seedL3D25E,"a"
+ 850              		.align	2
+ 851              		.set	.LANCHOR13,. + 0
+ 854              	_ZN5daisy4seedL3D25E:
+ 855 0000 0000     		.space	2
+ 856              		.section	.rodata._ZN5daisy4seedL3D26E,"a"
+ 857              		.align	2
+ 858              		.set	.LANCHOR16,. + 0
+ 861              	_ZN5daisy4seedL3D26E:
+ 862 0000 03       		.byte	3
+ 863 0001 0B       		.byte	11
+ 864              		.section	.rodata._ZN5daisy4seedL3D27E,"a"
+ 865              		.align	2
+ 866              		.set	.LANCHOR14,. + 0
+ 869              	_ZN5daisy4seedL3D27E:
+ 870 0000 06       		.byte	6
+ 871 0001 09       		.byte	9
+ 872              		.section	.rodata._ZN5daisy4seedL3D28E,"a"
+ 873              		.align	2
+ 874              		.set	.LANCHOR15,. + 0
+ 877              	_ZN5daisy4seedL3D28E:
+ 878 0000 00       		.byte	0
+ 879 0001 02       		.byte	2
+ 880              		.text
+ 881              	.Letext0:
+ 882              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 883              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 884              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 885              		.file 14 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 886              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 887              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 888              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 889              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 890              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 891              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 892              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 893              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 894              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 895              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 896              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 897              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 898              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 899              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 900              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 901              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 902              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
+ 903              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 904              		.file 33 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 905              		.file 34 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 906              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 907              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 908              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 909              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 910              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 911              		.file 40 "../DaisyExamples/libDaisy/src/per/tim.h"
+ 912              		.file 41 "../DaisyExamples/libDaisy/src/per/sai.h"
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 36
+
+
+ 913              		.file 42 "../DaisyExamples/libDaisy/src/util/wav_format.h"
+ 914              		.file 43 "../DaisyExamples/libDaisy/src/dev/max11300.h"
+ 915              		.file 44 "../DaisyExamples/libDaisy/src/dev/sdram.h"
+ 916              		.file 45 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 917              		.file 46 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 918              		.file 47 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 919              		.file 48 "../DaisyExamples/DaisySP/Source/Control/adenv.h"
+ 920              		.file 49 "../DaisyExamples/DaisySP/Source/Utility/dsp.h"
+ 921              		.file 50 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 922              		.file 51 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 923              		.file 52 "button.h"
+ 924              		.file 53 "dualLedButton.h"
+ 925              		.file 54 "track.h"
+ 926              		.file 55 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
+ 927              		.file 56 "<built-in>"
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 37
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Loop.cpp
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:17     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:67     .text._Z13AudioCallbackPKfPfj:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:75     .text._Z13AudioCallbackPKfPfj:00000000 _Z13AudioCallbackPKfPfj
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:197    .text._Z13AudioCallbackPKfPfj:0000007c $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:205    .text.startup.main:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:213    .text.startup.main:00000000 main
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:296    .text.startup.main:00000058 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:305    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKfPfj:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:312    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKfPfj:00000000 _GLOBAL__sub_I__Z13AudioCallbackPKfPfj
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:605    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKfPfj:0000010c $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:631    .init_array:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:634    .bss._ZL11dualLedBtns:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:638    .bss._ZL11dualLedBtns:00000000 _ZL11dualLedBtns
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:641    .bss._ZL2hw:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:645    .bss._ZL2hw:00000000 _ZL2hw
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:648    .bss._ZL5start:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:652    .bss._ZL5start:00000000 _ZL5start
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:655    .bss._ZL6tracks:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:659    .bss._ZL6tracks:00000000 _ZL6tracks
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:662    .bss._ZL8clearBtn:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:666    .bss._ZL8clearBtn:00000000 _ZL8clearBtn
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:669    .bss._ZL8loopTrig:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:673    .bss._ZL8loopTrig:00000000 _ZL8loopTrig
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:676    .bss._ZL9recordBtn:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:680    .bss._ZL9recordBtn:00000000 _ZL9recordBtn
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:683    .rodata._ZN5daisy4seedL2D7E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:687    .rodata._ZN5daisy4seedL2D7E:00000000 _ZN5daisy4seedL2D7E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:691    .rodata._ZN5daisy4seedL2D8E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:695    .rodata._ZN5daisy4seedL2D8E:00000000 _ZN5daisy4seedL2D8E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:699    .rodata._ZN5daisy4seedL2D9E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:703    .rodata._ZN5daisy4seedL2D9E:00000000 _ZN5daisy4seedL2D9E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:707    .rodata._ZN5daisy4seedL3D13E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:711    .rodata._ZN5daisy4seedL3D13E:00000000 _ZN5daisy4seedL3D13E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:715    .rodata._ZN5daisy4seedL3D14E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:719    .rodata._ZN5daisy4seedL3D14E:00000000 _ZN5daisy4seedL3D14E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:723    .rodata._ZN5daisy4seedL3D15E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:727    .rodata._ZN5daisy4seedL3D15E:00000000 _ZN5daisy4seedL3D15E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:731    .rodata._ZN5daisy4seedL3D20E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:735    .rodata._ZN5daisy4seedL3D20E:00000000 _ZN5daisy4seedL3D20E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:739    .rodata._ZN5daisy4seedL3D21E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:743    .rodata._ZN5daisy4seedL3D21E:00000000 _ZN5daisy4seedL3D21E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:747    .rodata._ZN5daisy4seedL3D22E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:751    .rodata._ZN5daisy4seedL3D22E:00000000 _ZN5daisy4seedL3D22E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:755    .rodata._ZN5daisy4seedL3D23E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:759    .rodata._ZN5daisy4seedL3D23E:00000000 _ZN5daisy4seedL3D23E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:763    .rodata._ZN5daisy4seedL3D24E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:767    .rodata._ZN5daisy4seedL3D24E:00000000 _ZN5daisy4seedL3D24E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:771    .rodata._ZN5daisy4seedL3D25E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:775    .rodata._ZN5daisy4seedL3D25E:00000000 _ZN5daisy4seedL3D25E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:778    .rodata._ZN5daisy4seedL3D26E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:782    .rodata._ZN5daisy4seedL3D26E:00000000 _ZN5daisy4seedL3D26E
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:786    .rodata._ZN5daisy4seedL3D27E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:790    .rodata._ZN5daisy4seedL3D27E:00000000 _ZN5daisy4seedL3D27E
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s 			page 36
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:17     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:67     .text._Z13AudioCallbackPKfPfj:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:75     .text._Z13AudioCallbackPKfPfj:00000000 _Z13AudioCallbackPKfPfj
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:197    .text._Z13AudioCallbackPKfPfj:0000007c $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:205    .text.startup.main:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:213    .text.startup.main:00000000 main
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:373    .text.startup.main:0000008c $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:384    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKfPfj:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:391    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKfPfj:00000000 _GLOBAL__sub_I__Z13AudioCallbackPKfPfj
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:684    .text.startup._GLOBAL__sub_I__Z13AudioCallbackPKfPfj:0000010c $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:710    .init_array:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:713    .bss._ZL11dualLedBtns:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:717    .bss._ZL11dualLedBtns:00000000 _ZL11dualLedBtns
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:720    .bss._ZL2hw:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:724    .bss._ZL2hw:00000000 _ZL2hw
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:727    .bss._ZL5start:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:731    .bss._ZL5start:00000000 _ZL5start
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:734    .bss._ZL6tracks:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:738    .bss._ZL6tracks:00000000 _ZL6tracks
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:741    .bss._ZL8clearBtn:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:745    .bss._ZL8clearBtn:00000000 _ZL8clearBtn
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:748    .bss._ZL8loopTrig:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:752    .bss._ZL8loopTrig:00000000 _ZL8loopTrig
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:755    .bss._ZL9recordBtn:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:759    .bss._ZL9recordBtn:00000000 _ZL9recordBtn
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:762    .rodata._ZN5daisy4seedL2D7E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:766    .rodata._ZN5daisy4seedL2D7E:00000000 _ZN5daisy4seedL2D7E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:770    .rodata._ZN5daisy4seedL2D8E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:774    .rodata._ZN5daisy4seedL2D8E:00000000 _ZN5daisy4seedL2D8E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:778    .rodata._ZN5daisy4seedL2D9E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:782    .rodata._ZN5daisy4seedL2D9E:00000000 _ZN5daisy4seedL2D9E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:786    .rodata._ZN5daisy4seedL3D13E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:790    .rodata._ZN5daisy4seedL3D13E:00000000 _ZN5daisy4seedL3D13E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:794    .rodata._ZN5daisy4seedL3D14E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:798    .rodata._ZN5daisy4seedL3D14E:00000000 _ZN5daisy4seedL3D14E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:802    .rodata._ZN5daisy4seedL3D15E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:806    .rodata._ZN5daisy4seedL3D15E:00000000 _ZN5daisy4seedL3D15E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:810    .rodata._ZN5daisy4seedL3D20E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:814    .rodata._ZN5daisy4seedL3D20E:00000000 _ZN5daisy4seedL3D20E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:818    .rodata._ZN5daisy4seedL3D21E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:822    .rodata._ZN5daisy4seedL3D21E:00000000 _ZN5daisy4seedL3D21E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:826    .rodata._ZN5daisy4seedL3D22E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:830    .rodata._ZN5daisy4seedL3D22E:00000000 _ZN5daisy4seedL3D22E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:834    .rodata._ZN5daisy4seedL3D23E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:838    .rodata._ZN5daisy4seedL3D23E:00000000 _ZN5daisy4seedL3D23E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:842    .rodata._ZN5daisy4seedL3D24E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:846    .rodata._ZN5daisy4seedL3D24E:00000000 _ZN5daisy4seedL3D24E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:850    .rodata._ZN5daisy4seedL3D25E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:854    .rodata._ZN5daisy4seedL3D25E:00000000 _ZN5daisy4seedL3D25E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:857    .rodata._ZN5daisy4seedL3D26E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:861    .rodata._ZN5daisy4seedL3D26E:00000000 _ZN5daisy4seedL3D26E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:865    .rodata._ZN5daisy4seedL3D27E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:869    .rodata._ZN5daisy4seedL3D27E:00000000 _ZN5daisy4seedL3D27E
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s 			page 38
 
 
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:794    .rodata._ZN5daisy4seedL3D28E:00000000 $d
-C:\Users\papag\AppData\Local\Temp\cc4Ic5Nd.s:798    .rodata._ZN5daisy4seedL3D28E:00000000 _ZN5daisy4seedL3D28E
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:873    .rodata._ZN5daisy4seedL3D28E:00000000 $d
+C:\Users\papag\AppData\Local\Temp\ccRQI1Qh.s:877    .rodata._ZN5daisy4seedL3D28E:00000000 _ZN5daisy4seedL3D28E
                            .group:00000000 _ZN5daisy9DaisySeedD5Ev
 
 UNDEFINED SYMBOLS
@@ -2079,11 +2191,11 @@ _ZN5Track5AudioEPKfPfjS2_
 _ZN5daisy9DaisySeed4InitEb
 _ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
 _ZN5daisy9DaisySeed17SetAudioBlockSizeEj
+_ZN5daisy6System6GetNowEv
 _ZN13DualLedButton3OffEv
 _ZN5daisy6System5DelayEm
-_ZN6Button10GetPressedEv
-_ZN13DualLedButton3RedEv
 _ZN13DualLedButton5GreenEv
+_ZN13DualLedButton3RedEv
 __aeabi_atexit
 _ZN13DualLedButton3NewEN5daisy3PinEmmS1_S1_
 _ZN5Track3NewEiP13DualLedButton

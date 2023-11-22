@@ -32,7 +32,7 @@ static const uint32_t longClick = 400;
 
 static DualLedButton dualLedBtns[] = {
     DualLedButton::New(D20, shortClick, longClick, D22, D21),
-    DualLedButton::New(D24, shortClick, longClick, D23, D25),
+    DualLedButton::New(D24, shortClick, longClick, D25, D23),
     DualLedButton::New(D27, shortClick, longClick, D26, D28),
     DualLedButton::New( D8, shortClick, longClick, D7, D9)
 };
@@ -85,21 +85,25 @@ int main(void)
 
     hw.SetAudioBlockSize(4);
 
+    //hw.StartAudio(AudioCallback);
+
     while(1) {
 
-        if(recordBtn.Check())
-        {
+        uint32_t now = System::GetNow();
 
-            dualLedBtns[0].Off();
+        for(int i = 0; i < 4; i++)
+            dualLedBtns[i].Off();
 
-            System::Delay(500);
+        System::Delay(500);
 
+        for(int i = 0; i < 4; i++)
+            dualLedBtns[i].Green();
 
-            if(recordBtn.GetPressed())
-                dualLedBtns[0].Red();
-            else
-                dualLedBtns[0].Green();
-        }
+        System::Delay(500);
 
+        for(int i = 0; i < 4; i++)
+            dualLedBtns[i].Red();
+
+        System::Delay(500);
     }
 }
