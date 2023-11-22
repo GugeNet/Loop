@@ -1,0 +1,224 @@
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"track.cpp"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.section	.text._ZN5TrackC2EiP13DualLedButton,"ax",%progbits
+  17              		.align	1
+  18              		.p2align 2,,3
+  19              		.global	_ZN5TrackC2EiP13DualLedButton
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv5-d16
+  26              	_ZN5TrackC2EiP13DualLedButton:
+  27              	.LVL0:
+  28              	.LFB4789:
+  29              		.file 1 "track.cpp"
+   1:track.cpp     **** #include "daisy_seed.h"
+   2:track.cpp     **** #include "daisysp.h"
+   3:track.cpp     **** #include "track.h"
+   4:track.cpp     **** 
+   5:track.cpp     **** using namespace daisy;
+   6:track.cpp     **** 
+   7:track.cpp     **** Track::Track(int o, DualLedButton *btn)
+  30              		.loc 1 7 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+  35              	.LBB5:
+   8:track.cpp     **** {
+   9:track.cpp     ****     ordinal = o;
+  36              		.loc 1 9 5 view .LVU1
+  10:track.cpp     ****     button = btn;
+  11:track.cpp     ****     state = BLANK;
+  37              		.loc 1 11 11 is_stmt 0 view .LVU2
+  38 0000 4FF0000C 		mov	ip, #0
+  10:track.cpp     ****     button = btn;
+  39              		.loc 1 10 12 view .LVU3
+  40 0004 C0E90112 		strd	r1, r2, [r0, #4]
+  41              		.loc 1 11 5 is_stmt 1 view .LVU4
+  42              		.loc 1 11 11 is_stmt 0 view .LVU5
+  43 0008 80F800C0 		strb	ip, [r0]
+  44              	.LBE5:
+  12:track.cpp     **** }
+  45              		.loc 1 12 1 view .LVU6
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 2
+
+
+  46 000c 7047     		bx	lr
+  47              		.cfi_endproc
+  48              	.LFE4789:
+  50              		.global	_ZN5TrackC1EiP13DualLedButton
+  51              		.thumb_set _ZN5TrackC1EiP13DualLedButton,_ZN5TrackC2EiP13DualLedButton
+  52 000e 00BF     		.section	.text._ZN5Track3NewEiP13DualLedButton,"ax",%progbits
+  53              		.align	1
+  54              		.p2align 2,,3
+  55              		.global	_ZN5Track3NewEiP13DualLedButton
+  56              		.syntax unified
+  57              		.thumb
+  58              		.thumb_func
+  59              		.fpu fpv5-d16
+  61              	_ZN5Track3NewEiP13DualLedButton:
+  62              	.LVL1:
+  63              	.LFB4791:
+  13:track.cpp     **** 
+  14:track.cpp     **** Track Track::New(int o, DualLedButton *btn)
+  15:track.cpp     **** {
+  64              		.loc 1 15 1 is_stmt 1 view -0
+  65              		.cfi_startproc
+  66              		@ args = 0, pretend = 0, frame = 0
+  67              		@ frame_needed = 0, uses_anonymous_args = 0
+  68              		@ link register save eliminated.
+  16:track.cpp     ****     return Track(o, btn);
+  69              		.loc 1 16 5 view .LVU8
+  70              	.LBB6:
+  71              	.LBB7:
+  72              	.LBB8:
+  11:track.cpp     **** }
+  73              		.loc 1 11 11 is_stmt 0 view .LVU9
+  74 0000 4FF0000C 		mov	ip, #0
+  75              	.LVL2:
+  11:track.cpp     **** }
+  76              		.loc 1 11 11 view .LVU10
+  77              	.LBE8:
+  78              	.LBE7:
+  79              	.LBI6:
+   7:track.cpp     **** {
+  80              		.loc 1 7 1 is_stmt 1 view .LVU11
+  81              	.LBB10:
+  82              	.LBB9:
+   9:track.cpp     ****     button = btn;
+  83              		.loc 1 9 5 view .LVU12
+  10:track.cpp     ****     state = BLANK;
+  84              		.loc 1 10 12 is_stmt 0 view .LVU13
+  85 0004 C0E90112 		strd	r1, r2, [r0, #4]
+  11:track.cpp     **** }
+  86              		.loc 1 11 5 is_stmt 1 view .LVU14
+  11:track.cpp     **** }
+  87              		.loc 1 11 11 is_stmt 0 view .LVU15
+  88 0008 80F800C0 		strb	ip, [r0]
+  89              	.LVL3:
+  11:track.cpp     **** }
+  90              		.loc 1 11 11 view .LVU16
+  91              	.LBE9:
+  92              	.LBE10:
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 3
+
+
+  93              	.LBE6:
+  17:track.cpp     **** }
+  94              		.loc 1 17 1 view .LVU17
+  95 000c 7047     		bx	lr
+  96              		.cfi_endproc
+  97              	.LFE4791:
+  99 000e 00BF     		.section	.text._ZN5Track5AudioEPKfPfjS2_,"ax",%progbits
+ 100              		.align	1
+ 101              		.p2align 2,,3
+ 102              		.global	_ZN5Track5AudioEPKfPfjS2_
+ 103              		.syntax unified
+ 104              		.thumb
+ 105              		.thumb_func
+ 106              		.fpu fpv5-d16
+ 108              	_ZN5Track5AudioEPKfPfjS2_:
+ 109              	.LVL4:
+ 110              	.LFB4792:
+  18:track.cpp     **** 
+  19:track.cpp     **** void Track::Audio(AudioHandle::InterleavingInputBuffer  in,
+  20:track.cpp     ****                   AudioHandle::InterleavingOutputBuffer out,
+  21:track.cpp     ****                   size_t                                size,
+  22:track.cpp     ****                   float *buffer)
+  23:track.cpp     **** {
+ 111              		.loc 1 23 1 is_stmt 1 view -0
+ 112              		.cfi_startproc
+ 113              		@ args = 4, pretend = 0, frame = 0
+ 114              		@ frame_needed = 0, uses_anonymous_args = 0
+ 115              		@ link register save eliminated.
+  24:track.cpp     **** 
+  25:track.cpp     **** }...
+ 116              		.loc 1 25 1 is_stmt 0 view .LVU19
+ 117 0000 7047     		bx	lr
+ 118              		.cfi_endproc
+ 119              	.LFE4792:
+ 121 0002 00BF     		.text
+ 122              	.Letext0:
+ 123              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 124              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 125              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 126              		.file 5 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 127              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 128              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 129              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 130              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 131              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 132              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 133              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 134              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 135              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 136              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 137              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 138              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 139              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 140              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 141              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 142              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 143              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 4
+
+
+ 144              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 145              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 146              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 147              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 148              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 149              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 150              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 151              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 152              		.file 31 "../DaisyExamples/libDaisy/src/daisy_core.h"
+ 153              		.file 32 "../DaisyExamples/libDaisy/src/per/gpio.h"
+ 154              		.file 33 "../DaisyExamples/libDaisy/src/per/sai.h"
+ 155              		.file 34 "../DaisyExamples/libDaisy/src/hid/audio.h"
+ 156              		.file 35 "../DaisyExamples/libDaisy/src/util/wav_format.h"
+ 157              		.file 36 "../DaisyExamples/libDaisy/src/dev/max11300.h"
+ 158              		.file 37 "../DaisyExamples/libDaisy/src/daisy_seed.h"
+ 159              		.file 38 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 160              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 161              		.file 40 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 162              		.file 41 "../DaisyExamples/DaisySP/Source/Control/adenv.h"
+ 163              		.file 42 "../DaisyExamples/DaisySP/Source/Utility/dsp.h"
+ 164              		.file 43 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 165              		.file 44 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 166              		.file 45 "button.h"
+ 167              		.file 46 "dualLedButton.h"
+ 168              		.file 47 "track.h"
+ 169              		.file 48 "<built-in>"
+ 170              		.file 49 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc7xfscb.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 track.cpp
+C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:17     .text._ZN5TrackC2EiP13DualLedButton:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC2EiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC1EiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:53     .text._ZN5Track3NewEiP13DualLedButton:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:61     .text._ZN5Track3NewEiP13DualLedButton:00000000 _ZN5Track3NewEiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:100    .text._ZN5Track5AudioEPKfPfjS2_:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc7xfscb.s:108    .text._ZN5Track5AudioEPKfPfjS2_:00000000 _ZN5Track5AudioEPKfPfjS2_
+
+NO UNDEFINED SYMBOLS

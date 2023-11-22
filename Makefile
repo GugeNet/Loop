@@ -2,7 +2,11 @@
 TARGET = Loop
 
 # Sources
-CPP_SOURCES = Loop.cpp
+CPP_SOURCES = \
+Loop.cpp \
+button.cpp \
+dualLedButton.cpp \
+track.cpp
 
 # Library Locations
 LIBDAISY_DIR = ../DaisyExamples/libDaisy
