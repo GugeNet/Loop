@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 1
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -44,37 +44,38 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 1
   34              		.loc 1 8 5 view .LVU1
    7:button.cpp    ****     return Button(pin, shortTime, longTime);
   35              		.loc 1 7 68 is_stmt 0 view .LVU2
-  36 0000 10B5     		push	{r4, lr}
-  37              		.cfi_def_cfa_offset 8
-  38              		.cfi_offset 4, -8
-  39              		.cfi_offset 14, -4
-  40              	.LBB33:
-  41              	.LBB34:
+  36 0000 30B5     		push	{r4, r5, lr}
+  37              		.cfi_def_cfa_offset 12
+  38              		.cfi_offset 4, -12
+  39              		.cfi_offset 5, -8
+  40              		.cfi_offset 14, -4
+  41              	.LBB33:
+  42              	.LBB34:
    9:button.cpp    **** }
   10:button.cpp    **** 
   11:button.cpp    **** Button::Button(Pin pin, uint32_t shortTime, uint32_t longTime) {
-  42              		.loc 1 11 62 view .LVU3
-  43 0002 4FF60B73 		movw	r3, #65291
-  44              	.LVL1:
-  45              		.loc 1 11 62 view .LVU4
-  46              	.LBE34:
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 2
+  43              		.loc 1 11 62 view .LVU3
+  44 0002 4FF60B73 		movw	r3, #65291
+  45              	.LVL1:
+  46              		.loc 1 11 62 view .LVU4
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 2
 
 
-  47              	.LBE33:
+  47              	.LBE34:
+  48              	.LBE33:
    7:button.cpp    ****     return Button(pin, shortTime, longTime);
-  48              		.loc 1 7 68 view .LVU5
-  49 0006 86B0     		sub	sp, sp, #24
-  50              		.cfi_def_cfa_offset 32
-  51              	.LBB64:
-  52              	.LBB60:
-  53              	.LBB35:
-  54              	.LBB36:
-  55              	.LBB37:
-  56              	.LBB38:
-  57              	.LBB39:
-  58              	.LBB40:
-  59              		.file 2 "../DaisyExamples/libDaisy/src/per/gpio.h"
+  49              		.loc 1 7 68 view .LVU5
+  50 0006 87B0     		sub	sp, sp, #28
+  51              		.cfi_def_cfa_offset 40
+  52              	.LBB66:
+  53              	.LBB61:
+  54              	.LBB35:
+  55              	.LBB36:
+  56              	.LBB37:
+  57              	.LBB38:
+  58              	.LBB39:
+  59              	.LBB40:
+  60              		.file 2 "../DaisyExamples/libDaisy/src/per/gpio.h"
    1:../DaisyExamples/libDaisy/src/per/gpio.h **** #pragma once
    2:../DaisyExamples/libDaisy/src/per/gpio.h **** #ifndef DSY_GPIO_H
    3:../DaisyExamples/libDaisy/src/per/gpio.h **** #define DSY_GPIO_H
@@ -117,10 +118,10 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 1
   40:../DaisyExamples/libDaisy/src/per/gpio.h ****      */
   41:../DaisyExamples/libDaisy/src/per/gpio.h ****     enum class Pull
   42:../DaisyExamples/libDaisy/src/per/gpio.h ****     {
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 3
+
+
   43:../DaisyExamples/libDaisy/src/per/gpio.h ****         NOPULL,   /**< No pull up resistor */
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 3
-
-
   44:../DaisyExamples/libDaisy/src/per/gpio.h ****         PULLUP,   /**< Internal pull up enabled */
   45:../DaisyExamples/libDaisy/src/per/gpio.h ****         PULLDOWN, /**< Internal pull down enabled*/
   46:../DaisyExamples/libDaisy/src/per/gpio.h ****     };
@@ -147,61 +148,59 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 1
   67:../DaisyExamples/libDaisy/src/per/gpio.h ****          */
   68:../DaisyExamples/libDaisy/src/per/gpio.h ****         Config()
   69:../DaisyExamples/libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
-  60              		.loc 2 69 73 view .LVU6
-  61 0008 0022     		movs	r2, #0
-  62              	.LVL2:
-  63              		.loc 2 69 73 view .LVU7
-  64              	.LBE40:
-  65              	.LBE39:
-  66              	.LBE38:
-  67              	.LBE37:
-  68              	.LBE36:
-  69              	.LBE35:
-  70              	.LBE60:
-  71              	.LBE64:
+  61              		.loc 2 69 73 view .LVU6
+  62 0008 0025     		movs	r5, #0
+  63              	.LBE40:
+  64              	.LBE39:
+  65              	.LBE38:
+  66              	.LBE37:
+  67              	.LBE36:
+  68              	.LBE35:
+  69              	.LBE61:
+  70              	.LBE66:
    7:button.cpp    ****     return Button(pin, shortTime, longTime);
-  72              		.loc 1 7 68 view .LVU8
-  73 000a 0446     		mov	r4, r0
-  74              	.LVL3:
-  75              	.LBB65:
-  76              	.LBB61:
-  77              		.loc 1 11 62 view .LVU9
-  78 000c 0360     		str	r3, [r0]
-  79              	.LBB57:
+  71              		.loc 1 7 68 view .LVU7
+  72 000a 0446     		mov	r4, r0
+  73              	.LVL2:
+  74              	.LBB67:
+  75              	.LBB62:
+  76              		.loc 1 11 62 view .LVU8
+  77 000c 0360     		str	r3, [r0]
+  78              	.LBB57:
   12:button.cpp    ****     gpio.Init(pin, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
-  80              		.loc 1 12 14 view .LVU10
-  81 000e 0223     		movs	r3, #2
-  82 0010 ADF81410 		strh	r1, [sp, #20]	@ movhi
-  83              	.LVL4:
-  84              		.loc 1 12 14 view .LVU11
-  85              	.LBE57:
-  86              	.LBE61:
-  87              	.LBI33:
+  79              		.loc 1 12 14 view .LVU9
+  80 000e 0223     		movs	r3, #2
+  81 0010 ADF81410 		strh	r1, [sp, #20]	@ movhi
+  82              	.LVL3:
+  83              		.loc 1 12 14 view .LVU10
+  84              	.LBE57:
+  85              	.LBE62:
+  86              	.LBI33:
   11:button.cpp    ****     gpio.Init(pin, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 4
+  87              		.loc 1 11 1 is_stmt 1 view .LVU11
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 4
 
 
-  88              		.loc 1 11 1 is_stmt 1 view .LVU12
-  89              	.LBB62:
-  90              	.LBB58:
-  91              	.LBB54:
-  92              	.LBI36:
+  88              	.LBB63:
+  89              	.LBB58:
+  90              	.LBB54:
+  91              	.LBI36:
   70:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
   71:../DaisyExamples/libDaisy/src/per/gpio.h ****         }
   72:../DaisyExamples/libDaisy/src/per/gpio.h ****     };
   73:../DaisyExamples/libDaisy/src/per/gpio.h **** 
   74:../DaisyExamples/libDaisy/src/per/gpio.h ****     GPIO() {}
-  93              		.loc 2 74 5 view .LVU13
-  94              	.LBB51:
-  95              	.LBB48:
-  96              	.LBI38:
+  92              		.loc 2 74 5 view .LVU12
+  93              	.LBB51:
+  94              	.LBB48:
+  95              	.LBI38:
   68:../DaisyExamples/libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
-  97              		.loc 2 68 9 view .LVU14
-  98              	.LBB45:
-  99              	.LBB42:
- 100              	.LBB41:
- 101              	.LBI41:
- 102              		.file 3 "../DaisyExamples/libDaisy/src/daisy_core.h"
+  96              		.loc 2 68 9 view .LVU13
+  97              	.LBB45:
+  98              	.LBB42:
+  99              	.LBB41:
+ 100              	.LBI41:
+ 101              		.file 3 "../DaisyExamples/libDaisy/src/daisy_core.h"
    1:../DaisyExamples/libDaisy/src/daisy_core.h **** #pragma once
    2:../DaisyExamples/libDaisy/src/daisy_core.h **** #ifndef DSY_CORE_HW_H
    3:../DaisyExamples/libDaisy/src/daisy_core.h **** #define DSY_CORE_HW_H /**< & */
@@ -238,10 +237,10 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 1
   34:../DaisyExamples/libDaisy/src/daisy_core.h **** #define FBIPMIN (-FBIPMAX)            /**< - (1 - LSB) */
   35:../DaisyExamples/libDaisy/src/daisy_core.h **** #define U82F_SCALE 0.0078740f         /**< 1 / 127 */
   36:../DaisyExamples/libDaisy/src/daisy_core.h **** #define F2U8_SCALE 127.0f             /**< 128 - 1 */
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 5
-
-
   37:../DaisyExamples/libDaisy/src/daisy_core.h **** #define S82F_SCALE 0.0078125f         /**< 1 / (2**7) */
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 5
+
+
   38:../DaisyExamples/libDaisy/src/daisy_core.h **** #define F2S8_SCALE 127.0f             /**< (2 ** 7) - 1 */
   39:../DaisyExamples/libDaisy/src/daisy_core.h **** #define S162F_SCALE 3.0517578125e-05f /**< 1 / (2** 15) */
   40:../DaisyExamples/libDaisy/src/daisy_core.h **** #define F2S16_SCALE 32767.0f          /**< (2 ** 15) - 1 */
@@ -298,10 +297,10 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 1
   91:../DaisyExamples/libDaisy/src/daisy_core.h ****     return (uint8_t)((x * F2U8_SCALE) + F2U8_SCALE);
   92:../DaisyExamples/libDaisy/src/daisy_core.h **** }
   93:../DaisyExamples/libDaisy/src/daisy_core.h **** 
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 6
-
-
   94:../DaisyExamples/libDaisy/src/daisy_core.h **** 
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 6
+
+
   95:../DaisyExamples/libDaisy/src/daisy_core.h **** /** 
   96:../DaisyExamples/libDaisy/src/daisy_core.h ****     Converts Signed 8-bit to float
   97:../DaisyExamples/libDaisy/src/daisy_core.h ****     \param x Number to be scaled.
@@ -358,10 +357,10 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 1
  148:../DaisyExamples/libDaisy/src/daisy_core.h ****     x = x <= FBIPMIN ? FBIPMIN : x;
  149:../DaisyExamples/libDaisy/src/daisy_core.h ****     x = x >= FBIPMAX ? FBIPMAX : x;
  150:../DaisyExamples/libDaisy/src/daisy_core.h ****     return (int32_t)(x * F2S24_SCALE);
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 7
-
-
  151:../DaisyExamples/libDaisy/src/daisy_core.h **** }
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 7
+
+
  152:../DaisyExamples/libDaisy/src/daisy_core.h **** 
  153:../DaisyExamples/libDaisy/src/daisy_core.h **** /**
  154:../DaisyExamples/libDaisy/src/daisy_core.h ****     Converts Signed 32-bit to float
@@ -418,10 +417,10 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 1
  205:../DaisyExamples/libDaisy/src/daisy_core.h **** {
  206:../DaisyExamples/libDaisy/src/daisy_core.h ****     dsy_gpio_port port; /**< & */
  207:../DaisyExamples/libDaisy/src/daisy_core.h ****     uint8_t       pin;  /**< number 0-15 */
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 8
-
-
  208:../DaisyExamples/libDaisy/src/daisy_core.h **** } dsy_gpio_pin;
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 8
+
+
  209:../DaisyExamples/libDaisy/src/daisy_core.h **** 
  210:../DaisyExamples/libDaisy/src/daisy_core.h **** /** Helper for creating pins from port/pin combos easily
  211:../DaisyExamples/libDaisy/src/daisy_core.h ****  * 
@@ -478,10 +477,10 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 1
  262:../DaisyExamples/libDaisy/src/daisy_core.h ****     GPIOPort port;
  263:../DaisyExamples/libDaisy/src/daisy_core.h ****     uint8_t  pin;
  264:../DaisyExamples/libDaisy/src/daisy_core.h **** 
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 9
-
-
  265:../DaisyExamples/libDaisy/src/daisy_core.h ****     /** @brief Constructor creates a valid pin. 
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 9
+
+
  266:../DaisyExamples/libDaisy/src/daisy_core.h ****      *  @param pt GPIOPort between PA, and PK corresponding to STM32 Port.
  267:../DaisyExamples/libDaisy/src/daisy_core.h ****      *  @param pn pin number in range of 0-15
  268:../DaisyExamples/libDaisy/src/daisy_core.h ****     */
@@ -489,487 +488,542 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 1
  270:../DaisyExamples/libDaisy/src/daisy_core.h **** 
  271:../DaisyExamples/libDaisy/src/daisy_core.h ****     /** @brief Basic Constructor creates an invalid Pin object */
  272:../DaisyExamples/libDaisy/src/daisy_core.h ****     constexpr Pin() : port(PORTX), pin(255) {}
- 103              		.loc 3 272 15 view .LVU15
- 104              		.loc 3 272 15 is_stmt 0 view .LVU16
- 105              	.LBE41:
- 106              	.LBE42:
- 107              	.LBE45:
- 108              	.LBE48:
- 109              	.LBE51:
- 110              	.LBE54:
- 111              	.LBE58:
- 112              	.LBE62:
- 113              	.LBE65:
+ 102              		.loc 3 272 15 view .LVU14
+ 103              		.loc 3 272 15 is_stmt 0 view .LVU15
+ 104              	.LBE41:
+ 105              	.LBE42:
+ 106              	.LBE45:
+ 107              	.LBE48:
+ 108              	.LBE51:
+ 109              	.LBE54:
+ 110              		.loc 1 12 14 view .LVU16
+ 111 0014 2A46     		mov	r2, r5
+ 112              	.LVL4:
+ 113              		.loc 1 12 14 view .LVU17
+ 114              	.LBE58:
+ 115              	.LBE63:
+ 116              	.LBE67:
    7:button.cpp    ****     return Button(pin, shortTime, longTime);
- 114              		.loc 1 7 68 view .LVU17
- 115 0014 ADF80C10 		strh	r1, [sp, #12]	@ movhi
- 116              	.LBB66:
- 117              	.LBB63:
- 118              	.LBB59:
- 119              	.LBB55:
- 120              	.LBB52:
- 121              	.LBB49:
- 122              	.LBB46:
- 123              	.LBB43:
-  69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
- 124              		.loc 2 69 73 view .LVU18
- 125 0018 C260     		str	r2, [r0, #12]
- 126              	.LVL5:
+ 117              		.loc 1 7 68 view .LVU18
+ 118 0016 ADF80C10 		strh	r1, [sp, #12]	@ movhi
+ 119              	.LBB68:
+ 120              	.LBB64:
+ 121              	.LBB59:
+ 122              	.LBB55:
+ 123              	.LBB52:
+ 124              	.LBB49:
+ 125              	.LBB46:
+ 126              	.LBB43:
   69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
  127              		.loc 2 69 73 view .LVU19
- 128              	.LBE43:
- 129              	.LBE46:
- 130              	.LBE49:
- 131              	.LBE52:
- 132              	.LBE55:
- 133              		.loc 1 12 5 is_stmt 1 view .LVU20
- 134              		.loc 1 12 14 is_stmt 0 view .LVU21
- 135 001a 0599     		ldr	r1, [sp, #20]
- 136              	.LBB56:
- 137              	.LBB53:
- 138              	.LBB50:
- 139              	.LBB47:
- 140              	.LBB44:
+ 128 001a C560     		str	r5, [r0, #12]
+ 129              	.LVL5:
   69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
- 141              		.loc 2 69 73 view .LVU22
- 142 001c C0E90122 		strd	r2, r2, [r0, #4]
- 143              	.LBE44:
- 144              	.LBE47:
- 145              	.LBE50:
- 146              	.LBE53:
- 147              	.LBE56:
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 10
+ 130              		.loc 2 69 73 view .LVU20
+ 131              	.LBE43:
+ 132              	.LBE46:
+ 133              	.LBE49:
+ 134              	.LBE52:
+ 135              	.LBE55:
+ 136              		.loc 1 12 5 is_stmt 1 view .LVU21
+ 137              		.loc 1 12 14 is_stmt 0 view .LVU22
+ 138 001c 0599     		ldr	r1, [sp, #20]
+ 139              	.LBB56:
+ 140              	.LBB53:
+ 141              	.LBB50:
+ 142              	.LBB47:
+ 143              	.LBB44:
+  69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
+ 144              		.loc 2 69 73 view .LVU23
+ 145 001e C0E90155 		strd	r5, r5, [r0, #4]
+ 146              	.LBE44:
+ 147              	.LBE47:
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 10
 
 
- 148              		.loc 1 12 14 view .LVU23
- 149 0020 0092     		str	r2, [sp]
- 150 0022 FFF7FEFF 		bl	_ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
- 151              	.LVL6:
- 152              		.loc 1 12 14 view .LVU24
- 153              	.LBE59:
- 154              	.LBE63:
- 155              	.LBE66:
+ 148              	.LBE50:
+ 149              	.LBE53:
+ 150              	.LBE56:
+ 151              		.loc 1 12 14 view .LVU24
+ 152 0022 0095     		str	r5, [sp]
+ 153 0024 FFF7FEFF 		bl	_ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
+ 154              	.LVL6:
+  13:button.cpp    ****     previousState = false;
+ 155              		.loc 1 13 5 is_stmt 1 view .LVU25
+ 156              	.LBE59:
+ 157              	.LBE64:
+ 158              	.LBE68:
    9:button.cpp    **** 
- 156              		.loc 1 9 1 view .LVU25
- 157 0026 2046     		mov	r0, r4
- 158 0028 06B0     		add	sp, sp, #24
- 159              		.cfi_def_cfa_offset 8
- 160              		@ sp needed
- 161 002a 10BD     		pop	{r4, pc}
+ 159              		.loc 1 9 1 is_stmt 0 view .LVU26
+ 160 0028 2046     		mov	r0, r4
+ 161              	.LBB69:
+ 162              	.LBB65:
+ 163              	.LBB60:
+ 164              		.loc 1 13 19 view .LVU27
+ 165 002a 2575     		strb	r5, [r4, #20]
+ 166              	.LVL7:
+ 167              		.loc 1 13 19 view .LVU28
+ 168              	.LBE60:
+ 169              	.LBE65:
+ 170              	.LBE69:
    9:button.cpp    **** 
- 162              		.loc 1 9 1 view .LVU26
- 163              		.cfi_endproc
- 164              	.LFE4788:
- 166              		.section	.text._ZN6ButtonC2EN5daisy3PinEmm,"ax",%progbits
- 167              		.align	1
- 168              		.p2align 2,,3
- 169              		.global	_ZN6ButtonC2EN5daisy3PinEmm
- 170              		.syntax unified
- 171              		.thumb
- 172              		.thumb_func
- 173              		.fpu fpv5-d16
- 175              	_ZN6ButtonC2EN5daisy3PinEmm:
- 176              	.LVL7:
- 177              	.LFB4790:
+ 171              		.loc 1 9 1 view .LVU29
+ 172 002c 07B0     		add	sp, sp, #28
+ 173              		.cfi_def_cfa_offset 12
+ 174              		@ sp needed
+ 175 002e 30BD     		pop	{r4, r5, pc}
+   9:button.cpp    **** 
+ 176              		.loc 1 9 1 view .LVU30
+ 177              		.cfi_endproc
+ 178              	.LFE4788:
+ 180              		.section	.text._ZN6ButtonC2EN5daisy3PinEmm,"ax",%progbits
+ 181              		.align	1
+ 182              		.p2align 2,,3
+ 183              		.global	_ZN6ButtonC2EN5daisy3PinEmm
+ 184              		.syntax unified
+ 185              		.thumb
+ 186              		.thumb_func
+ 187              		.fpu fpv5-d16
+ 189              	_ZN6ButtonC2EN5daisy3PinEmm:
+ 190              	.LVL8:
+ 191              	.LFB4790:
   11:button.cpp    ****     gpio.Init(pin, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
- 178              		.loc 1 11 1 is_stmt 1 view -0
- 179              		.cfi_startproc
- 180              		@ args = 0, pretend = 0, frame = 8
- 181              		@ frame_needed = 0, uses_anonymous_args = 0
+ 192              		.loc 1 11 1 is_stmt 1 view -0
+ 193              		.cfi_startproc
+ 194              		@ args = 0, pretend = 0, frame = 8
+ 195              		@ frame_needed = 0, uses_anonymous_args = 0
   11:button.cpp    ****     gpio.Init(pin, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
- 182              		.loc 1 11 1 is_stmt 0 view .LVU28
- 183 0000 10B5     		push	{r4, lr}
- 184              		.cfi_def_cfa_offset 8
- 185              		.cfi_offset 4, -8
- 186              		.cfi_offset 14, -4
- 187              	.LBB67:
- 188              	.LBB68:
- 189              	.LBB69:
- 190              	.LBB70:
-  69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
- 191              		.loc 2 69 73 view .LVU29
- 192 0002 0022     		movs	r2, #0
- 193              	.LVL8:
-  69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
- 194              		.loc 2 69 73 view .LVU30
- 195              	.LBE70:
- 196              	.LBE69:
- 197              	.LBE68:
- 198              	.LBE67:
-  11:button.cpp    ****     gpio.Init(pin, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
- 199              		.loc 1 11 1 view .LVU31
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 11
+ 196              		.loc 1 11 1 is_stmt 0 view .LVU32
+ 197 0000 30B5     		push	{r4, r5, lr}
+ 198              		.cfi_def_cfa_offset 12
+ 199              		.cfi_offset 4, -12
+ 200              		.cfi_offset 5, -8
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 11
 
 
- 200 0004 84B0     		sub	sp, sp, #16
- 201              		.cfi_def_cfa_offset 24
- 202              	.LBB91:
- 203              	.LBB86:
- 204              	.LBB81:
- 205              	.LBB76:
- 206              	.LBB71:
- 207              	.LBB72:
- 208              		.loc 3 272 43 view .LVU32
- 209 0006 4FF00B0C 		mov	ip, #11
- 210 000a FF23     		movs	r3, #255
- 211              	.LVL9:
- 212              		.loc 3 272 43 view .LVU33
- 213              	.LBE72:
- 214              	.LBE71:
- 215              	.LBE76:
- 216              	.LBE81:
- 217              	.LBE86:
- 218              	.LBE91:
+ 201              		.cfi_offset 14, -4
+ 202              	.LBB70:
+ 203              	.LBB71:
+ 204              	.LBB72:
+ 205              	.LBB73:
+ 206              	.LBB74:
+ 207              	.LBB75:
+ 208              		.loc 3 272 43 view .LVU33
+ 209 0002 0B22     		movs	r2, #11
+ 210              	.LVL9:
+ 211              		.loc 3 272 43 view .LVU34
+ 212              	.LBE75:
+ 213              	.LBE74:
+ 214              	.LBE73:
+ 215              	.LBE72:
+ 216              	.LBE71:
+ 217              	.LBE70:
   11:button.cpp    ****     gpio.Init(pin, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
- 219              		.loc 1 11 1 view .LVU34
- 220 000c ADF80C10 		strh	r1, [sp, #12]	@ movhi
- 221 0010 0446     		mov	r4, r0
- 222              	.LVL10:
- 223              	.LBB92:
- 224              	.LBB87:
- 225              	.LBI68:
- 226              		.loc 2 74 5 is_stmt 1 view .LVU35
- 227              	.LBB82:
- 228              	.LBI69:
+ 218              		.loc 1 11 1 view .LVU35
+ 219 0004 85B0     		sub	sp, sp, #20
+ 220              		.cfi_def_cfa_offset 32
+ 221              	.LBB101:
+ 222              	.LBB95:
+ 223              	.LBB89:
+ 224              	.LBB83:
+  69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
+ 225              		.loc 2 69 73 view .LVU36
+ 226 0006 0025     		movs	r5, #0
+ 227              	.LBB79:
+ 228              	.LBB76:
+ 229              		.loc 3 272 43 view .LVU37
+ 230 0008 FF23     		movs	r3, #255
+ 231              	.LVL10:
+ 232              		.loc 3 272 43 view .LVU38
+ 233              	.LBE76:
+ 234              	.LBE79:
+ 235              	.LBE83:
+ 236              	.LBE89:
+ 237              	.LBE95:
+ 238              	.LBE101:
+  11:button.cpp    ****     gpio.Init(pin, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
+ 239              		.loc 1 11 1 view .LVU39
+ 240 000a ADF80C10 		strh	r1, [sp, #12]	@ movhi
+ 241 000e 0446     		mov	r4, r0
+ 242              	.LVL11:
+ 243              	.LBB102:
+ 244              	.LBB96:
+ 245              	.LBI71:
+ 246              		.loc 2 74 5 is_stmt 1 view .LVU40
+ 247              	.LBB90:
+ 248              	.LBI72:
   68:../DaisyExamples/libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
- 229              		.loc 2 68 9 view .LVU36
- 230              	.LBB77:
- 231              	.LBB74:
- 232              	.LBI71:
- 233              		.loc 3 272 15 view .LVU37
- 234              	.LBE74:
- 235              	.LBE77:
- 236              	.LBE82:
- 237              	.LBE87:
- 238              		.loc 1 12 14 is_stmt 0 view .LVU38
- 239 0012 0092     		str	r2, [sp]
- 240              	.LBB88:
- 241              	.LBB83:
- 242              	.LBB78:
- 243              	.LBB75:
- 244              	.LBB73:
- 245              		.loc 3 272 43 view .LVU39
- 246 0014 80F800C0 		strb	ip, [r0]
- 247 0018 4370     		strb	r3, [r0, #1]
- 248              	.LVL11:
- 249              		.loc 3 272 43 view .LVU40
- 250              	.LBE73:
- 251              	.LBE75:
- 252              	.LBE78:
- 253              	.LBE83:
- 254              	.LBE88:
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 12
+ 249              		.loc 2 68 9 view .LVU41
+ 250              	.LBB84:
+ 251              	.LBB80:
+ 252              	.LBI74:
+ 253              		.loc 3 272 15 view .LVU42
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 12
 
 
- 255              		.loc 1 12 14 view .LVU41
- 256 001a 0223     		movs	r3, #2
- 257              	.LBB89:
- 258              	.LBB84:
- 259              	.LBB79:
+ 254              	.LBE80:
+ 255              	.LBE84:
+ 256              	.LBE90:
+ 257              	.LBE96:
+  12:button.cpp    ****     previousState = false;
+ 258              		.loc 1 12 14 is_stmt 0 view .LVU43
+ 259 0010 0095     		str	r5, [sp]
+ 260              	.LBB97:
+ 261              	.LBB91:
+ 262              	.LBB85:
+ 263              	.LBB81:
+ 264              	.LBB77:
+ 265              		.loc 3 272 43 view .LVU44
+ 266 0012 0270     		strb	r2, [r0]
+ 267              	.LBE77:
+ 268              	.LBE81:
+ 269              	.LBE85:
+ 270              	.LBE91:
+ 271              	.LBE97:
+  12:button.cpp    ****     previousState = false;
+ 272              		.loc 1 12 14 view .LVU45
+ 273 0014 2A46     		mov	r2, r5
+ 274              	.LBB98:
+ 275              	.LBB92:
+ 276              	.LBB86:
+ 277              	.LBB82:
+ 278              	.LBB78:
+ 279              		.loc 3 272 43 view .LVU46
+ 280 0016 4370     		strb	r3, [r0, #1]
+ 281              	.LVL12:
+ 282              		.loc 3 272 43 view .LVU47
+ 283              	.LBE78:
+ 284              	.LBE82:
+ 285              	.LBE86:
+ 286              	.LBE92:
+ 287              	.LBE98:
+  12:button.cpp    ****     previousState = false;
+ 288              		.loc 1 12 14 view .LVU48
+ 289 0018 0223     		movs	r3, #2
+ 290              	.LBB99:
+ 291              	.LBB93:
+ 292              	.LBB87:
   69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
- 260              		.loc 2 69 73 view .LVU42
- 261 001c C260     		str	r2, [r0, #12]
- 262              	.LVL12:
+ 293              		.loc 2 69 73 view .LVU49
+ 294 001a C560     		str	r5, [r0, #12]
+ 295              	.LVL13:
   69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
- 263              		.loc 2 69 73 view .LVU43
- 264              	.LBE79:
- 265              	.LBE84:
- 266              	.LBE89:
- 267              		.loc 1 12 5 is_stmt 1 view .LVU44
- 268              		.loc 1 12 14 is_stmt 0 view .LVU45
- 269 001e 0399     		ldr	r1, [sp, #12]
- 270              	.LBB90:
- 271              	.LBB85:
- 272              	.LBB80:
+ 296              		.loc 2 69 73 view .LVU50
+ 297              	.LBE87:
+ 298              	.LBE93:
+ 299              	.LBE99:
+  12:button.cpp    ****     previousState = false;
+ 300              		.loc 1 12 5 is_stmt 1 view .LVU51
+  12:button.cpp    ****     previousState = false;
+ 301              		.loc 1 12 14 is_stmt 0 view .LVU52
+ 302 001c 0399     		ldr	r1, [sp, #12]
+ 303              	.LBB100:
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 13
+
+
+ 304              	.LBB94:
+ 305              	.LBB88:
   69:../DaisyExamples/libDaisy/src/per/gpio.h ****         {
- 273              		.loc 2 69 73 view .LVU46
- 274 0020 C0E90122 		strd	r2, r2, [r0, #4]
- 275              	.LBE80:
- 276              	.LBE85:
- 277              	.LBE90:
- 278              		.loc 1 12 14 view .LVU47
- 279 0024 FFF7FEFF 		bl	_ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
- 280              	.LVL13:
- 281              		.loc 1 12 14 view .LVU48
- 282              	.LBE92:
+ 306              		.loc 2 69 73 view .LVU53
+ 307 001e C0E90155 		strd	r5, r5, [r0, #4]
+ 308              	.LBE88:
+ 309              	.LBE94:
+ 310              	.LBE100:
+  12:button.cpp    ****     previousState = false;
+ 311              		.loc 1 12 14 view .LVU54
+ 312 0022 FFF7FEFF 		bl	_ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
+ 313              	.LVL14:
+ 314              		.loc 1 13 5 is_stmt 1 view .LVU55
+ 315              	.LBE102:
+  14:button.cpp    **** }
+ 316              		.loc 1 14 1 is_stmt 0 view .LVU56
+ 317 0026 2046     		mov	r0, r4
+ 318              	.LBB103:
   13:button.cpp    **** }
- 283              		.loc 1 13 1 view .LVU49
- 284 0028 2046     		mov	r0, r4
- 285 002a 04B0     		add	sp, sp, #16
- 286              		.cfi_def_cfa_offset 8
- 287              		@ sp needed
- 288 002c 10BD     		pop	{r4, pc}
- 289              		.loc 1 13 1 view .LVU50
- 290              		.cfi_endproc
- 291              	.LFE4790:
- 293              		.global	_ZN6ButtonC1EN5daisy3PinEmm
- 294              		.thumb_set _ZN6ButtonC1EN5daisy3PinEmm,_ZN6ButtonC2EN5daisy3PinEmm
- 295 002e 00BF     		.section	.text._ZN6Button5CheckEv,"ax",%progbits
- 296              		.align	1
- 297              		.p2align 2,,3
- 298              		.global	_ZN6Button5CheckEv
- 299              		.syntax unified
- 300              		.thumb
- 301              		.thumb_func
- 302              		.fpu fpv5-d16
- 304              	_ZN6Button5CheckEv:
- 305              	.LVL14:
- 306              	.LFB4792:
-  14:button.cpp    **** 
-  15:button.cpp    **** bool Button::Check()
-  16:button.cpp    **** {
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 13
-
-
- 307              		.loc 1 16 1 is_stmt 1 view -0
- 308              		.cfi_startproc
- 309              		@ args = 0, pretend = 0, frame = 0
- 310              		@ frame_needed = 0, uses_anonymous_args = 0
+ 319              		.loc 1 13 19 view .LVU57
+ 320 0028 2575     		strb	r5, [r4, #20]
+ 321              	.LBE103:
+ 322              		.loc 1 14 1 view .LVU58
+ 323 002a 05B0     		add	sp, sp, #20
+ 324              		.cfi_def_cfa_offset 12
+ 325              		@ sp needed
+ 326 002c 30BD     		pop	{r4, r5, pc}
+ 327              		.loc 1 14 1 view .LVU59
+ 328              		.cfi_endproc
+ 329              	.LFE4790:
+ 331              		.global	_ZN6ButtonC1EN5daisy3PinEmm
+ 332              		.thumb_set _ZN6ButtonC1EN5daisy3PinEmm,_ZN6ButtonC2EN5daisy3PinEmm
+ 333 002e 00BF     		.section	.text._ZN6Button5CheckEv,"ax",%progbits
+ 334              		.align	1
+ 335              		.p2align 2,,3
+ 336              		.global	_ZN6Button5CheckEv
+ 337              		.syntax unified
+ 338              		.thumb
+ 339              		.thumb_func
+ 340              		.fpu fpv5-d16
+ 342              	_ZN6Button5CheckEv:
+ 343              	.LVL15:
+ 344              	.LFB4792:
+  15:button.cpp    **** 
+  16:button.cpp    **** bool Button::Check()
+  17:button.cpp    **** {
+ 345              		.loc 1 17 1 is_stmt 1 view -0
+ 346              		.cfi_startproc
+ 347              		@ args = 0, pretend = 0, frame = 0
+ 348              		@ frame_needed = 0, uses_anonymous_args = 0
+  18:button.cpp    ****     bool pressed = gpio.Read();
+ 349              		.loc 1 18 5 view .LVU61
   17:button.cpp    ****     bool pressed = gpio.Read();
- 311              		.loc 1 17 5 view .LVU52
-  16:button.cpp    ****     bool pressed = gpio.Read();
- 312              		.loc 1 16 1 is_stmt 0 view .LVU53
- 313 0000 38B5     		push	{r3, r4, r5, lr}
- 314              		.cfi_def_cfa_offset 16
- 315              		.cfi_offset 3, -16
- 316              		.cfi_offset 4, -12
- 317              		.cfi_offset 5, -8
- 318              		.cfi_offset 14, -4
-  16:button.cpp    ****     bool pressed = gpio.Read();
- 319              		.loc 1 16 1 view .LVU54
- 320 0002 0546     		mov	r5, r0
- 321              		.loc 1 17 29 view .LVU55
- 322 0004 FFF7FEFF 		bl	_ZN5daisy4GPIO4ReadEv
- 323              	.LVL15:
-  18:button.cpp    ****     bool changed = pressed == previousState;
-  19:button.cpp    ****     if(!changed)
- 324              		.loc 1 19 5 view .LVU56
- 325 0008 2B7D     		ldrb	r3, [r5, #20]	@ zero_extendqisi2
- 326              	.LVL16:
-  18:button.cpp    ****     bool changed = pressed == previousState;
- 327              		.loc 1 18 5 is_stmt 1 view .LVU57
- 328              		.loc 1 19 5 view .LVU58
- 329 000a 8342     		cmp	r3, r0
- 330 000c 06D1     		bne	.L9
+ 350              		.loc 1 17 1 is_stmt 0 view .LVU62
+ 351 0000 10B5     		push	{r4, lr}
+ 352              		.cfi_def_cfa_offset 8
+ 353              		.cfi_offset 4, -8
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 14
+
+
+ 354              		.cfi_offset 14, -4
+  17:button.cpp    ****     bool pressed = gpio.Read();
+ 355              		.loc 1 17 1 view .LVU63
+ 356 0002 0446     		mov	r4, r0
+ 357              		.loc 1 18 29 view .LVU64
+ 358 0004 FFF7FEFF 		bl	_ZN5daisy4GPIO4ReadEv
+ 359              	.LVL16:
+  19:button.cpp    ****     if(pressed == previousState)
+ 360              		.loc 1 19 5 view .LVU65
+ 361 0008 237D     		ldrb	r3, [r4, #20]	@ zero_extendqisi2
+ 362              	.LVL17:
+ 363              		.loc 1 19 5 is_stmt 1 view .LVU66
+ 364 000a 8342     		cmp	r3, r0
+ 365 000c 0DD0     		beq	.L10
   20:button.cpp    ****         return false;
   21:button.cpp    ****     previousState = pressed;
- 331              		.loc 1 21 5 view .LVU59
+ 366              		.loc 1 21 5 view .LVU67
+ 367              		.loc 1 21 19 is_stmt 0 view .LVU68
+ 368 000e 2075     		strb	r0, [r4, #20]
   22:button.cpp    ****     if(pressed)
- 332              		.loc 1 22 5 view .LVU60
- 333 000e 0446     		mov	r4, r0
- 334              	.LBB93:
- 335 0010 38B1     		cbz	r0, .L8
+ 369              		.loc 1 22 5 is_stmt 1 view .LVU69
+ 370              	.LBB104:
+ 371 0010 28B1     		cbz	r0, .L9
   23:button.cpp    ****     {
   24:button.cpp    ****         pressedTime = System::GetNow();
- 336              		.loc 1 24 9 view .LVU61
- 337              		.loc 1 24 37 is_stmt 0 view .LVU62
- 338 0012 FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
- 339              	.LVL17:
- 340              		.loc 1 24 21 view .LVU63
- 341 0016 A861     		str	r0, [r5, #24]
- 342              	.LBE93:
+ 372              		.loc 1 24 9 view .LVU70
+ 373              		.loc 1 24 37 is_stmt 0 view .LVU71
+ 374 0012 FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
+ 375              	.LVL18:
+ 376              		.loc 1 24 37 view .LVU72
+ 377 0016 0346     		mov	r3, r0
+ 378              	.LBE104:
   25:button.cpp    ****     }
   26:button.cpp    ****     else
   27:button.cpp    ****     {
   28:button.cpp    ****         uint32_t duration = System::GetNow() - pressedTime;
-  29:button.cpp    ****         longPress = duration > longTime;
-  30:button.cpp    ****     }
-  31:button.cpp    ****     return true;
-  32:button.cpp    **** }
- 343              		.loc 1 32 1 view .LVU64
- 344 0018 2046     		mov	r0, r4
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 14
+  29:button.cpp    ****         if(duration < 5) // bounce
+  30:button.cpp    ****             return false;
+  31:button.cpp    ****         longPress = duration > longTime;
+  32:button.cpp    ****         return true;
+  33:button.cpp    ****     }
+  34:button.cpp    ****     return false;
+ 379              		.loc 1 34 12 view .LVU73
+ 380 0018 0020     		movs	r0, #0
+ 381              	.LBB107:
+  24:button.cpp    ****     }
+ 382              		.loc 1 24 21 view .LVU74
+ 383 001a A361     		str	r3, [r4, #24]
+ 384              	.LBE107:
+ 385              		.loc 1 34 5 is_stmt 1 view .LVU75
+  35:button.cpp    **** }
+ 386              		.loc 1 35 1 is_stmt 0 view .LVU76
+ 387 001c 10BD     		pop	{r4, pc}
+ 388              	.LVL19:
+ 389              	.L9:
+ 390              	.LBB108:
+ 391              	.LBB105:
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 15
 
 
- 345 001a 38BD     		pop	{r3, r4, r5, pc}
- 346              	.LVL18:
- 347              	.L9:
+  28:button.cpp    ****         if(duration < 5) // bounce
+ 392              		.loc 1 28 9 is_stmt 1 view .LVU77
+  28:button.cpp    ****         if(duration < 5) // bounce
+ 393              		.loc 1 28 43 is_stmt 0 view .LVU78
+ 394 001e FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
+ 395              	.LVL20:
+  28:button.cpp    ****         if(duration < 5) // bounce
+ 396              		.loc 1 28 48 view .LVU79
+ 397 0022 A369     		ldr	r3, [r4, #24]
+ 398 0024 C31A     		subs	r3, r0, r3
+ 399              	.LVL21:
+  29:button.cpp    ****             return false;
+ 400              		.loc 1 29 9 is_stmt 1 view .LVU80
+ 401 0026 042B     		cmp	r3, #4
+ 402 0028 01D8     		bhi	.L12
+ 403              	.LVL22:
+ 404              	.L10:
+  29:button.cpp    ****             return false;
+ 405              		.loc 1 29 9 is_stmt 0 view .LVU81
+ 406              	.LBE105:
+ 407              	.LBE108:
   20:button.cpp    ****     previousState = pressed;
- 348              		.loc 1 20 16 view .LVU65
- 349 001c 0024     		movs	r4, #0
- 350              		.loc 1 32 1 view .LVU66
- 351 001e 2046     		mov	r0, r4
- 352              	.LVL19:
- 353              		.loc 1 32 1 view .LVU67
- 354 0020 38BD     		pop	{r3, r4, r5, pc}
- 355              	.LVL20:
- 356              	.L8:
- 357              	.LBB97:
- 358              	.LBB94:
-  28:button.cpp    ****         longPress = duration > longTime;
- 359              		.loc 1 28 9 is_stmt 1 view .LVU68
-  28:button.cpp    ****         longPress = duration > longTime;
- 360              		.loc 1 28 43 is_stmt 0 view .LVU69
- 361 0022 FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
- 362              	.LVL21:
-  29:button.cpp    ****     }
- 363              		.loc 1 29 9 is_stmt 1 view .LVU70
-  28:button.cpp    ****         longPress = duration > longTime;
- 364              		.loc 1 28 48 is_stmt 0 view .LVU71
- 365 0026 AA69     		ldr	r2, [r5, #24]
-  29:button.cpp    ****     }
- 366              		.loc 1 29 30 view .LVU72
- 367 0028 2B6A     		ldr	r3, [r5, #32]
- 368              	.LBE94:
- 369              	.LBE97:
-  31:button.cpp    **** }
- 370              		.loc 1 31 12 view .LVU73
- 371 002a 0124     		movs	r4, #1
- 372              	.LBB98:
- 373              	.LBB95:
-  28:button.cpp    ****         longPress = duration > longTime;
- 374              		.loc 1 28 48 view .LVU74
- 375 002c 801A     		subs	r0, r0, r2
- 376              	.LVL22:
-  29:button.cpp    ****     }
- 377              		.loc 1 29 30 view .LVU75
- 378 002e 8342     		cmp	r3, r0
- 379              	.LBE95:
- 380              	.LBE98:
- 381              		.loc 1 32 1 view .LVU76
- 382 0030 2046     		mov	r0, r4
- 383              	.LVL23:
- 384              	.LBB99:
- 385              	.LBB96:
-  29:button.cpp    ****     }
- 386              		.loc 1 29 30 view .LVU77
- 387 0032 2CBF     		ite	cs
- 388 0034 0023     		movcs	r3, #0
- 389 0036 0123     		movcc	r3, #1
- 390 0038 6B75     		strb	r3, [r5, #21]
- 391              	.LBE96:
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 15
+ 408              		.loc 1 20 16 view .LVU82
+ 409 002a 0020     		movs	r0, #0
+ 410              		.loc 1 35 1 view .LVU83
+ 411 002c 10BD     		pop	{r4, pc}
+ 412              	.LVL23:
+ 413              	.L12:
+ 414              	.LBB109:
+ 415              	.LBB106:
+  31:button.cpp    ****         return true;
+ 416              		.loc 1 31 9 is_stmt 1 view .LVU84
+  31:button.cpp    ****         return true;
+ 417              		.loc 1 31 30 is_stmt 0 view .LVU85
+ 418 002e 226A     		ldr	r2, [r4, #32]
+  32:button.cpp    ****     }
+ 419              		.loc 1 32 16 view .LVU86
+ 420 0030 0120     		movs	r0, #1
+  31:button.cpp    ****         return true;
+ 421              		.loc 1 31 30 view .LVU87
+ 422 0032 9A42     		cmp	r2, r3
+ 423 0034 2CBF     		ite	cs
+ 424 0036 0023     		movcs	r3, #0
+ 425              	.LVL24:
+  31:button.cpp    ****         return true;
+ 426              		.loc 1 31 30 view .LVU88
+ 427 0038 0123     		movcc	r3, #1
+ 428 003a 6375     		strb	r3, [r4, #21]
+  32:button.cpp    ****     }
+ 429              		.loc 1 32 9 is_stmt 1 view .LVU89
+ 430              	.LBE106:
+ 431              	.LBE109:
+ 432              		.loc 1 35 1 is_stmt 0 view .LVU90
+ 433 003c 10BD     		pop	{r4, pc}
+ 434              		.loc 1 35 1 view .LVU91
+ 435              		.cfi_endproc
+ 436              	.LFE4792:
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 16
 
 
- 392              	.LBE99:
- 393              		.loc 1 32 1 view .LVU78
- 394 003a 38BD     		pop	{r3, r4, r5, pc}
- 395              		.loc 1 32 1 view .LVU79
- 396              		.cfi_endproc
- 397              	.LFE4792:
- 399              		.section	.text._ZN6Button10GetPressedEv,"ax",%progbits
- 400              		.align	1
- 401              		.p2align 2,,3
- 402              		.global	_ZN6Button10GetPressedEv
- 403              		.syntax unified
- 404              		.thumb
- 405              		.thumb_func
- 406              		.fpu fpv5-d16
- 408              	_ZN6Button10GetPressedEv:
- 409              	.LVL24:
- 410              	.LFB4793:
-  33:button.cpp    **** 
-  34:button.cpp    **** bool Button::GetPressed()
-  35:button.cpp    **** {
- 411              		.loc 1 35 1 is_stmt 1 view -0
- 412              		.cfi_startproc
- 413              		@ args = 0, pretend = 0, frame = 0
- 414              		@ frame_needed = 0, uses_anonymous_args = 0
- 415              		@ link register save eliminated.
-  36:button.cpp    ****     return previousState;
- 416              		.loc 1 36 5 view .LVU81
-  37:button.cpp    **** }
- 417              		.loc 1 37 1 is_stmt 0 view .LVU82
- 418 0000 007D     		ldrb	r0, [r0, #20]	@ zero_extendqisi2
- 419              	.LVL25:
- 420              		.loc 1 37 1 view .LVU83
- 421 0002 7047     		bx	lr
- 422              		.cfi_endproc
- 423              	.LFE4793:
- 425              		.section	.text._ZN6Button7GetLongEv,"ax",%progbits
- 426              		.align	1
- 427              		.p2align 2,,3
- 428              		.global	_ZN6Button7GetLongEv
- 429              		.syntax unified
- 430              		.thumb
- 431              		.thumb_func
- 432              		.fpu fpv5-d16
- 434              	_ZN6Button7GetLongEv:
- 435              	.LVL26:
- 436              	.LFB4794:
-  38:button.cpp    **** 
-  39:button.cpp    **** bool Button::GetLong()
-  40:button.cpp    **** {
- 437              		.loc 1 40 1 is_stmt 1 view -0
- 438              		.cfi_startproc
- 439              		@ args = 0, pretend = 0, frame = 0
- 440              		@ frame_needed = 0, uses_anonymous_args = 0
- 441              		@ link register save eliminated.
-  41:button.cpp    ****     return longPress;
- 442              		.loc 1 41 5 view .LVU85
-  42:button.cpp    **** }...
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 16
+ 438 003e 00BF     		.section	.text._ZN6Button10GetPressedEv,"ax",%progbits
+ 439              		.align	1
+ 440              		.p2align 2,,3
+ 441              		.global	_ZN6Button10GetPressedEv
+ 442              		.syntax unified
+ 443              		.thumb
+ 444              		.thumb_func
+ 445              		.fpu fpv5-d16
+ 447              	_ZN6Button10GetPressedEv:
+ 448              	.LVL25:
+ 449              	.LFB4793:
+  36:button.cpp    **** 
+  37:button.cpp    **** bool Button::GetPressed()
+  38:button.cpp    **** {
+ 450              		.loc 1 38 1 is_stmt 1 view -0
+ 451              		.cfi_startproc
+ 452              		@ args = 0, pretend = 0, frame = 0
+ 453              		@ frame_needed = 0, uses_anonymous_args = 0
+ 454              		@ link register save eliminated.
+  39:button.cpp    ****     return previousState;
+ 455              		.loc 1 39 5 view .LVU93
+  40:button.cpp    **** }
+ 456              		.loc 1 40 1 is_stmt 0 view .LVU94
+ 457 0000 007D     		ldrb	r0, [r0, #20]	@ zero_extendqisi2
+ 458              	.LVL26:
+ 459              		.loc 1 40 1 view .LVU95
+ 460 0002 7047     		bx	lr
+ 461              		.cfi_endproc
+ 462              	.LFE4793:
+ 464              		.section	.text._ZN6Button7GetLongEv,"ax",%progbits
+ 465              		.align	1
+ 466              		.p2align 2,,3
+ 467              		.global	_ZN6Button7GetLongEv
+ 468              		.syntax unified
+ 469              		.thumb
+ 470              		.thumb_func
+ 471              		.fpu fpv5-d16
+ 473              	_ZN6Button7GetLongEv:
+ 474              	.LVL27:
+ 475              	.LFB4794:
+  41:button.cpp    **** 
+  42:button.cpp    **** bool Button::GetLong()
+  43:button.cpp    **** {
+ 476              		.loc 1 43 1 is_stmt 1 view -0
+ 477              		.cfi_startproc
+ 478              		@ args = 0, pretend = 0, frame = 0
+ 479              		@ frame_needed = 0, uses_anonymous_args = 0
+ 480              		@ link register save eliminated.
+  44:button.cpp    ****     return longPress;
+ 481              		.loc 1 44 5 view .LVU97
+  45:button.cpp    **** }...
+ 482              		.loc 1 45 1 is_stmt 0 view .LVU98
+ 483 0000 407D     		ldrb	r0, [r0, #21]	@ zero_extendqisi2
+ 484              	.LVL28:
+ 485              		.loc 1 45 1 view .LVU99
+ 486 0002 7047     		bx	lr
+ 487              		.cfi_endproc
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 17
 
 
- 443              		.loc 1 42 1 is_stmt 0 view .LVU86
- 444 0000 407D     		ldrb	r0, [r0, #21]	@ zero_extendqisi2
- 445              	.LVL27:
- 446              		.loc 1 42 1 view .LVU87
- 447 0002 7047     		bx	lr
- 448              		.cfi_endproc
- 449              	.LFE4794:
- 451              		.text
- 452              	.Letext0:
- 453              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
- 454              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
- 455              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
- 456              		.file 7 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
- 457              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
- 458              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 459              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
- 460              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
- 461              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
- 462              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
- 463              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
- 464              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
- 465              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
- 466              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
- 467              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
- 468              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
- 469              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
- 470              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
- 471              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
- 472              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
- 473              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
- 474              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
- 475              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
- 476              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
- 477              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
- 478              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 479              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
- 480              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 481              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
- 482              		.file 33 "../DaisyExamples/libDaisy/src/per/tim.h"
- 483              		.file 34 "../DaisyExamples/libDaisy/src/sys/system.h"
- 484              		.file 35 "../DaisyExamples/libDaisy/src/util/wav_format.h"
- 485              		.file 36 "../DaisyExamples/libDaisy/src/dev/max11300.h"
- 486              		.file 37 "../DaisyExamples/libDaisy/src/daisy_seed.h"
- 487              		.file 38 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
- 488              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
- 489              		.file 40 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
- 490              		.file 41 "../DaisyExamples/DaisySP/Source/Control/adenv.h"
- 491              		.file 42 "../DaisyExamples/DaisySP/Source/Utility/dsp.h"
- 492              		.file 43 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
- 493              		.file 44 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
- 494              		.file 45 "button.h"
- 495              		.file 46 "<built-in>"
- 496              		.file 47 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccYboeAg.s 			page 17
+ 488              	.LFE4794:
+ 490              		.text
+ 491              	.Letext0:
+ 492              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 493              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 494              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 495              		.file 7 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 496              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 497              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 498              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 499              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 500              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 501              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 502              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 503              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 504              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 505              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 506              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 507              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 508              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 509              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 510              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 511              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 512              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
+ 513              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 514              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 515              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 516              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 517              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 518              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 519              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 520              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 521              		.file 33 "../DaisyExamples/libDaisy/src/per/tim.h"
+ 522              		.file 34 "../DaisyExamples/libDaisy/src/sys/system.h"
+ 523              		.file 35 "../DaisyExamples/libDaisy/src/util/wav_format.h"
+ 524              		.file 36 "../DaisyExamples/libDaisy/src/dev/max11300.h"
+ 525              		.file 37 "../DaisyExamples/libDaisy/src/daisy_seed.h"
+ 526              		.file 38 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 527              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 528              		.file 40 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 529              		.file 41 "../DaisyExamples/DaisySP/Source/Control/adenv.h"
+ 530              		.file 42 "../DaisyExamples/DaisySP/Source/Utility/dsp.h"
+ 531              		.file 43 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 532              		.file 44 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 533              		.file 45 "button.h"
+ 534              		.file 46 "<built-in>"
+ 535              		.file 47 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 button.cpp
-C:\Users\papag\AppData\Local\Temp\ccYboeAg.s:17     .text._ZN6Button3NewEN5daisy3PinEmm:00000000 $t
-C:\Users\papag\AppData\Local\Temp\ccYboeAg.s:26     .text._ZN6Button3NewEN5daisy3PinEmm:00000000 _ZN6Button3NewEN5daisy3PinEmm
-C:\Users\papag\AppData\Local\Temp\ccYboeAg.s:167    .text._ZN6ButtonC2EN5daisy3PinEmm:00000000 $t
-C:\Users\papag\AppData\Local\Temp\ccYboeAg.s:175    .text._ZN6ButtonC2EN5daisy3PinEmm:00000000 _ZN6ButtonC2EN5daisy3PinEmm
-C:\Users\papag\AppData\Local\Temp\ccYboeAg.s:175    .text._ZN6ButtonC2EN5daisy3PinEmm:00000000 _ZN6ButtonC1EN5daisy3PinEmm
-C:\Users\papag\AppData\Local\Temp\ccYboeAg.s:296    .text._ZN6Button5CheckEv:00000000 $t
-C:\Users\papag\AppData\Local\Temp\ccYboeAg.s:304    .text._ZN6Button5CheckEv:00000000 _ZN6Button5CheckEv
-C:\Users\papag\AppData\Local\Temp\ccYboeAg.s:400    .text._ZN6Button10GetPressedEv:00000000 $t
-C:\Users\papag\AppData\Local\Temp\ccYboeAg.s:408    .text._ZN6Button10GetPressedEv:00000000 _ZN6Button10GetPressedEv
-C:\Users\papag\AppData\Local\Temp\ccYboeAg.s:426    .text._ZN6Button7GetLongEv:00000000 $t
-C:\Users\papag\AppData\Local\Temp\ccYboeAg.s:434    .text._ZN6Button7GetLongEv:00000000 _ZN6Button7GetLongEv
+C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s:17     .text._ZN6Button3NewEN5daisy3PinEmm:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s:26     .text._ZN6Button3NewEN5daisy3PinEmm:00000000 _ZN6Button3NewEN5daisy3PinEmm
+C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s:181    .text._ZN6ButtonC2EN5daisy3PinEmm:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s:189    .text._ZN6ButtonC2EN5daisy3PinEmm:00000000 _ZN6ButtonC2EN5daisy3PinEmm
+C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s:189    .text._ZN6ButtonC2EN5daisy3PinEmm:00000000 _ZN6ButtonC1EN5daisy3PinEmm
+C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s:334    .text._ZN6Button5CheckEv:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s:342    .text._ZN6Button5CheckEv:00000000 _ZN6Button5CheckEv
+C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s:439    .text._ZN6Button10GetPressedEv:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s:447    .text._ZN6Button10GetPressedEv:00000000 _ZN6Button10GetPressedEv
+C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s:465    .text._ZN6Button7GetLongEv:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccTSRJMk.s:473    .text._ZN6Button7GetLongEv:00000000 _ZN6Button7GetLongEv
 
 UNDEFINED SYMBOLS
 _ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE

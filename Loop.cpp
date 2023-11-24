@@ -6,8 +6,8 @@
 #include "button.h"
 #include "dualLedButton.h"
 
-// 1MB test
-#define TEST_BUFF_SIZE (1024 * 1024)
+#define NUM_TRACKS 4
+
 
 using namespace daisy;
 using namespace daisy::seed;
@@ -18,17 +18,15 @@ using namespace daisysp;
 
 static DaisySeed hw;
 
-static float *ram = (float *)0xC0000000; // SDRAM
-
+static float *ram = (float *)0xC0000000;
+static float *end = (float *)0xC0000000 + 64 * 1024 * 1024;
+static float *head = ram;
 
 static GPIO loopTrig;
 static bool previousLoopTrig;
 
-static uint32_t  start, end, dur;
-
 static const uint32_t shortClick = 50;
 static const uint32_t longClick = 400;
-
 
 static DualLedButton dualLedBtns[] = {
     DualLedButton::New(D20, shortClick, longClick, D22, D21),
@@ -47,33 +45,69 @@ static Track tracks[] = {
 static Button recordBtn = Button::New(D13, shortClick, longClick);
 static Button clearBtn = Button::New(D14, shortClick, longClick);
 
+static int loopBlink = 0;
+
+void Loop()
+{
+    head = ram;
+    for(int j = 0; j < NUM_TRACKS; j++)
+    {
+        tracks[j].Loop();
+    }
+    loopBlink = 480;
+}
+
 void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
                    AudioHandle::InterleavingOutputBuffer out,
                    size_t                                size)
 {
-    start = System::GetTick();
-    memcpy(ram, in, sizeof(float) * size);
-    for(int i = 0; i < 300; i++)
-    {
-        memcpy((i + 1) * size + ram, ram, sizeof(float) * size);
-    }
-    end = System::GetTick();
-    dur = (end - start) / 200; // us
+    //start = System::GetTick();
+    //memcpy(ram, in, sizeof(float) * size);
+    //for(int i = 0; i < 300; i++)
+    //{
+    //    memcpy((i + 1) * size + ram, ram, sizeof(float) * size);
+    //}
+    //end = System::GetTick();
+    //dur = (end - start) / 200; // us
     memcpy(out, in, sizeof(float) * size);
+
+    if(previousLoopTrig != loopTrig.Read()) {
+        previousLoopTrig = !previousLoopTrig;
+
+        if(previousLoopTrig)
+            Loop();
+    }
 
     bool recordChanged = recordBtn.Check();
 
     bool clearChanged = clearBtn.Check();
 
-    //state = UpdateMainState(record, clear, remainingTime);
-
-    for(int i = 0; i < 4; i++)
-    {
-        //tracks[i].UpdateTrackState(state, remainingTime);
-
-        tracks[i].Audio(in, out, size, ram);
+    for(size_t i = 0; i < size; i += 2) {
+        for(int j = 0; j < NUM_TRACKS; j++)
+        {
+            tracks[j].Audio(in[i], in[i+1], &out[i], &out[i+1], head, head+1);
+            head+=2;
+            if(loopBlink > 0)
+                tracks[j].GetButton()->Color(1 + loopBlink % 2);
+        }
+        if(loopBlink > 0)
+            loopBlink--;
     }
 
+    for(int j = 0; j < NUM_TRACKS; j++)
+    {
+        tracks[j].Check(clearBtn.GetPressed(), recordBtn.GetPressed());
+    }
+
+    //state = UpdateMainState(record, clear, remainingTime);
+
+        //tracks[i].UpdateTrackState(state, remainingTime);
+
+
+    head += NUM_TRACKS * 2 * sizeof(float) * size;
+
+    if(head >= end)
+        Loop();
 }
 
 int main(void)
@@ -81,29 +115,29 @@ int main(void)
     // Initialize Hardware
     hw.Init();
 
+    memset(ram, 0, end-ram);
+
     loopTrig.Init(D15, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
+    previousLoopTrig = loopTrig.Read();
 
     hw.SetAudioBlockSize(4);
 
-    //hw.StartAudio(AudioCallback);
-
-    while(1) {
-
-        uint32_t now = System::GetNow();
-
+    for(int j = 0; j < 6; j++)
+    {
         for(int i = 0; i < 4; i++)
-            dualLedBtns[i].Off();
+        {
+            if(i == j)
+                dualLedBtns[i].Red();
+            else if(i == j-1)
+                dualLedBtns[i].Green();
+            else
+                dualLedBtns[i].Off();
+        }
 
-        System::Delay(500);
-
-        for(int i = 0; i < 4; i++)
-            dualLedBtns[i].Green();
-
-        System::Delay(500);
-
-        for(int i = 0; i < 4; i++)
-            dualLedBtns[i].Red();
-
-        System::Delay(500);
+        System::Delay(300);
     }
+
+    hw.StartAudio(AudioCallback);
+
+    for(;;) {}
 }

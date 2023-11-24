@@ -11,6 +11,7 @@ class Track {
     public:
     enum State {
         BLANK,
+        MUTED,
         PLAYING,
         RECORDING,
         LOOPING,
@@ -19,17 +20,20 @@ class Track {
     };
 
     private:
-        State state;
+        State state, nextState;
         int ordinal;
         DualLedButton *button;
 
     public:
         Track(int ordinal, DualLedButton *btn);
         static Track New(int ordinal, DualLedButton *button);
-        void Audio(AudioHandle::InterleavingInputBuffer  in,
-                           AudioHandle::InterleavingOutputBuffer out,
-                           size_t                                size,
-                           float *buffer);
+        void Audio(
+            const float leftIn, const float rightIn, 
+            float *leftOut, float *rightOut, 
+            float *bufferLeft, float *bufferRight);
+        void Loop();
+        DualLedButton *GetButton();
+        void Check(bool clear, bool record);
 };
 
 #endif
