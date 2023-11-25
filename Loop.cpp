@@ -13,14 +13,11 @@ using namespace daisy;
 using namespace daisy::seed;
 using namespace daisysp;
 
-
-//static uint32_t DSY_SDRAM_BSS test_buff[TEST_BUFF_SIZE];
-
 static DaisySeed hw;
 
-static float *ram = (float *)0xC0000000;
-static float *end = (float *)0xC0000000 + 64 * 1024 * 1024;
-static float *head = ram;
+static float DSY_SDRAM_BSS buffer[16 * 1024 * 1024];
+
+static uint32_t head;
 
 static GPIO loopTrig;
 static bool previousLoopTrig;
@@ -49,7 +46,7 @@ static int loopBlink = 0;
 
 void Loop()
 {
-    head = ram;
+    head = 0;
     for(int j = 0; j < NUM_TRACKS; j++)
     {
         tracks[j].Loop();
@@ -85,7 +82,7 @@ void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
     for(size_t i = 0; i < size; i += 2) {
         for(int j = 0; j < NUM_TRACKS; j++)
         {
-            tracks[j].Audio(in[i], in[i+1], &out[i], &out[i+1], head, head+1);
+            tracks[j].Audio(in[i], in[i+1], &out[i], &out[i+1], (float*)&buffer[head], (float*)&buffer[head+1]);
             head+=2;
             if(loopBlink > 0)
                 tracks[j].GetButton()->Color(1 + loopBlink % 2);
@@ -103,10 +100,7 @@ void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
 
         //tracks[i].UpdateTrackState(state, remainingTime);
 
-
-    head += NUM_TRACKS * 2 * sizeof(float) * size;
-
-    if(head >= end)
+    if(head >= 16 * 1024 * 1024)
         Loop();
 }
 
@@ -115,7 +109,7 @@ int main(void)
     // Initialize Hardware
     hw.Init();
 
-    memset(ram, 0, end-ram);
+    memset((float*)0xC0000000, 0, 64 * 1024 * 1024);
 
     loopTrig.Init(D15, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
     previousLoopTrig = loopTrig.Read();
