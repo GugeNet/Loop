@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 1
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -44,747 +44,779 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 1
   35              	.LBB5:
    8:track.cpp     ****     ordinal = o;
   36              		.loc 1 8 5 view .LVU1
-  37              		.loc 1 8 13 is_stmt 0 view .LVU2
-  38 0000 C0E90112 		strd	r1, r2, [r0, #4]
    9:track.cpp     ****     button = btn;
-  39              		.loc 1 9 5 is_stmt 1 view .LVU3
   10:track.cpp     ****     state = BLANK;
-  40              		.loc 1 10 5 view .LVU4
-  11:track.cpp     **** 
-  12:track.cpp     ****     if(o == 0) {
-  41              		.loc 1 12 5 view .LVU5
-  42 0004 11B1     		cbz	r1, .L2
-  10:track.cpp     ****     state = BLANK;
+  37              		.loc 1 10 11 is_stmt 0 view .LVU2
+  38 0000 0023     		movs	r3, #0
+   8:track.cpp     ****     ordinal = o;
+  39              		.loc 1 8 13 view .LVU3
+  40 0002 C0E90112 		strd	r1, r2, [r0, #4]
+   9:track.cpp     ****     button = btn;
+  41              		.loc 1 9 5 is_stmt 1 view .LVU4
+  42              		.loc 1 10 5 view .LVU5
   43              		.loc 1 10 11 is_stmt 0 view .LVU6
-  44 0006 0023     		movs	r3, #0
-  45 0008 0370     		strb	r3, [r0]
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 2
+  44 0006 0370     		strb	r3, [r0]
+  11:track.cpp     ****     heartbeat = 0;
+  45              		.loc 1 11 5 is_stmt 1 view .LVU7
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 2
 
 
-  46 000a 7047     		bx	lr
-  47              	.L2:
-  13:track.cpp     ****         state = RECORDING;
-  48              		.loc 1 13 9 is_stmt 1 view .LVU7
-  14:track.cpp     ****         nextState = PLAYING;
-  49              		.loc 1 14 9 view .LVU8
-  13:track.cpp     ****         state = RECORDING;
-  50              		.loc 1 13 15 is_stmt 0 view .LVU9
-  51 000c 40F20323 		movw	r3, #515
-  52 0010 0380     		strh	r3, [r0]	@ movhi
-  53              	.LBE5:
-  15:track.cpp     ****     }
-  16:track.cpp     **** }
-  54              		.loc 1 16 1 view .LVU10
-  55 0012 7047     		bx	lr
-  56              		.cfi_endproc
-  57              	.LFE4789:
-  59              		.global	_ZN5TrackC1EiP13DualLedButton
-  60              		.thumb_set _ZN5TrackC1EiP13DualLedButton,_ZN5TrackC2EiP13DualLedButton
-  61              		.section	.text._ZN5Track3NewEiP13DualLedButton,"ax",%progbits
-  62              		.align	1
-  63              		.p2align 2,,3
-  64              		.global	_ZN5Track3NewEiP13DualLedButton
-  65              		.syntax unified
-  66              		.thumb
-  67              		.thumb_func
-  68              		.fpu fpv5-d16
-  70              	_ZN5Track3NewEiP13DualLedButton:
-  71              	.LVL1:
-  72              	.LFB4791:
-  17:track.cpp     **** 
-  18:track.cpp     **** Track Track::New(int o, DualLedButton *btn) {
-  73              		.loc 1 18 45 is_stmt 1 view -0
-  74              		.cfi_startproc
-  75              		@ args = 0, pretend = 0, frame = 0
-  76              		@ frame_needed = 0, uses_anonymous_args = 0
-  77              		@ link register save eliminated.
-  19:track.cpp     ****     return Track(o, btn);
-  78              		.loc 1 19 5 view .LVU12
-  79              	.LBB6:
-  80              	.LBI6:
+  46              		.loc 1 11 15 is_stmt 0 view .LVU8
+  47 0008 C360     		str	r3, [r0, #12]
+  12:track.cpp     **** 
+  13:track.cpp     ****     if(o == 0) {
+  48              		.loc 1 13 5 is_stmt 1 view .LVU9
+  49 000a 09B9     		cbnz	r1, .L2
+  14:track.cpp     ****         state = BLANK;
+  50              		.loc 1 14 9 view .LVU10
+  15:track.cpp     ****         nextState = RECORDING;
+  51              		.loc 1 15 9 view .LVU11
+  52              		.loc 1 15 19 is_stmt 0 view .LVU12
+  53 000c 0323     		movs	r3, #3
+  54 000e 4370     		strb	r3, [r0, #1]
+  55              	.L2:
+  56              	.LBE5:
+  16:track.cpp     ****     }
+  17:track.cpp     **** }
+  57              		.loc 1 17 1 view .LVU13
+  58 0010 7047     		bx	lr
+  59              		.cfi_endproc
+  60              	.LFE4789:
+  62              		.global	_ZN5TrackC1EiP13DualLedButton
+  63              		.thumb_set _ZN5TrackC1EiP13DualLedButton,_ZN5TrackC2EiP13DualLedButton
+  64 0012 00BF     		.section	.text._ZN5Track3NewEiP13DualLedButton,"ax",%progbits
+  65              		.align	1
+  66              		.p2align 2,,3
+  67              		.global	_ZN5Track3NewEiP13DualLedButton
+  68              		.syntax unified
+  69              		.thumb
+  70              		.thumb_func
+  71              		.fpu fpv5-d16
+  73              	_ZN5Track3NewEiP13DualLedButton:
+  74              	.LVL1:
+  75              	.LFB4791:
+  18:track.cpp     **** 
+  19:track.cpp     **** Track Track::New(int o, DualLedButton *btn) {
+  76              		.loc 1 19 45 is_stmt 1 view -0
+  77              		.cfi_startproc
+  78              		@ args = 0, pretend = 0, frame = 0
+  79              		@ frame_needed = 0, uses_anonymous_args = 0
+  80              		@ link register save eliminated.
+  20:track.cpp     ****     return Track(o, btn);
+  81              		.loc 1 20 5 view .LVU15
+  82              	.LBB6:
+  83              	.LBB7:
+  84              	.LBB8:
+  10:track.cpp     ****     heartbeat = 0;
+  85              		.loc 1 10 11 is_stmt 0 view .LVU16
+  86 0000 0023     		movs	r3, #0
+  87              	.LVL2:
+  10:track.cpp     ****     heartbeat = 0;
+  88              		.loc 1 10 11 view .LVU17
+  89              	.LBE8:
+  90              	.LBE7:
+  91              	.LBI6:
    7:track.cpp     ****     ordinal = o;
-  81              		.loc 1 7 1 view .LVU13
-  82              	.LBB7:
-  83              	.LBB8:
+  92              		.loc 1 7 1 is_stmt 1 view .LVU18
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 3
+
+
+  93              	.LBB10:
+  94              	.LBB9:
    8:track.cpp     ****     button = btn;
-  84              		.loc 1 8 5 view .LVU14
+  95              		.loc 1 8 5 view .LVU19
    8:track.cpp     ****     button = btn;
-  85              		.loc 1 8 13 is_stmt 0 view .LVU15
-  86 0000 C0E90112 		strd	r1, r2, [r0, #4]
+  96              		.loc 1 8 13 is_stmt 0 view .LVU20
+  97 0002 C0E90112 		strd	r1, r2, [r0, #4]
    9:track.cpp     ****     state = BLANK;
-  87              		.loc 1 9 5 is_stmt 1 view .LVU16
-  10:track.cpp     **** 
-  88              		.loc 1 10 5 view .LVU17
-  12:track.cpp     ****         state = RECORDING;
-  89              		.loc 1 12 5 view .LVU18
-  90 0004 11B1     		cbz	r1, .L6
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 3
+  98              		.loc 1 9 5 is_stmt 1 view .LVU21
+  10:track.cpp     ****     heartbeat = 0;
+  99              		.loc 1 10 5 view .LVU22
+  10:track.cpp     ****     heartbeat = 0;
+ 100              		.loc 1 10 11 is_stmt 0 view .LVU23
+ 101 0006 0370     		strb	r3, [r0]
+  11:track.cpp     **** 
+ 102              		.loc 1 11 5 is_stmt 1 view .LVU24
+  11:track.cpp     **** 
+ 103              		.loc 1 11 15 is_stmt 0 view .LVU25
+ 104 0008 C360     		str	r3, [r0, #12]
+  13:track.cpp     ****         state = BLANK;
+ 105              		.loc 1 13 5 is_stmt 1 view .LVU26
+ 106 000a 09B9     		cbnz	r1, .L4
+  14:track.cpp     ****         nextState = RECORDING;
+ 107              		.loc 1 14 9 view .LVU27
+  15:track.cpp     ****     }
+ 108              		.loc 1 15 9 view .LVU28
+  15:track.cpp     ****     }
+ 109              		.loc 1 15 19 is_stmt 0 view .LVU29
+ 110 000c 0323     		movs	r3, #3
+ 111 000e 4370     		strb	r3, [r0, #1]
+ 112              	.LVL3:
+ 113              	.L4:
+  15:track.cpp     ****     }
+ 114              		.loc 1 15 19 view .LVU30
+ 115              	.LBE9:
+ 116              	.LBE10:
+ 117              	.LBE6:
+  21:track.cpp     **** }
+ 118              		.loc 1 21 1 view .LVU31
+ 119 0010 7047     		bx	lr
+ 120              		.cfi_endproc
+ 121              	.LFE4791:
+ 123 0012 00BF     		.section	.text._ZN5Track5AudioEffPfS0_S0_S0_,"ax",%progbits
+ 124              		.align	1
+ 125              		.p2align 2,,3
+ 126              		.global	_ZN5Track5AudioEffPfS0_S0_S0_
+ 127              		.syntax unified
+ 128              		.thumb
+ 129              		.thumb_func
+ 130              		.fpu fpv5-d16
+ 132              	_ZN5Track5AudioEffPfS0_S0_S0_:
+ 133              	.LVL4:
+ 134              	.LFB4792:
+  22:track.cpp     **** 
+  23:track.cpp     **** void Track::Audio(
+  24:track.cpp     ****     const float leftIn, const float rightIn, 
+  25:track.cpp     ****     float *leftOut, float *rightOut, 
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 4
 
 
-  10:track.cpp     **** 
-  91              		.loc 1 10 11 is_stmt 0 view .LVU19
-  92 0006 0023     		movs	r3, #0
-  93 0008 0370     		strb	r3, [r0]
-  94 000a 7047     		bx	lr
-  95              	.L6:
-  13:track.cpp     ****         nextState = PLAYING;
-  96              		.loc 1 13 9 is_stmt 1 view .LVU20
-  14:track.cpp     ****     }
-  97              		.loc 1 14 9 view .LVU21
-  13:track.cpp     ****         nextState = PLAYING;
-  98              		.loc 1 13 15 is_stmt 0 view .LVU22
-  99 000c 40F20323 		movw	r3, #515
- 100 0010 0380     		strh	r3, [r0]	@ movhi
- 101              	.LVL2:
-  13:track.cpp     ****         nextState = PLAYING;
- 102              		.loc 1 13 15 view .LVU23
- 103              	.LBE8:
- 104              	.LBE7:
- 105              	.LBE6:
-  20:track.cpp     **** }
- 106              		.loc 1 20 1 view .LVU24
- 107 0012 7047     		bx	lr
- 108              		.cfi_endproc
- 109              	.LFE4791:
- 111              		.section	.text._ZN5Track5AudioEffPfS0_S0_S0_,"ax",%progbits
- 112              		.align	1
- 113              		.p2align 2,,3
- 114              		.global	_ZN5Track5AudioEffPfS0_S0_S0_
- 115              		.syntax unified
- 116              		.thumb
- 117              		.thumb_func
- 118              		.fpu fpv5-d16
- 120              	_ZN5Track5AudioEffPfS0_S0_S0_:
- 121              	.LVL3:
- 122              	.LFB4792:
-  21:track.cpp     **** 
-  22:track.cpp     **** void Track::Audio(
-  23:track.cpp     ****     const float leftIn, const float rightIn, 
-  24:track.cpp     ****     float *leftOut, float *rightOut, 
-  25:track.cpp     ****     float *bufferLeft, float *bufferRight) {
- 123              		.loc 1 25 44 is_stmt 1 view -0
- 124              		.cfi_startproc
- 125              		@ args = 4, pretend = 0, frame = 0
- 126              		@ frame_needed = 0, uses_anonymous_args = 0
- 127              		@ link register save eliminated.
+  26:track.cpp     ****     float *bufferLeft, float *bufferRight) {
+ 135              		.loc 1 26 44 is_stmt 1 view -0
+ 136              		.cfi_startproc
+ 137              		@ args = 4, pretend = 0, frame = 0
+ 138              		@ frame_needed = 0, uses_anonymous_args = 0
+ 139              		@ link register save eliminated.
+  27:track.cpp     **** 
+  28:track.cpp     ****     heartbeat++;
+ 140              		.loc 1 28 5 view .LVU33
   26:track.cpp     **** 
-  27:track.cpp     ****     if(state == RECORDING) {
- 128              		.loc 1 27 5 view .LVU26
- 129              		.loc 1 27 8 is_stmt 0 view .LVU27
- 130 0000 90F800C0 		ldrb	ip, [r0]	@ zero_extendqisi2
- 131              		.loc 1 27 5 view .LVU28
- 132 0004 BCF1030F 		cmp	ip, #3
-  25:track.cpp     **** 
- 133              		.loc 1 25 44 view .LVU29
- 134 0008 10B4     		push	{r4}
- 135              		.cfi_def_cfa_offset 4
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 4
-
-
- 136              		.cfi_offset 4, -4
-  25:track.cpp     **** 
- 137              		.loc 1 25 44 view .LVU30
- 138 000a 019C     		ldr	r4, [sp, #4]
- 139              		.loc 1 27 5 view .LVU31
- 140 000c 2CD0     		beq	.L22
-  28:track.cpp     ****         *leftOut += *bufferLeft;
-  29:track.cpp     ****         *rightOut += *bufferRight;
-  30:track.cpp     ****         *bufferLeft = leftIn;
-  31:track.cpp     ****         *bufferRight = rightIn;
-  32:track.cpp     ****         if(leftIn + rightIn > 0.5)
-  33:track.cpp     ****             button->Red();
-  34:track.cpp     ****         else
-  35:track.cpp     ****             button->Off();
-  36:track.cpp     ****     } 
-  37:track.cpp     ****     else if(state == PLAYING) {
- 141              		.loc 1 37 10 is_stmt 1 view .LVU32
- 142 000e BCF1020F 		cmp	ip, #2
- 143 0012 05D0     		beq	.L23
-  38:track.cpp     ****         *leftOut += *bufferLeft;
-  39:track.cpp     ****         *rightOut += *bufferRight;
-  40:track.cpp     ****         if(*bufferLeft + *bufferRight > 0.3)
-  41:track.cpp     ****             button->Green();
-  42:track.cpp     ****         else
-  43:track.cpp     ****             button->Off();
-  44:track.cpp     ****     }
-  45:track.cpp     ****     else if(state == BLANK || state == MUTED) {
- 144              		.loc 1 45 10 view .LVU33
- 145 0014 BCF1010F 		cmp	ip, #1
- 146 0018 4CD9     		bls	.L24
-  46:track.cpp     ****         button->Off();
+ 141              		.loc 1 26 44 is_stmt 0 view .LVU34
+ 142 0000 30B4     		push	{r4, r5}
+ 143              		.cfi_def_cfa_offset 8
+ 144              		.cfi_offset 4, -8
+ 145              		.cfi_offset 5, -4
+  29:track.cpp     **** 
+  30:track.cpp     ****     if(state == RECORDING) {
+ 146              		.loc 1 30 8 view .LVU35
+ 147 0002 90F800C0 		ldrb	ip, [r0]	@ zero_extendqisi2
+  28:track.cpp     **** 
+ 148              		.loc 1 28 14 view .LVU36
+ 149 0006 C468     		ldr	r4, [r0, #12]
+ 150              		.loc 1 30 5 view .LVU37
+ 151 0008 BCF1030F 		cmp	ip, #3
+  26:track.cpp     **** 
+ 152              		.loc 1 26 44 view .LVU38
+ 153 000c 029D     		ldr	r5, [sp, #8]
+  28:track.cpp     **** 
+ 154              		.loc 1 28 14 view .LVU39
+ 155 000e 04F10104 		add	r4, r4, #1
+ 156 0012 C460     		str	r4, [r0, #12]
+ 157              		.loc 1 30 5 is_stmt 1 view .LVU40
+ 158 0014 2AD0     		beq	.L16
+  31:track.cpp     ****         *leftOut += *bufferLeft;
+  32:track.cpp     ****         *rightOut += *bufferRight;
+  33:track.cpp     ****         *bufferLeft = leftIn;
+  34:track.cpp     ****         *bufferRight = rightIn;
+  35:track.cpp     ****         if(leftIn + rightIn > 0.5 || ((heartbeat >> 8) & 1) == 1)
+  36:track.cpp     ****             button->Red();
+  37:track.cpp     ****         else
+  38:track.cpp     ****             button->Off();
+  39:track.cpp     ****     } 
+  40:track.cpp     ****     else if(state == PLAYING) {
+ 159              		.loc 1 40 10 view .LVU41
+ 160 0016 BCF1020F 		cmp	ip, #2
+ 161 001a 04D0     		beq	.L17
+  41:track.cpp     ****         *leftOut += *bufferLeft;
+  42:track.cpp     ****         *rightOut += *bufferRight;
+  43:track.cpp     ****         if(*bufferLeft + *bufferRight > 0.5 || ((heartbeat >> 8) & 1) == 1)
+  44:track.cpp     ****             button->Green();
+  45:track.cpp     ****         else
+  46:track.cpp     ****             button->Off();
   47:track.cpp     ****     }
-  48:track.cpp     **** }
- 147              		.loc 1 48 1 is_stmt 0 view .LVU34
- 148 001a 5DF8044B 		ldr	r4, [sp], #4
- 149              		.cfi_remember_state
- 150              		.cfi_restore 4
- 151              		.cfi_def_cfa_offset 0
- 152              	.LVL4:
- 153              		.loc 1 48 1 view .LVU35
- 154 001e 7047     		bx	lr
- 155              	.LVL5:
- 156              	.L23:
- 157              		.cfi_restore_state
-  38:track.cpp     ****         *leftOut += *bufferLeft;
- 158              		.loc 1 38 9 is_stmt 1 view .LVU36
-  38:track.cpp     ****         *leftOut += *bufferLeft;
- 159              		.loc 1 38 18 is_stmt 0 view .LVU37
- 160 0020 93ED007A 		vldr.32	s14, [r3]
- 161 0024 D1ED007A 		vldr.32	s15, [r1]
-  41:track.cpp     ****         else
- 162              		.loc 1 41 26 view .LVU38
- 163 0028 8068     		ldr	r0, [r0, #8]
- 164              	.LVL6:
-  38:track.cpp     ****         *leftOut += *bufferLeft;
- 165              		.loc 1 38 18 view .LVU39
- 166 002a 77EE877A 		vadd.f32	s15, s15, s14
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 5
+  48:track.cpp     ****     else if(state == BLANK || state == MUTED) {
+ 162              		.loc 1 48 10 view .LVU42
+ 163 001c BCF1010F 		cmp	ip, #1
+ 164 0020 47D9     		bls	.L18
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 5
 
 
-  40:track.cpp     ****             button->Green();
- 167              		.loc 1 40 9 view .LVU40
- 168 002e 9FED246B 		vldr.64	d6, .L26
-  38:track.cpp     ****         *rightOut += *bufferRight;
- 169              		.loc 1 38 18 view .LVU41
- 170 0032 C1ED007A 		vstr.32	s15, [r1]
-  39:track.cpp     ****         if(*bufferLeft + *bufferRight > 0.3)
- 171              		.loc 1 39 9 is_stmt 1 view .LVU42
-  39:track.cpp     ****         if(*bufferLeft + *bufferRight > 0.3)
- 172              		.loc 1 39 19 is_stmt 0 view .LVU43
- 173 0036 94ED007A 		vldr.32	s14, [r4]
- 174 003a D2ED007A 		vldr.32	s15, [r2]
- 175 003e 77EE877A 		vadd.f32	s15, s15, s14
- 176 0042 C2ED007A 		vstr.32	s15, [r2]
-  40:track.cpp     ****             button->Green();
- 177              		.loc 1 40 9 is_stmt 1 view .LVU44
-  40:track.cpp     ****             button->Green();
- 178              		.loc 1 40 24 is_stmt 0 view .LVU45
- 179 0046 D4ED007A 		vldr.32	s15, [r4]
- 180 004a 93ED007A 		vldr.32	s14, [r3]
- 181 004e 37EE277A 		vadd.f32	s14, s14, s15
- 182 0052 B7EEC77A 		vcvt.f64.f32	d7, s14
-  40:track.cpp     ****             button->Green();
- 183              		.loc 1 40 9 view .LVU46
- 184 0056 B4EEC67B 		vcmpe.f64	d7, d6
- 185 005a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
- 186 005e 21DD     		ble	.L21
-  41:track.cpp     ****         else
- 187              		.loc 1 41 13 is_stmt 1 view .LVU47
- 188              		.loc 1 48 1 is_stmt 0 view .LVU48
- 189 0060 5DF8044B 		ldr	r4, [sp], #4
- 190              		.cfi_remember_state
- 191              		.cfi_restore 4
- 192              		.cfi_def_cfa_offset 0
- 193              	.LVL7:
-  41:track.cpp     ****         else
- 194              		.loc 1 41 26 view .LVU49
- 195 0064 FFF7FEBF 		b	_ZN13DualLedButton5GreenEv
- 196              	.LVL8:
- 197              	.L22:
- 198              		.cfi_restore_state
-  28:track.cpp     ****         *rightOut += *bufferRight;
- 199              		.loc 1 28 9 is_stmt 1 view .LVU50
-  28:track.cpp     ****         *rightOut += *bufferRight;
- 200              		.loc 1 28 18 is_stmt 0 view .LVU51
- 201 0068 93ED006A 		vldr.32	s12, [r3]
-  32:track.cpp     ****             button->Red();
- 202              		.loc 1 32 19 view .LVU52
- 203 006c 70EE206A 		vadd.f32	s13, s0, s1
-  28:track.cpp     ****         *rightOut += *bufferRight;
- 204              		.loc 1 28 18 view .LVU53
- 205 0070 D1ED007A 		vldr.32	s15, [r1]
-  32:track.cpp     ****             button->Red();
- 206              		.loc 1 32 9 view .LVU54
- 207 0074 B6EE007A 		vmov.f32	s14, #5.0e-1
-  33:track.cpp     ****         else
- 208              		.loc 1 33 24 view .LVU55
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 6
+  49:track.cpp     ****         button->Off();
+  50:track.cpp     ****     }
+  51:track.cpp     **** }
+ 165              		.loc 1 51 1 is_stmt 0 view .LVU43
+ 166 0022 30BC     		pop	{r4, r5}
+ 167              		.cfi_remember_state
+ 168              		.cfi_restore 5
+ 169              		.cfi_restore 4
+ 170              		.cfi_def_cfa_offset 0
+ 171              	.LVL5:
+ 172              		.loc 1 51 1 view .LVU44
+ 173 0024 7047     		bx	lr
+ 174              	.LVL6:
+ 175              	.L17:
+ 176              		.cfi_restore_state
+  41:track.cpp     ****         *leftOut += *bufferLeft;
+ 177              		.loc 1 41 9 is_stmt 1 view .LVU45
+  41:track.cpp     ****         *leftOut += *bufferLeft;
+ 178              		.loc 1 41 18 is_stmt 0 view .LVU46
+ 179 0026 D3ED006A 		vldr.32	s13, [r3]
+  43:track.cpp     ****             button->Green();
+ 180              		.loc 1 43 9 view .LVU47
+ 181 002a B6EE007A 		vmov.f32	s14, #5.0e-1
+  41:track.cpp     ****         *leftOut += *bufferLeft;
+ 182              		.loc 1 41 18 view .LVU48
+ 183 002e D1ED007A 		vldr.32	s15, [r1]
+  44:track.cpp     ****         else
+ 184              		.loc 1 44 26 view .LVU49
+ 185 0032 8068     		ldr	r0, [r0, #8]
+ 186              	.LVL7:
+  41:track.cpp     ****         *rightOut += *bufferRight;
+ 187              		.loc 1 41 18 view .LVU50
+ 188 0034 77EEA67A 		vadd.f32	s15, s15, s13
+ 189 0038 C1ED007A 		vstr.32	s15, [r1]
+  42:track.cpp     ****         if(*bufferLeft + *bufferRight > 0.5 || ((heartbeat >> 8) & 1) == 1)
+ 190              		.loc 1 42 9 is_stmt 1 view .LVU51
+  42:track.cpp     ****         if(*bufferLeft + *bufferRight > 0.5 || ((heartbeat >> 8) & 1) == 1)
+ 191              		.loc 1 42 19 is_stmt 0 view .LVU52
+ 192 003c D5ED006A 		vldr.32	s13, [r5]
+ 193 0040 D2ED007A 		vldr.32	s15, [r2]
+ 194 0044 77EEA67A 		vadd.f32	s15, s15, s13
+ 195 0048 C2ED007A 		vstr.32	s15, [r2]
+  43:track.cpp     ****             button->Green();
+ 196              		.loc 1 43 9 is_stmt 1 view .LVU53
+  43:track.cpp     ****             button->Green();
+ 197              		.loc 1 43 24 is_stmt 0 view .LVU54
+ 198 004c D3ED007A 		vldr.32	s15, [r3]
+ 199 0050 D5ED006A 		vldr.32	s13, [r5]
+ 200 0054 77EEA67A 		vadd.f32	s15, s15, s13
+  43:track.cpp     ****             button->Green();
+ 201              		.loc 1 43 9 view .LVU55
+ 202 0058 F4EEC77A 		vcmpe.f32	s15, s14
+ 203 005c F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 204 0060 01DC     		bgt	.L11
+  43:track.cpp     ****             button->Green();
+ 205              		.loc 1 43 45 discriminator 1 view .LVU56
+ 206 0062 E305     		lsls	r3, r4, #23
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 6
 
 
- 209 0078 8068     		ldr	r0, [r0, #8]
- 210              	.LVL9:
-  28:track.cpp     ****         *rightOut += *bufferRight;
- 211              		.loc 1 28 18 view .LVU56
- 212 007a 77EE867A 		vadd.f32	s15, s15, s12
-  32:track.cpp     ****             button->Red();
- 213              		.loc 1 32 9 view .LVU57
- 214 007e F4EEC76A 		vcmpe.f32	s13, s14
-  28:track.cpp     ****         *rightOut += *bufferRight;
- 215              		.loc 1 28 18 view .LVU58
- 216 0082 C1ED007A 		vstr.32	s15, [r1]
-  29:track.cpp     ****         *bufferLeft = leftIn;
- 217              		.loc 1 29 9 is_stmt 1 view .LVU59
-  29:track.cpp     ****         *bufferLeft = leftIn;
- 218              		.loc 1 29 19 is_stmt 0 view .LVU60
- 219 0086 D2ED007A 		vldr.32	s15, [r2]
-  32:track.cpp     ****             button->Red();
- 220              		.loc 1 32 9 view .LVU61
- 221 008a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
-  29:track.cpp     ****         *bufferLeft = leftIn;
- 222              		.loc 1 29 19 view .LVU62
- 223 008e 94ED006A 		vldr.32	s12, [r4]
- 224 0092 77EE867A 		vadd.f32	s15, s15, s12
- 225 0096 C2ED007A 		vstr.32	s15, [r2]
-  30:track.cpp     ****         *bufferRight = rightIn;
- 226              		.loc 1 30 9 is_stmt 1 view .LVU63
-  30:track.cpp     ****         *bufferRight = rightIn;
- 227              		.loc 1 30 21 is_stmt 0 view .LVU64
- 228 009a 83ED000A 		vstr.32	s0, [r3]
-  31:track.cpp     ****         if(leftIn + rightIn > 0.5)
- 229              		.loc 1 31 9 is_stmt 1 view .LVU65
-  31:track.cpp     ****         if(leftIn + rightIn > 0.5)
- 230              		.loc 1 31 22 is_stmt 0 view .LVU66
- 231 009e C4ED000A 		vstr.32	s1, [r4]
-  32:track.cpp     ****             button->Red();
- 232              		.loc 1 32 9 is_stmt 1 view .LVU67
- 233 00a2 03DC     		bgt	.L25
- 234              	.L21:
- 235              		.loc 1 48 1 is_stmt 0 view .LVU68
- 236 00a4 5DF8044B 		ldr	r4, [sp], #4
- 237              		.cfi_remember_state
- 238              		.cfi_restore 4
- 239              		.cfi_def_cfa_offset 0
- 240              	.LVL10:
-  46:track.cpp     ****     }
- 241              		.loc 1 46 20 view .LVU69
- 242 00a8 FFF7FEBF 		b	_ZN13DualLedButton3OffEv
- 243              	.LVL11:
- 244              	.L25:
- 245              		.cfi_restore_state
-  33:track.cpp     ****         else
- 246              		.loc 1 33 13 is_stmt 1 view .LVU70
- 247              		.loc 1 48 1 is_stmt 0 view .LVU71
- 248 00ac 5DF8044B 		ldr	r4, [sp], #4
- 249              		.cfi_remember_state
- 250              		.cfi_restore 4
- 251              		.cfi_def_cfa_offset 0
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 7
+ 207              	.LVL8:
+  43:track.cpp     ****             button->Green();
+ 208              		.loc 1 43 45 discriminator 1 view .LVU57
+ 209 0064 26D5     		bpl	.L15
+ 210              	.L11:
+  44:track.cpp     ****         else
+ 211              		.loc 1 44 13 is_stmt 1 view .LVU58
+ 212              		.loc 1 51 1 is_stmt 0 view .LVU59
+ 213 0066 30BC     		pop	{r4, r5}
+ 214              		.cfi_remember_state
+ 215              		.cfi_restore 5
+ 216              		.cfi_restore 4
+ 217              		.cfi_def_cfa_offset 0
+ 218              	.LVL9:
+  44:track.cpp     ****         else
+ 219              		.loc 1 44 26 view .LVU60
+ 220 0068 FFF7FEBF 		b	_ZN13DualLedButton5GreenEv
+ 221              	.LVL10:
+ 222              	.L16:
+ 223              		.cfi_restore_state
+  31:track.cpp     ****         *rightOut += *bufferRight;
+ 224              		.loc 1 31 9 is_stmt 1 view .LVU61
+  31:track.cpp     ****         *rightOut += *bufferRight;
+ 225              		.loc 1 31 18 is_stmt 0 view .LVU62
+ 226 006c 93ED006A 		vldr.32	s12, [r3]
+  35:track.cpp     ****             button->Red();
+ 227              		.loc 1 35 19 view .LVU63
+ 228 0070 70EE206A 		vadd.f32	s13, s0, s1
+  31:track.cpp     ****         *rightOut += *bufferRight;
+ 229              		.loc 1 31 18 view .LVU64
+ 230 0074 D1ED007A 		vldr.32	s15, [r1]
+  35:track.cpp     ****             button->Red();
+ 231              		.loc 1 35 9 view .LVU65
+ 232 0078 B6EE007A 		vmov.f32	s14, #5.0e-1
+  36:track.cpp     ****         else
+ 233              		.loc 1 36 24 view .LVU66
+ 234 007c 8068     		ldr	r0, [r0, #8]
+ 235              	.LVL11:
+  31:track.cpp     ****         *rightOut += *bufferRight;
+ 236              		.loc 1 31 18 view .LVU67
+ 237 007e 77EE867A 		vadd.f32	s15, s15, s12
+  35:track.cpp     ****             button->Red();
+ 238              		.loc 1 35 9 view .LVU68
+ 239 0082 F4EEC76A 		vcmpe.f32	s13, s14
+  31:track.cpp     ****         *rightOut += *bufferRight;
+ 240              		.loc 1 31 18 view .LVU69
+ 241 0086 C1ED007A 		vstr.32	s15, [r1]
+  32:track.cpp     ****         *bufferLeft = leftIn;
+ 242              		.loc 1 32 9 is_stmt 1 view .LVU70
+  32:track.cpp     ****         *bufferLeft = leftIn;
+ 243              		.loc 1 32 19 is_stmt 0 view .LVU71
+ 244 008a D2ED007A 		vldr.32	s15, [r2]
+  35:track.cpp     ****             button->Red();
+ 245              		.loc 1 35 9 view .LVU72
+ 246 008e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+  32:track.cpp     ****         *bufferLeft = leftIn;
+ 247              		.loc 1 32 19 view .LVU73
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 7
 
 
- 252              	.LVL12:
-  33:track.cpp     ****         else
- 253              		.loc 1 33 24 view .LVU72
- 254 00b0 FFF7FEBF 		b	_ZN13DualLedButton3RedEv
- 255              	.LVL13:
- 256              	.L24:
- 257              		.cfi_restore_state
-  46:track.cpp     ****     }
- 258              		.loc 1 46 9 is_stmt 1 view .LVU73
-  46:track.cpp     ****     }
- 259              		.loc 1 46 20 is_stmt 0 view .LVU74
- 260 00b4 8068     		ldr	r0, [r0, #8]
- 261              	.LVL14:
- 262              		.loc 1 48 1 view .LVU75
- 263 00b6 5DF8044B 		ldr	r4, [sp], #4
- 264              		.cfi_restore 4
- 265              		.cfi_def_cfa_offset 0
- 266              	.LVL15:
-  46:track.cpp     ****     }
- 267              		.loc 1 46 20 view .LVU76
- 268 00ba FFF7FEBF 		b	_ZN13DualLedButton3OffEv
- 269              	.LVL16:
- 270              	.L27:
-  46:track.cpp     ****     }
- 271              		.loc 1 46 20 view .LVU77
- 272 00be 00BF     		.align	3
- 273              	.L26:
- 274 00c0 33333333 		.word	858993459
- 275 00c4 3333D33F 		.word	1070805811
- 276              		.cfi_endproc
- 277              	.LFE4792:
- 279              		.section	.text._ZN5Track4LoopEv,"ax",%progbits
- 280              		.align	1
- 281              		.p2align 2,,3
- 282              		.global	_ZN5Track4LoopEv
- 283              		.syntax unified
- 284              		.thumb
- 285              		.thumb_func
- 286              		.fpu fpv5-d16
- 288              	_ZN5Track4LoopEv:
- 289              	.LVL17:
- 290              	.LFB4793:
-  49:track.cpp     **** 
-  50:track.cpp     **** void Track::Loop() {
- 291              		.loc 1 50 20 is_stmt 1 view -0
- 292              		.cfi_startproc
- 293              		@ args = 0, pretend = 0, frame = 0
- 294              		@ frame_needed = 0, uses_anonymous_args = 0
- 295              		@ link register save eliminated.
-  51:track.cpp     ****     state = nextState;
- 296              		.loc 1 51 5 view .LVU79
- 297              		.loc 1 51 13 is_stmt 0 view .LVU80
- 298 0000 4378     		ldrb	r3, [r0, #1]	@ zero_extendqisi2
-  52:track.cpp     ****     if(state == RECORDING)
- 299              		.loc 1 52 5 view .LVU81
- 300 0002 032B     		cmp	r3, #3
-  51:track.cpp     ****     state = nextState;
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 8
+ 248 0092 95ED006A 		vldr.32	s12, [r5]
+ 249 0096 77EE867A 		vadd.f32	s15, s15, s12
+ 250 009a C2ED007A 		vstr.32	s15, [r2]
+  33:track.cpp     ****         *bufferRight = rightIn;
+ 251              		.loc 1 33 9 is_stmt 1 view .LVU74
+  33:track.cpp     ****         *bufferRight = rightIn;
+ 252              		.loc 1 33 21 is_stmt 0 view .LVU75
+ 253 009e 83ED000A 		vstr.32	s0, [r3]
+  34:track.cpp     ****         if(leftIn + rightIn > 0.5 || ((heartbeat >> 8) & 1) == 1)
+ 254              		.loc 1 34 9 is_stmt 1 view .LVU76
+  34:track.cpp     ****         if(leftIn + rightIn > 0.5 || ((heartbeat >> 8) & 1) == 1)
+ 255              		.loc 1 34 22 is_stmt 0 view .LVU77
+ 256 00a2 C5ED000A 		vstr.32	s1, [r5]
+  35:track.cpp     ****             button->Red();
+ 257              		.loc 1 35 9 is_stmt 1 view .LVU78
+ 258 00a6 01DC     		bgt	.L8
+  35:track.cpp     ****             button->Red();
+ 259              		.loc 1 35 35 is_stmt 0 discriminator 1 view .LVU79
+ 260 00a8 E205     		lsls	r2, r4, #23
+ 261              	.LVL12:
+  35:track.cpp     ****             button->Red();
+ 262              		.loc 1 35 35 discriminator 1 view .LVU80
+ 263 00aa 03D5     		bpl	.L15
+ 264              	.L8:
+  36:track.cpp     ****         else
+ 265              		.loc 1 36 13 is_stmt 1 view .LVU81
+ 266              		.loc 1 51 1 is_stmt 0 view .LVU82
+ 267 00ac 30BC     		pop	{r4, r5}
+ 268              		.cfi_remember_state
+ 269              		.cfi_restore 5
+ 270              		.cfi_restore 4
+ 271              		.cfi_def_cfa_offset 0
+ 272              	.LVL13:
+  36:track.cpp     ****         else
+ 273              		.loc 1 36 24 view .LVU83
+ 274 00ae FFF7FEBF 		b	_ZN13DualLedButton3RedEv
+ 275              	.LVL14:
+ 276              	.L18:
+ 277              		.cfi_restore_state
+  49:track.cpp     ****     }
+ 278              		.loc 1 49 9 is_stmt 1 view .LVU84
+  49:track.cpp     ****     }
+ 279              		.loc 1 49 20 is_stmt 0 view .LVU85
+ 280 00b2 8068     		ldr	r0, [r0, #8]
+ 281              	.LVL15:
+ 282              	.L15:
+ 283              		.loc 1 51 1 view .LVU86
+ 284 00b4 30BC     		pop	{r4, r5}
+ 285              		.cfi_restore 5
+ 286              		.cfi_restore 4
+ 287              		.cfi_def_cfa_offset 0
+ 288              	.LVL16:
+  49:track.cpp     ****     }
+ 289              		.loc 1 49 20 view .LVU87
+ 290 00b6 FFF7FEBF 		b	_ZN13DualLedButton3OffEv
+ 291              	.LVL17:
+  49:track.cpp     ****     }
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 8
 
 
- 301              		.loc 1 51 11 view .LVU82
- 302 0004 0370     		strb	r3, [r0]
- 303              		.loc 1 52 5 is_stmt 1 view .LVU83
- 304 0006 01D1     		bne	.L28
-  53:track.cpp     ****         nextState = PLAYING;
- 305              		.loc 1 53 9 view .LVU84
- 306              		.loc 1 53 19 is_stmt 0 view .LVU85
- 307 0008 0223     		movs	r3, #2
- 308 000a 4370     		strb	r3, [r0, #1]
- 309              	.L28:
-  54:track.cpp     **** }
- 310              		.loc 1 54 1 view .LVU86
- 311 000c 7047     		bx	lr
- 312              		.cfi_endproc
- 313              	.LFE4793:
- 315 000e 00BF     		.section	.text._ZN5Track9GetButtonEv,"ax",%progbits
- 316              		.align	1
- 317              		.p2align 2,,3
- 318              		.global	_ZN5Track9GetButtonEv
- 319              		.syntax unified
- 320              		.thumb
- 321              		.thumb_func
- 322              		.fpu fpv5-d16
- 324              	_ZN5Track9GetButtonEv:
- 325              	.LVL18:
- 326              	.LFB4794:
-  55:track.cpp     **** 
-  56:track.cpp     **** DualLedButton *Track::GetButton() {
- 327              		.loc 1 56 35 is_stmt 1 view -0
- 328              		.cfi_startproc
- 329              		@ args = 0, pretend = 0, frame = 0
- 330              		@ frame_needed = 0, uses_anonymous_args = 0
- 331              		@ link register save eliminated.
-  57:track.cpp     ****     return button;
- 332              		.loc 1 57 5 view .LVU88
-  58:track.cpp     **** }
- 333              		.loc 1 58 1 is_stmt 0 view .LVU89
- 334 0000 8068     		ldr	r0, [r0, #8]
- 335              	.LVL19:
- 336              		.loc 1 58 1 view .LVU90
- 337 0002 7047     		bx	lr
- 338              		.cfi_endproc
- 339              	.LFE4794:
- 341              		.section	.text._ZN5Track5CheckEbb,"ax",%progbits
- 342              		.align	1
- 343              		.p2align 2,,3
- 344              		.global	_ZN5Track5CheckEbb
- 345              		.syntax unified
- 346              		.thumb
- 347              		.thumb_func
- 348              		.fpu fpv5-d16
- 350              	_ZN5Track5CheckEbb:
- 351              	.LVL20:
- 352              	.LFB4795:
-  59:track.cpp     **** 
-  60:track.cpp     **** void Track::Check(bool clear, bool record)
-  61:track.cpp     **** {
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 9
+ 292              		.loc 1 49 20 view .LVU88
+ 293              		.cfi_endproc
+ 294              	.LFE4792:
+ 296 00ba 00BF     		.section	.text._ZN5Track4LoopEv,"ax",%progbits
+ 297              		.align	1
+ 298              		.p2align 2,,3
+ 299              		.global	_ZN5Track4LoopEv
+ 300              		.syntax unified
+ 301              		.thumb
+ 302              		.thumb_func
+ 303              		.fpu fpv5-d16
+ 305              	_ZN5Track4LoopEv:
+ 306              	.LVL18:
+ 307              	.LFB4793:
+  52:track.cpp     **** 
+  53:track.cpp     **** void Track::Loop() {
+ 308              		.loc 1 53 20 is_stmt 1 view -0
+ 309              		.cfi_startproc
+ 310              		@ args = 0, pretend = 0, frame = 0
+ 311              		@ frame_needed = 0, uses_anonymous_args = 0
+ 312              		@ link register save eliminated.
+  54:track.cpp     ****     state = nextState;
+ 313              		.loc 1 54 5 view .LVU90
+ 314              		.loc 1 54 13 is_stmt 0 view .LVU91
+ 315 0000 4378     		ldrb	r3, [r0, #1]	@ zero_extendqisi2
+  55:track.cpp     ****     if(state == RECORDING)
+ 316              		.loc 1 55 5 view .LVU92
+ 317 0002 032B     		cmp	r3, #3
+  54:track.cpp     ****     state = nextState;
+ 318              		.loc 1 54 11 view .LVU93
+ 319 0004 0370     		strb	r3, [r0]
+ 320              		.loc 1 55 5 is_stmt 1 view .LVU94
+ 321 0006 01D1     		bne	.L19
+  56:track.cpp     ****         nextState = PLAYING;
+ 322              		.loc 1 56 9 view .LVU95
+ 323              		.loc 1 56 19 is_stmt 0 view .LVU96
+ 324 0008 0223     		movs	r3, #2
+ 325 000a 4370     		strb	r3, [r0, #1]
+ 326              	.L19:
+  57:track.cpp     **** }
+ 327              		.loc 1 57 1 view .LVU97
+ 328 000c 7047     		bx	lr
+ 329              		.cfi_endproc
+ 330              	.LFE4793:
+ 332 000e 00BF     		.section	.text._ZN5Track9GetButtonEv,"ax",%progbits
+ 333              		.align	1
+ 334              		.p2align 2,,3
+ 335              		.global	_ZN5Track9GetButtonEv
+ 336              		.syntax unified
+ 337              		.thumb
+ 338              		.thumb_func
+ 339              		.fpu fpv5-d16
+ 341              	_ZN5Track9GetButtonEv:
+ 342              	.LVL19:
+ 343              	.LFB4794:
+  58:track.cpp     **** 
+  59:track.cpp     **** DualLedButton *Track::GetButton() {
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 9
 
 
- 353              		.loc 1 61 1 is_stmt 1 view -0
- 354              		.cfi_startproc
- 355              		@ args = 0, pretend = 0, frame = 0
- 356              		@ frame_needed = 0, uses_anonymous_args = 0
-  62:track.cpp     ****     bool clicked = button->Check();
- 357              		.loc 1 62 5 view .LVU92
-  61:track.cpp     ****     bool clicked = button->Check();
- 358              		.loc 1 61 1 is_stmt 0 view .LVU93
- 359 0000 70B5     		push	{r4, r5, r6, lr}
- 360              		.cfi_def_cfa_offset 16
- 361              		.cfi_offset 4, -16
- 362              		.cfi_offset 5, -12
- 363              		.cfi_offset 6, -8
- 364              		.cfi_offset 14, -4
-  61:track.cpp     ****     bool clicked = button->Check();
- 365              		.loc 1 61 1 view .LVU94
- 366 0002 0446     		mov	r4, r0
- 367              		.loc 1 62 33 view .LVU95
- 368 0004 8068     		ldr	r0, [r0, #8]
- 369              	.LVL21:
-  61:track.cpp     ****     bool clicked = button->Check();
- 370              		.loc 1 61 1 view .LVU96
- 371 0006 0D46     		mov	r5, r1
- 372 0008 1646     		mov	r6, r2
- 373              		.loc 1 62 33 view .LVU97
- 374 000a FFF7FEFF 		bl	_ZN6Button5CheckEv
- 375              	.LVL22:
-  63:track.cpp     ****     if(clicked) {
- 376              		.loc 1 63 5 is_stmt 1 view .LVU98
- 377              	.LBB9:
- 378 000e 00B9     		cbnz	r0, .L47
- 379              	.LVL23:
- 380              	.L31:
- 381              		.loc 1 63 5 is_stmt 0 view .LVU99
- 382              	.LBE9:
-  64:track.cpp     ****         bool longClick = button->GetLong();
-  65:track.cpp     ****         if(longClick) {
-  66:track.cpp     ****             if(!clear && !record) {
-  67:track.cpp     ****                 if(state == BLANK)
-  68:track.cpp     ****                     nextState = RECORDING;
-  69:track.cpp     ****                 else if(state == PLAYING || state == RECORDING)
-  70:track.cpp     ****                     nextState = MUTED;
-  71:track.cpp     ****                 else if(state == MUTED)
-  72:track.cpp     ****                     nextState = PLAYING;
-  73:track.cpp     ****             }
-  74:track.cpp     ****         } else {
-  75:track.cpp     ****             if(!clear && !record) {
-  76:track.cpp     ****                 if(state == PLAYING)
-  77:track.cpp     ****                     nextState = state = MUTED;
-  78:track.cpp     ****                 else if(state == MUTED)
-  79:track.cpp     ****                     nextState = state = PLAYING;
-  80:track.cpp     ****                 else if(state == BLANK)
-  81:track.cpp     ****                 {
-  82:track.cpp     ****                     state = RECORDING;
-  83:track.cpp     ****                     nextState = PLAYING;
-  84:track.cpp     ****                 }
-  85:track.cpp     ****             } else if(!clear && record)
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 10
+ 344              		.loc 1 59 35 is_stmt 1 view -0
+ 345              		.cfi_startproc
+ 346              		@ args = 0, pretend = 0, frame = 0
+ 347              		@ frame_needed = 0, uses_anonymous_args = 0
+ 348              		@ link register save eliminated.
+  60:track.cpp     ****     return button;
+ 349              		.loc 1 60 5 view .LVU99
+  61:track.cpp     **** }
+ 350              		.loc 1 61 1 is_stmt 0 view .LVU100
+ 351 0000 8068     		ldr	r0, [r0, #8]
+ 352              	.LVL20:
+ 353              		.loc 1 61 1 view .LVU101
+ 354 0002 7047     		bx	lr
+ 355              		.cfi_endproc
+ 356              	.LFE4794:
+ 358              		.section	.text._ZN5Track5CheckEbb,"ax",%progbits
+ 359              		.align	1
+ 360              		.p2align 2,,3
+ 361              		.global	_ZN5Track5CheckEbb
+ 362              		.syntax unified
+ 363              		.thumb
+ 364              		.thumb_func
+ 365              		.fpu fpv5-d16
+ 367              	_ZN5Track5CheckEbb:
+ 368              	.LVL21:
+ 369              	.LFB4795:
+  62:track.cpp     **** 
+  63:track.cpp     **** void Track::Check(bool clear, bool record)
+  64:track.cpp     **** {
+ 370              		.loc 1 64 1 is_stmt 1 view -0
+ 371              		.cfi_startproc
+ 372              		@ args = 0, pretend = 0, frame = 0
+ 373              		@ frame_needed = 0, uses_anonymous_args = 0
+  65:track.cpp     ****     bool clicked = button->Check();
+ 374              		.loc 1 65 5 view .LVU103
+  64:track.cpp     ****     bool clicked = button->Check();
+ 375              		.loc 1 64 1 is_stmt 0 view .LVU104
+ 376 0000 70B5     		push	{r4, r5, r6, lr}
+ 377              		.cfi_def_cfa_offset 16
+ 378              		.cfi_offset 4, -16
+ 379              		.cfi_offset 5, -12
+ 380              		.cfi_offset 6, -8
+ 381              		.cfi_offset 14, -4
+  64:track.cpp     ****     bool clicked = button->Check();
+ 382              		.loc 1 64 1 view .LVU105
+ 383 0002 0446     		mov	r4, r0
+ 384              		.loc 1 65 33 view .LVU106
+ 385 0004 8068     		ldr	r0, [r0, #8]
+ 386              	.LVL22:
+  64:track.cpp     ****     bool clicked = button->Check();
+ 387              		.loc 1 64 1 view .LVU107
+ 388 0006 0D46     		mov	r5, r1
+ 389 0008 1646     		mov	r6, r2
+ 390              		.loc 1 65 33 view .LVU108
+ 391 000a FFF7FEFF 		bl	_ZN6Button5CheckEv
+ 392              	.LVL23:
+  66:track.cpp     ****     if(clicked) {
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 10
 
 
-  86:track.cpp     ****             {
-  87:track.cpp     ****                 if(state != RECORDING)
-  88:track.cpp     ****                     nextState = RECORDING;
-  89:track.cpp     ****                 else
-  90:track.cpp     ****                     nextState = state;
-  91:track.cpp     ****             }
-  92:track.cpp     ****         }
-  93:track.cpp     ****     }
-  94:track.cpp     **** }
- 383              		.loc 1 94 1 view .LVU100
- 384 0010 70BD     		pop	{r4, r5, r6, pc}
- 385              	.LVL24:
- 386              	.L47:
- 387              	.LBB16:
- 388              	.LBB10:
-  64:track.cpp     ****         bool longClick = button->GetLong();
- 389              		.loc 1 64 9 is_stmt 1 view .LVU101
-  64:track.cpp     ****         bool longClick = button->GetLong();
- 390              		.loc 1 64 41 is_stmt 0 view .LVU102
- 391 0012 A068     		ldr	r0, [r4, #8]
- 392              	.LVL25:
-  64:track.cpp     ****         bool longClick = button->GetLong();
- 393              		.loc 1 64 41 view .LVU103
- 394 0014 FFF7FEFF 		bl	_ZN6Button7GetLongEv
- 395              	.LVL26:
-  65:track.cpp     ****             if(!clear && !record) {
- 396              		.loc 1 65 9 is_stmt 1 view .LVU104
- 397 0018 60B9     		cbnz	r0, .L48
-  75:track.cpp     ****                 if(state == PLAYING)
- 398              		.loc 1 75 13 view .LVU105
- 399 001a CDB9     		cbnz	r5, .L38
- 400 001c C6B9     		cbnz	r6, .L38
-  76:track.cpp     ****                     nextState = state = MUTED;
- 401              		.loc 1 76 17 view .LVU106
-  76:track.cpp     ****                     nextState = state = MUTED;
- 402              		.loc 1 76 20 is_stmt 0 view .LVU107
- 403 001e 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
-  76:track.cpp     ****                     nextState = state = MUTED;
- 404              		.loc 1 76 17 view .LVU108
- 405 0020 022B     		cmp	r3, #2
- 406 0022 20D0     		beq	.L49
-  78:track.cpp     ****                     nextState = state = PLAYING;
- 407              		.loc 1 78 22 is_stmt 1 view .LVU109
- 408 0024 012B     		cmp	r3, #1
- 409 0026 1AD0     		beq	.L50
-  80:track.cpp     ****                 {
- 410              		.loc 1 80 22 view .LVU110
- 411 0028 002B     		cmp	r3, #0
- 412 002a F1D1     		bne	.L31
-  82:track.cpp     ****                     nextState = PLAYING;
- 413              		.loc 1 82 21 view .LVU111
-  83:track.cpp     ****                 }
- 414              		.loc 1 83 21 view .LVU112
-  82:track.cpp     ****                     nextState = PLAYING;
- 415              		.loc 1 82 27 is_stmt 0 view .LVU113
- 416 002c 40F20323 		movw	r3, #515
- 417 0030 2380     		strh	r3, [r4]	@ movhi
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 11
+ 393              		.loc 1 66 5 is_stmt 1 view .LVU109
+ 394              	.LBB11:
+ 395 000e 00B9     		cbnz	r0, .L38
+ 396              	.LVL24:
+ 397              	.L22:
+ 398              		.loc 1 66 5 is_stmt 0 view .LVU110
+ 399              	.LBE11:
+  67:track.cpp     ****         bool longClick = button->GetLong();
+  68:track.cpp     ****         if(longClick) {
+  69:track.cpp     ****             if(!clear && !record) {
+  70:track.cpp     ****                 if(state == BLANK)
+  71:track.cpp     ****                     nextState = RECORDING;
+  72:track.cpp     ****                 else if(state == PLAYING || state == RECORDING)
+  73:track.cpp     ****                     nextState = MUTED;
+  74:track.cpp     ****                 else if(state == MUTED)
+  75:track.cpp     ****                     nextState = PLAYING;
+  76:track.cpp     ****             }
+  77:track.cpp     ****         } else {
+  78:track.cpp     ****             if(!clear && !record) {
+  79:track.cpp     ****                 if(state == PLAYING)
+  80:track.cpp     ****                     nextState = state = MUTED;
+  81:track.cpp     ****                 else if(state == MUTED)
+  82:track.cpp     ****                     nextState = state = PLAYING;
+  83:track.cpp     ****                 else if(state == BLANK)
+  84:track.cpp     ****                 {
+  85:track.cpp     ****                     state = RECORDING;
+  86:track.cpp     ****                     nextState = PLAYING;
+  87:track.cpp     ****                 }
+  88:track.cpp     ****             } else if(!clear && record)
+  89:track.cpp     ****             {
+  90:track.cpp     ****                 if(state != RECORDING)
+  91:track.cpp     ****                     nextState = RECORDING;
+  92:track.cpp     ****                 else
+  93:track.cpp     ****                     nextState = state;
+  94:track.cpp     ****             }
+  95:track.cpp     ****         }
+  96:track.cpp     ****     }
+  97:track.cpp     **** }
+ 400              		.loc 1 97 1 view .LVU111
+ 401 0010 70BD     		pop	{r4, r5, r6, pc}
+ 402              	.LVL25:
+ 403              	.L38:
+ 404              	.LBB18:
+ 405              	.LBB12:
+  67:track.cpp     ****         bool longClick = button->GetLong();
+ 406              		.loc 1 67 9 is_stmt 1 view .LVU112
+  67:track.cpp     ****         bool longClick = button->GetLong();
+ 407              		.loc 1 67 41 is_stmt 0 view .LVU113
+ 408 0012 A068     		ldr	r0, [r4, #8]
+ 409              	.LVL26:
+  67:track.cpp     ****         bool longClick = button->GetLong();
+ 410              		.loc 1 67 41 view .LVU114
+ 411 0014 FFF7FEFF 		bl	_ZN6Button7GetLongEv
+ 412              	.LVL27:
+  68:track.cpp     ****             if(!clear && !record) {
+ 413              		.loc 1 68 9 is_stmt 1 view .LVU115
+ 414 0018 60B9     		cbnz	r0, .L39
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 11
 
 
- 418              	.LBE10:
- 419              	.LBE16:
- 420              		.loc 1 94 1 view .LVU114
- 421 0032 70BD     		pop	{r4, r5, r6, pc}
- 422              	.LVL27:
- 423              	.L48:
- 424              	.LBB17:
- 425              	.LBB11:
-  66:track.cpp     ****                 if(state == BLANK)
- 426              		.loc 1 66 13 is_stmt 1 view .LVU115
- 427 0034 002D     		cmp	r5, #0
- 428 0036 EBD1     		bne	.L31
- 429 0038 002E     		cmp	r6, #0
- 430 003a E9D1     		bne	.L31
-  67:track.cpp     ****                     nextState = RECORDING;
- 431              		.loc 1 67 17 view .LVU116
-  67:track.cpp     ****                     nextState = RECORDING;
- 432              		.loc 1 67 20 is_stmt 0 view .LVU117
- 433 003c 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
-  67:track.cpp     ****                     nextState = RECORDING;
- 434              		.loc 1 67 17 view .LVU118
- 435 003e 5BB1     		cbz	r3, .L41
-  69:track.cpp     ****                     nextState = MUTED;
- 436              		.loc 1 69 22 is_stmt 1 view .LVU119
- 437 0040 9A1E     		subs	r2, r3, #2
- 438 0042 012A     		cmp	r2, #1
- 439 0044 13D9     		bls	.L51
-  71:track.cpp     ****                     nextState = PLAYING;
- 440              		.loc 1 71 22 view .LVU120
- 441 0046 012B     		cmp	r3, #1
- 442 0048 E2D1     		bne	.L31
-  72:track.cpp     ****             }
- 443              		.loc 1 72 21 view .LVU121
-  72:track.cpp     ****             }
- 444              		.loc 1 72 31 is_stmt 0 view .LVU122
- 445 004a 0223     		movs	r3, #2
- 446 004c 6370     		strb	r3, [r4, #1]
- 447              	.LBE11:
- 448              	.LBE17:
- 449              		.loc 1 94 1 view .LVU123
- 450 004e 70BD     		pop	{r4, r5, r6, pc}
- 451              	.LVL28:
- 452              	.L38:
- 453              	.LBB18:
- 454              	.LBB12:
-  85:track.cpp     ****             {
- 455              		.loc 1 85 20 is_stmt 1 view .LVU124
- 456 0050 012D     		cmp	r5, #1
- 457 0052 DDD0     		beq	.L31
- 458 0054 002E     		cmp	r6, #0
- 459 0056 DBD0     		beq	.L31
- 460              	.L41:
-  68:track.cpp     ****                 else if(state == PLAYING || state == RECORDING)
- 461              		.loc 1 68 21 view .LVU125
-  68:track.cpp     ****                 else if(state == PLAYING || state == RECORDING)
- 462              		.loc 1 68 31 is_stmt 0 view .LVU126
- 463 0058 0323     		movs	r3, #3
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 12
+  78:track.cpp     ****                 if(state == PLAYING)
+ 415              		.loc 1 78 13 view .LVU116
+ 416 001a CDB9     		cbnz	r5, .L29
+ 417 001c C6B9     		cbnz	r6, .L29
+  79:track.cpp     ****                     nextState = state = MUTED;
+ 418              		.loc 1 79 17 view .LVU117
+  79:track.cpp     ****                     nextState = state = MUTED;
+ 419              		.loc 1 79 20 is_stmt 0 view .LVU118
+ 420 001e 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+  79:track.cpp     ****                     nextState = state = MUTED;
+ 421              		.loc 1 79 17 view .LVU119
+ 422 0020 022B     		cmp	r3, #2
+ 423 0022 20D0     		beq	.L40
+  81:track.cpp     ****                     nextState = state = PLAYING;
+ 424              		.loc 1 81 22 is_stmt 1 view .LVU120
+ 425 0024 012B     		cmp	r3, #1
+ 426 0026 1AD0     		beq	.L41
+  83:track.cpp     ****                 {
+ 427              		.loc 1 83 22 view .LVU121
+ 428 0028 002B     		cmp	r3, #0
+ 429 002a F1D1     		bne	.L22
+  85:track.cpp     ****                     nextState = PLAYING;
+ 430              		.loc 1 85 21 view .LVU122
+  86:track.cpp     ****                 }
+ 431              		.loc 1 86 21 view .LVU123
+  85:track.cpp     ****                     nextState = PLAYING;
+ 432              		.loc 1 85 27 is_stmt 0 view .LVU124
+ 433 002c 40F20323 		movw	r3, #515
+ 434 0030 2380     		strh	r3, [r4]	@ movhi
+ 435              	.LBE12:
+ 436              	.LBE18:
+ 437              		.loc 1 97 1 view .LVU125
+ 438 0032 70BD     		pop	{r4, r5, r6, pc}
+ 439              	.LVL28:
+ 440              	.L39:
+ 441              	.LBB19:
+ 442              	.LBB13:
+  69:track.cpp     ****                 if(state == BLANK)
+ 443              		.loc 1 69 13 is_stmt 1 view .LVU126
+ 444 0034 002D     		cmp	r5, #0
+ 445 0036 EBD1     		bne	.L22
+ 446 0038 002E     		cmp	r6, #0
+ 447 003a E9D1     		bne	.L22
+  70:track.cpp     ****                     nextState = RECORDING;
+ 448              		.loc 1 70 17 view .LVU127
+  70:track.cpp     ****                     nextState = RECORDING;
+ 449              		.loc 1 70 20 is_stmt 0 view .LVU128
+ 450 003c 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+  70:track.cpp     ****                     nextState = RECORDING;
+ 451              		.loc 1 70 17 view .LVU129
+ 452 003e 5BB1     		cbz	r3, .L32
+  72:track.cpp     ****                     nextState = MUTED;
+ 453              		.loc 1 72 22 is_stmt 1 view .LVU130
+ 454 0040 9A1E     		subs	r2, r3, #2
+ 455 0042 012A     		cmp	r2, #1
+ 456 0044 13D9     		bls	.L42
+  74:track.cpp     ****                     nextState = PLAYING;
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 12
 
 
- 464 005a 6370     		strb	r3, [r4, #1]
- 465              	.LBE12:
- 466              	.LBE18:
- 467              		.loc 1 94 1 view .LVU127
- 468 005c 70BD     		pop	{r4, r5, r6, pc}
- 469              	.LVL29:
- 470              	.L50:
- 471              	.LBB19:
- 472              	.LBB13:
-  79:track.cpp     ****                 else if(state == BLANK)
- 473              		.loc 1 79 21 is_stmt 1 view .LVU128
-  79:track.cpp     ****                 else if(state == BLANK)
- 474              		.loc 1 79 39 is_stmt 0 view .LVU129
- 475 005e 40F20223 		movw	r3, #514
- 476 0062 2380     		strh	r3, [r4]	@ movhi
- 477              	.LBE13:
- 478              	.LBE19:
- 479              		.loc 1 94 1 view .LVU130
- 480 0064 70BD     		pop	{r4, r5, r6, pc}
- 481              	.LVL30:
- 482              	.L49:
- 483              	.LBB20:
- 484              	.LBB14:
-  77:track.cpp     ****                 else if(state == MUTED)
- 485              		.loc 1 77 21 is_stmt 1 view .LVU131
-  77:track.cpp     ****                 else if(state == MUTED)
- 486              		.loc 1 77 39 is_stmt 0 view .LVU132
- 487 0066 40F20113 		movw	r3, #257
- 488 006a 2380     		strh	r3, [r4]	@ movhi
- 489              	.LBE14:
- 490              	.LBE20:
- 491              		.loc 1 94 1 view .LVU133
- 492 006c 70BD     		pop	{r4, r5, r6, pc}
- 493              	.LVL31:
- 494              	.L51:
- 495              	.LBB21:
- 496              	.LBB15:
-  70:track.cpp     ****                 else if(state == MUTED)
- 497              		.loc 1 70 21 is_stmt 1 view .LVU134
-  70:track.cpp     ****                 else if(state == MUTED)
- 498              		.loc 1 70 31 is_stmt 0 view .LVU135
- 499 006e 0123     		movs	r3, #1
- 500 0070 6370     		strb	r3, [r4, #1]
- 501              	.LBE15:
- 502              	.LBE21:
- 503              		.loc 1 94 1 view .LVU136
- 504 0072 70BD     		pop	{r4, r5, r6, pc}
- 505              		.loc 1 94 1 view .LVU137
- 506              		.cfi_endproc
- 507              	.LFE4795:
- 509              		.text
- 510              	.Letext0:
- 511              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
- 512              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
- 513              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
- 514              		.file 5 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
- 515              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 13
+ 457              		.loc 1 74 22 view .LVU131
+ 458 0046 012B     		cmp	r3, #1
+ 459 0048 E2D1     		bne	.L22
+  75:track.cpp     ****             }
+ 460              		.loc 1 75 21 view .LVU132
+  75:track.cpp     ****             }
+ 461              		.loc 1 75 31 is_stmt 0 view .LVU133
+ 462 004a 0223     		movs	r3, #2
+ 463 004c 6370     		strb	r3, [r4, #1]
+ 464              	.LBE13:
+ 465              	.LBE19:
+ 466              		.loc 1 97 1 view .LVU134
+ 467 004e 70BD     		pop	{r4, r5, r6, pc}
+ 468              	.LVL29:
+ 469              	.L29:
+ 470              	.LBB20:
+ 471              	.LBB14:
+  88:track.cpp     ****             {
+ 472              		.loc 1 88 20 is_stmt 1 view .LVU135
+ 473 0050 012D     		cmp	r5, #1
+ 474 0052 DDD0     		beq	.L22
+ 475 0054 002E     		cmp	r6, #0
+ 476 0056 DBD0     		beq	.L22
+ 477              	.L32:
+  71:track.cpp     ****                 else if(state == PLAYING || state == RECORDING)
+ 478              		.loc 1 71 21 view .LVU136
+  71:track.cpp     ****                 else if(state == PLAYING || state == RECORDING)
+ 479              		.loc 1 71 31 is_stmt 0 view .LVU137
+ 480 0058 0323     		movs	r3, #3
+ 481 005a 6370     		strb	r3, [r4, #1]
+ 482              	.LBE14:
+ 483              	.LBE20:
+ 484              		.loc 1 97 1 view .LVU138
+ 485 005c 70BD     		pop	{r4, r5, r6, pc}
+ 486              	.LVL30:
+ 487              	.L41:
+ 488              	.LBB21:
+ 489              	.LBB15:
+  82:track.cpp     ****                 else if(state == BLANK)
+ 490              		.loc 1 82 21 is_stmt 1 view .LVU139
+  82:track.cpp     ****                 else if(state == BLANK)
+ 491              		.loc 1 82 39 is_stmt 0 view .LVU140
+ 492 005e 40F20223 		movw	r3, #514
+ 493 0062 2380     		strh	r3, [r4]	@ movhi
+ 494              	.LBE15:
+ 495              	.LBE21:
+ 496              		.loc 1 97 1 view .LVU141
+ 497 0064 70BD     		pop	{r4, r5, r6, pc}
+ 498              	.LVL31:
+ 499              	.L40:
+ 500              	.LBB22:
+ 501              	.LBB16:
+  80:track.cpp     ****                 else if(state == MUTED)
+ 502              		.loc 1 80 21 is_stmt 1 view .LVU142
+  80:track.cpp     ****                 else if(state == MUTED)
+ 503              		.loc 1 80 39 is_stmt 0 view .LVU143
+ 504 0066 40F20113 		movw	r3, #257
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 13
 
 
- 516              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 517              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
- 518              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
- 519              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
- 520              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
- 521              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
- 522              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
- 523              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
- 524              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
- 525              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
- 526              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
- 527              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
- 528              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
- 529              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
- 530              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
- 531              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
- 532              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
- 533              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
- 534              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
- 535              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
- 536              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 537              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
- 538              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 539              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
- 540              		.file 31 "../DaisyExamples/libDaisy/src/daisy_core.h"
- 541              		.file 32 "../DaisyExamples/libDaisy/src/per/gpio.h"
- 542              		.file 33 "../DaisyExamples/libDaisy/src/util/wav_format.h"
- 543              		.file 34 "../DaisyExamples/libDaisy/src/dev/max11300.h"
- 544              		.file 35 "../DaisyExamples/libDaisy/src/daisy_seed.h"
- 545              		.file 36 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
- 546              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
- 547              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
- 548              		.file 39 "../DaisyExamples/DaisySP/Source/Control/adenv.h"
- 549              		.file 40 "../DaisyExamples/DaisySP/Source/Utility/dsp.h"
- 550              		.file 41 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
- 551              		.file 42 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
- 552              		.file 43 "button.h"
- 553              		.file 44 "dualLedButton.h"
- 554              		.file 45 "track.h"
- 555              		.file 46 "<built-in>"
- 556              		.file 47 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
-ARM GAS  C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s 			page 14
+ 505 006a 2380     		strh	r3, [r4]	@ movhi
+ 506              	.LBE16:
+ 507              	.LBE22:
+ 508              		.loc 1 97 1 view .LVU144
+ 509 006c 70BD     		pop	{r4, r5, r6, pc}
+ 510              	.LVL32:
+ 511              	.L42:
+ 512              	.LBB23:
+ 513              	.LBB17:
+  73:track.cpp     ****                 else if(state == MUTED)
+ 514              		.loc 1 73 21 is_stmt 1 view .LVU145
+  73:track.cpp     ****                 else if(state == MUTED)
+ 515              		.loc 1 73 31 is_stmt 0 view .LVU146
+ 516 006e 0123     		movs	r3, #1
+ 517 0070 6370     		strb	r3, [r4, #1]
+ 518              	.LBE17:
+ 519              	.LBE23:
+ 520              		.loc 1 97 1 view .LVU147
+ 521 0072 70BD     		pop	{r4, r5, r6, pc}
+ 522              		.loc 1 97 1 view .LVU148
+ 523              		.cfi_endproc
+ 524              	.LFE4795:
+ 526              		.text
+ 527              	.Letext0:
+ 528              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 529              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 530              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 531              		.file 5 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 532              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 533              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 534              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 535              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 536              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 537              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 538              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 539              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 540              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 541              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 542              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 543              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 544              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 545              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 546              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 547              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 548              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_tempbu
+ 549              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 550              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 551              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 552              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 553              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 554              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 555              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 556              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 557              		.file 31 "../DaisyExamples/libDaisy/src/daisy_core.h"
+ 558              		.file 32 "../DaisyExamples/libDaisy/src/per/gpio.h"
+ 559              		.file 33 "../DaisyExamples/libDaisy/src/util/wav_format.h"
+ 560              		.file 34 "../DaisyExamples/libDaisy/src/dev/max11300.h"
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 14
+
+
+ 561              		.file 35 "../DaisyExamples/libDaisy/src/daisy_seed.h"
+ 562              		.file 36 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 563              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\types.h"
+ 564              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 565              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 566              		.file 40 "../DaisyExamples/DaisySP/Source/Control/adenv.h"
+ 567              		.file 41 "../DaisyExamples/DaisySP/Source/Utility/dsp.h"
+ 568              		.file 42 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 569              		.file 43 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 570              		.file 44 "button.h"
+ 571              		.file 45 "dualLedButton.h"
+ 572              		.file 46 "track.h"
+ 573              		.file 47 "<built-in>"
+ 574              		.file 48 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
+ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 track.cpp
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:17     .text._ZN5TrackC2EiP13DualLedButton:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC2EiP13DualLedButton
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC1EiP13DualLedButton
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:62     .text._ZN5Track3NewEiP13DualLedButton:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:70     .text._ZN5Track3NewEiP13DualLedButton:00000000 _ZN5Track3NewEiP13DualLedButton
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:112    .text._ZN5Track5AudioEffPfS0_S0_S0_:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:120    .text._ZN5Track5AudioEffPfS0_S0_S0_:00000000 _ZN5Track5AudioEffPfS0_S0_S0_
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:274    .text._ZN5Track5AudioEffPfS0_S0_S0_:000000c0 $d
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:280    .text._ZN5Track4LoopEv:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:288    .text._ZN5Track4LoopEv:00000000 _ZN5Track4LoopEv
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:316    .text._ZN5Track9GetButtonEv:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:324    .text._ZN5Track9GetButtonEv:00000000 _ZN5Track9GetButtonEv
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:342    .text._ZN5Track5CheckEbb:00000000 $t
-C:\Users\papag\AppData\Local\Temp\cc6WoTJg.s:350    .text._ZN5Track5CheckEbb:00000000 _ZN5Track5CheckEbb
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:17     .text._ZN5TrackC2EiP13DualLedButton:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC2EiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC1EiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:65     .text._ZN5Track3NewEiP13DualLedButton:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:73     .text._ZN5Track3NewEiP13DualLedButton:00000000 _ZN5Track3NewEiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:124    .text._ZN5Track5AudioEffPfS0_S0_S0_:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:132    .text._ZN5Track5AudioEffPfS0_S0_S0_:00000000 _ZN5Track5AudioEffPfS0_S0_S0_
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:297    .text._ZN5Track4LoopEv:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:305    .text._ZN5Track4LoopEv:00000000 _ZN5Track4LoopEv
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:333    .text._ZN5Track9GetButtonEv:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:341    .text._ZN5Track9GetButtonEv:00000000 _ZN5Track9GetButtonEv
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:359    .text._ZN5Track5CheckEbb:00000000 $t
+C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:367    .text._ZN5Track5CheckEbb:00000000 _ZN5Track5CheckEbb
 
 UNDEFINED SYMBOLS
 _ZN13DualLedButton5GreenEv
-_ZN13DualLedButton3OffEv
 _ZN13DualLedButton3RedEv
+_ZN13DualLedButton3OffEv
 _ZN6Button5CheckEv
 _ZN6Button7GetLongEv

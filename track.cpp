@@ -8,10 +8,11 @@ Track::Track(int o, DualLedButton *btn) {
     ordinal = o;
     button = btn;
     state = BLANK;
+    heartbeat = 0;
 
     if(o == 0) {
-        state = RECORDING;
-        nextState = PLAYING;
+        state = BLANK;
+        nextState = RECORDING;
     }
 }
 
@@ -24,12 +25,14 @@ void Track::Audio(
     float *leftOut, float *rightOut, 
     float *bufferLeft, float *bufferRight) {
 
+    heartbeat++;
+
     if(state == RECORDING) {
         *leftOut += *bufferLeft;
         *rightOut += *bufferRight;
         *bufferLeft = leftIn;
         *bufferRight = rightIn;
-        if(leftIn + rightIn > 0.5)
+        if(leftIn + rightIn > 0.5 || ((heartbeat >> 8) & 1) == 1)
             button->Red();
         else
             button->Off();
@@ -37,7 +40,7 @@ void Track::Audio(
     else if(state == PLAYING) {
         *leftOut += *bufferLeft;
         *rightOut += *bufferRight;
-        if(*bufferLeft + *bufferRight > 0.3)
+        if(*bufferLeft + *bufferRight > 0.5 || ((heartbeat >> 8) & 1) == 1)
             button->Green();
         else
             button->Off();

@@ -23,6 +23,7 @@ class Track {
         State state, nextState;
         int ordinal;
         DualLedButton *button;
+        uint heartbeat;
 
     public:
         Track(int ordinal, DualLedButton *btn);
