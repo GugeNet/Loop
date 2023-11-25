@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
   44 0006 0370     		strb	r3, [r0]
   11:track.cpp     ****     heartbeat = 0;
   45              		.loc 1 11 5 is_stmt 1 view .LVU7
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 2
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 2
 
 
   46              		.loc 1 11 15 is_stmt 0 view .LVU8
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
   91              	.LBI6:
    7:track.cpp     ****     ordinal = o;
   92              		.loc 1 7 1 is_stmt 1 view .LVU18
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 3
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 3
 
 
   93              	.LBB10:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
   23:track.cpp     **** void Track::Audio(
   24:track.cpp     ****     const float leftIn, const float rightIn, 
   25:track.cpp     ****     float *leftOut, float *rightOut, 
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 4
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 4
 
 
   26:track.cpp     ****     float *bufferLeft, float *bufferRight) {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
  162              		.loc 1 48 10 view .LVU42
  163 001c BCF1010F 		cmp	ip, #1
  164 0020 47D9     		bls	.L18
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 5
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 5
 
 
   49:track.cpp     ****         button->Off();
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
   43:track.cpp     ****             button->Green();
  205              		.loc 1 43 45 discriminator 1 view .LVU56
  206 0062 E305     		lsls	r3, r4, #23
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 6
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 6
 
 
  207              	.LVL8:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
  246 008e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
   32:track.cpp     ****         *bufferLeft = leftIn;
  247              		.loc 1 32 19 view .LVU73
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 7
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 7
 
 
  248 0092 95ED006A 		vldr.32	s12, [r5]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
  290 00b6 FFF7FEBF 		b	_ZN13DualLedButton3OffEv
  291              	.LVL17:
   49:track.cpp     ****     }
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 8
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 8
 
 
  292              		.loc 1 49 20 view .LVU88
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
  343              	.LFB4794:
   58:track.cpp     **** 
   59:track.cpp     **** DualLedButton *Track::GetButton() {
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 9
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 9
 
 
  344              		.loc 1 59 35 is_stmt 1 view -0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
  391 000a FFF7FEFF 		bl	_ZN6Button5CheckEv
  392              	.LVL23:
   66:track.cpp     ****     if(clicked) {
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 10
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 10
 
 
  393              		.loc 1 66 5 is_stmt 1 view .LVU109
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
   68:track.cpp     ****             if(!clear && !record) {
  413              		.loc 1 68 9 is_stmt 1 view .LVU115
  414 0018 60B9     		cbnz	r0, .L39
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 11
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 11
 
 
   78:track.cpp     ****                 if(state == PLAYING)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
  455 0042 012A     		cmp	r2, #1
  456 0044 13D9     		bls	.L42
   74:track.cpp     ****                     nextState = PLAYING;
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 12
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 12
 
 
  457              		.loc 1 74 22 view .LVU131
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
   80:track.cpp     ****                 else if(state == MUTED)
  503              		.loc 1 80 39 is_stmt 0 view .LVU143
  504 0066 40F20113 		movw	r3, #257
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 13
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 13
 
 
  505 006a 2380     		strh	r3, [r4]	@ movhi
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
  558              		.file 32 "../DaisyExamples/libDaisy/src/per/gpio.h"
  559              		.file 33 "../DaisyExamples/libDaisy/src/util/wav_format.h"
  560              		.file 34 "../DaisyExamples/libDaisy/src/dev/max11300.h"
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 14
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 14
 
 
  561              		.file 35 "../DaisyExamples/libDaisy/src/daisy_seed.h"
@@ -795,24 +795,24 @@ ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 1
  572              		.file 46 "track.h"
  573              		.file 47 "<built-in>"
  574              		.file 48 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
-ARM GAS  C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s 			page 15
+ARM GAS  C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 track.cpp
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:17     .text._ZN5TrackC2EiP13DualLedButton:00000000 $t
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC2EiP13DualLedButton
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC1EiP13DualLedButton
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:65     .text._ZN5Track3NewEiP13DualLedButton:00000000 $t
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:73     .text._ZN5Track3NewEiP13DualLedButton:00000000 _ZN5Track3NewEiP13DualLedButton
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:124    .text._ZN5Track5AudioEffPfS0_S0_S0_:00000000 $t
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:132    .text._ZN5Track5AudioEffPfS0_S0_S0_:00000000 _ZN5Track5AudioEffPfS0_S0_S0_
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:297    .text._ZN5Track4LoopEv:00000000 $t
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:305    .text._ZN5Track4LoopEv:00000000 _ZN5Track4LoopEv
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:333    .text._ZN5Track9GetButtonEv:00000000 $t
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:341    .text._ZN5Track9GetButtonEv:00000000 _ZN5Track9GetButtonEv
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:359    .text._ZN5Track5CheckEbb:00000000 $t
-C:\Users\papag\AppData\Local\Temp\ccJH7E0X.s:367    .text._ZN5Track5CheckEbb:00000000 _ZN5Track5CheckEbb
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:17     .text._ZN5TrackC2EiP13DualLedButton:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC2EiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:26     .text._ZN5TrackC2EiP13DualLedButton:00000000 _ZN5TrackC1EiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:65     .text._ZN5Track3NewEiP13DualLedButton:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:73     .text._ZN5Track3NewEiP13DualLedButton:00000000 _ZN5Track3NewEiP13DualLedButton
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:124    .text._ZN5Track5AudioEffPfS0_S0_S0_:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:132    .text._ZN5Track5AudioEffPfS0_S0_S0_:00000000 _ZN5Track5AudioEffPfS0_S0_S0_
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:297    .text._ZN5Track4LoopEv:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:305    .text._ZN5Track4LoopEv:00000000 _ZN5Track4LoopEv
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:333    .text._ZN5Track9GetButtonEv:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:341    .text._ZN5Track9GetButtonEv:00000000 _ZN5Track9GetButtonEv
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:359    .text._ZN5Track5CheckEbb:00000000 $t
+C:\Users\papag\AppData\Local\Temp\cc4TIa1y.s:367    .text._ZN5Track5CheckEbb:00000000 _ZN5Track5CheckEbb
 
 UNDEFINED SYMBOLS
 _ZN13DualLedButton5GreenEv
