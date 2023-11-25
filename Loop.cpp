@@ -22,8 +22,8 @@ static uint32_t head;
 static GPIO loopTrig;
 static bool previousLoopTrig;
 
-static const uint32_t shortClick = 50;
-static const uint32_t longClick = 400;
+static const uint32_t shortClick = 10;
+static const uint32_t longClick = 800;
 
 static DualLedButton dualLedBtns[] = {
     DualLedButton::New(D20, shortClick, longClick, D22, D21),

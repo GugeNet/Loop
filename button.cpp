@@ -26,7 +26,7 @@ bool Button::Check()
     else
     {
         uint32_t duration = System::GetNow() - pressedTime;
-        if(duration < 5) // bounce
+        if(duration < shortTime) // bounce
             return false;
         longPress = duration > longTime;
         return true;

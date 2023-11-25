@@ -73,6 +73,8 @@ void Track::Check(bool clear, bool record)
                     nextState = MUTED;
                 else if(state == MUTED)
                     nextState = PLAYING;
+            } else if (!clear && record) {
+                nextState = RECORDING;
             }
         } else {
             if(!clear && !record) {
