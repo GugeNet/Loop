@@ -37,3 +37,8 @@
 *.elf
 *.hex
 build/*.*
+build/button.lst
+build/dualLedButton.lst
+build/Loop.lst
+build/startup_stm32h750xx.lst
+build/track.lst
