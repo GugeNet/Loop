@@ -26,10 +26,10 @@ static const uint32_t shortClick = 10;
 static const uint32_t longClick = 800;
 
 static DualLedButton dualLedBtns[] = {
-    DualLedButton::New(D20, shortClick, longClick, D22, D21),
+    DualLedButton::New(D22, shortClick, longClick, D20, D21),
     DualLedButton::New(D24, shortClick, longClick, D25, D23),
     DualLedButton::New(D27, shortClick, longClick, D26, D28),
-    DualLedButton::New( D8, shortClick, longClick, D7, D9)
+    DualLedButton::New( D1, shortClick, longClick, D3, D2)
 };
 
 static Track tracks[] = {
