@@ -4,7 +4,6 @@ TARGET = Loop
 # Sources
 CPP_SOURCES = \
 Loop.cpp \
-button.cpp \
 dualLedButton.cpp \
 track.cpp
 

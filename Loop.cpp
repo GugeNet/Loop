@@ -3,11 +3,9 @@
 #include "daisysp.h"
 #include <math.h>
 #include "track.h"
-#include "button.h"
 #include "dualLedButton.h"
 
 #define NUM_TRACKS 4
-
 
 using namespace daisy;
 using namespace daisy::seed;
@@ -19,18 +17,15 @@ static float DSY_SDRAM_BSS buffer[16 * 1024 * 1024];
 
 static uint32_t head;
 
+static Switch clear, record;
+
 static GPIO loopTrig;
 static bool previousLoopTrig;
 
 static const uint32_t shortClick = 10;
 static const uint32_t longClick = 800;
 
-static DualLedButton dualLedBtns[] = {
-    DualLedButton::New(D22, shortClick, longClick, D20, D21),
-    DualLedButton::New(D24, shortClick, longClick, D25, D23),
-    DualLedButton::New(D27, shortClick, longClick, D26, D28),
-    DualLedButton::New( D1, shortClick, longClick, D3, D2)
-};
+static DualLedButton dualLedBtns[4];
 
 static Track tracks[] = {
     Track::New(0, &dualLedBtns[0]),
@@ -38,9 +33,6 @@ static Track tracks[] = {
     Track::New(2, &dualLedBtns[2]),
     Track::New(3, &dualLedBtns[3]),
 };
-
-static Button recordBtn = Button::New(D13, shortClick, longClick);
-static Button clearBtn = Button::New(D14, shortClick, longClick);
 
 static int loopBlink = 0;
 
@@ -58,47 +50,15 @@ void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
                    AudioHandle::InterleavingOutputBuffer out,
                    size_t                                size)
 {
-    //start = System::GetTick();
-    //memcpy(ram, in, sizeof(float) * size);
-    //for(int i = 0; i < 300; i++)
-    //{
-    //    memcpy((i + 1) * size + ram, ram, sizeof(float) * size);
-    //}
-    //end = System::GetTick();
-    //dur = (end - start) / 200; // us
     memcpy(out, in, sizeof(float) * size);
-
-    if(previousLoopTrig != loopTrig.Read()) {
-        previousLoopTrig = !previousLoopTrig;
-
-        if(previousLoopTrig)
-            Loop();
-    }
-
-    bool recordChanged = recordBtn.Check();
-
-    bool clearChanged = clearBtn.Check();
 
     for(size_t i = 0; i < size; i += 2) {
         for(int j = 0; j < NUM_TRACKS; j++)
         {
             tracks[j].Audio(in[i], in[i+1], &out[i], &out[i+1], (float*)&buffer[head], (float*)&buffer[head+1]);
             head+=2;
-            if(loopBlink > 0)
-                tracks[j].GetButton()->Color(1 + loopBlink % 2);
         }
-        if(loopBlink > 0)
-            loopBlink--;
     }
-
-    for(int j = 0; j < NUM_TRACKS; j++)
-    {
-        tracks[j].Check(clearBtn.GetPressed(), recordBtn.GetPressed());
-    }
-
-    //state = UpdateMainState(record, clear, remainingTime);
-
-        //tracks[i].UpdateTrackState(state, remainingTime);
 
     if(head >= 16 * 1024 * 1024)
         Loop();
@@ -107,7 +67,18 @@ void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
 int main(void)
 {
     // Initialize Hardware
+    hw.Configure();
     hw.Init();
+
+    float samplerate = hw.AudioSampleRate();
+
+    clear.Init(D14, samplerate/48.f, Switch::TYPE_MOMENTARY, Switch::POLARITY_NORMAL, Switch::PULL_DOWN);
+    record.Init(D15, samplerate/48.f, Switch::TYPE_MOMENTARY, Switch::POLARITY_NORMAL, Switch::PULL_DOWN);
+
+    dualLedBtns[0].Init(D22, samplerate/48.f, D20, D21);
+    dualLedBtns[1].Init(D24, samplerate/48.f, D25, D23);
+    dualLedBtns[2].Init(D27, samplerate/48.f, D26, D28);
+    dualLedBtns[3].Init(D1,  samplerate/48.f, D3,  D2);
 
     memset((float*)0xC0000000, 0, 64 * 1024 * 1024);
 
@@ -128,10 +99,36 @@ int main(void)
                 dualLedBtns[i].Off();
         }
 
-        System::Delay(300);
+        System::Delay(200);
     }
 
     hw.StartAudio(AudioCallback);
 
-    for(;;) {}
+    while(1)
+    {
+        if(previousLoopTrig != loopTrig.Read()) {
+            previousLoopTrig = !previousLoopTrig;
+
+            if(previousLoopTrig)
+                Loop();
+        }
+
+        record.Debounce();
+        clear.Debounce();
+        for(int i=0; i<NUM_TRACKS; i++)
+            dualLedBtns[i].Debounce();
+        for(int i=0; i<NUM_TRACKS; i++)
+        {
+            tracks[i].Check(clear.Pressed(), record.Pressed());
+            if(loopBlink > 0)
+                tracks[i].GetButton()->Color(1 + loopBlink % 2);
+            else
+                tracks[i].Lights();
+        }
+        if(loopBlink > 0)
+            loopBlink--;
+
+        System::Delay(1);
+    }
 }
+

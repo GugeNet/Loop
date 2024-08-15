@@ -25,28 +25,15 @@ void Track::Audio(
     float *leftOut, float *rightOut, 
     float *bufferLeft, float *bufferRight) {
 
-    heartbeat++;
-
     if(state == RECORDING) {
         *leftOut += *bufferLeft;
         *rightOut += *bufferRight;
         *bufferLeft = leftIn;
         *bufferRight = rightIn;
-        if(leftIn + rightIn > 0.5 || ((heartbeat >> 8) & 1) == 1)
-            button->Red();
-        else
-            button->Off();
     } 
     else if(state == PLAYING) {
         *leftOut += *bufferLeft;
         *rightOut += *bufferRight;
-        if(*bufferLeft + *bufferRight > 0.5 || ((heartbeat >> 8) & 1) == 1)
-            button->Green();
-        else
-            button->Off();
-    }
-    else if(state == BLANK || state == MUTED) {
-        button->Off();
     }
 }
 
@@ -62,38 +49,34 @@ DualLedButton *Track::GetButton() {
 
 void Track::Check(bool clear, bool record)
 {
-    bool clicked = button->Check();
+    bool clicked = button->Pressed();
     if(clicked) {
-        bool longClick = button->GetLong();
-        if(longClick) {
-            if(!clear && !record) {
-                if(state == BLANK)
-                    nextState = RECORDING;
-                else if(state == PLAYING || state == RECORDING)
-                    nextState = MUTED;
-                else if(state == MUTED)
-                    nextState = PLAYING;
-            } else if (!clear && record) {
+        if(true || (!clear && !record)) {
+            if(state == PLAYING)
+                nextState = MUTED;
+            else if(state == MUTED)
+                nextState = PLAYING;
+            else if(state == BLANK)
+            {
                 nextState = RECORDING;
             }
-        } else {
-            if(!clear && !record) {
-                if(state == PLAYING)
-                    nextState = state = MUTED;
-                else if(state == MUTED)
-                    nextState = state = PLAYING;
-                else if(state == BLANK)
-                {
-                    state = RECORDING;
-                    nextState = PLAYING;
-                }
-            } else if(!clear && record)
-            {
-                if(state != RECORDING)
-                    nextState = RECORDING;
-                else
-                    nextState = state;
-            }
+        } 
+        else if(!clear && record)
+        {
+            if(state != RECORDING)
+                nextState = RECORDING;
+            else
+                nextState = state;
         }
     }
+}
+
+void Track::Lights()
+{
+    if(state == RECORDING || (state == BLANK && button->Pressed()))
+        button->Red();
+    if(state == MUTED || state == BLANK)
+        button->Off();
+    if(state == PLAYING)
+        button->Green();
 }

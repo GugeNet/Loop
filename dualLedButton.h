@@ -1,18 +1,23 @@
 #include "daisy_seed.h"
 #include "daisysp.h"
-#include "button.h"
 
 #ifndef DUALLEDBUTTON_H
 #define DUALLEDBUTTON_H
 
-class DualLedButton : public Button {
+using namespace daisy;
+
+class DualLedButton {
 
     private:
         GPIO redGpio, greenGpio;
+        Switch button;
 
     public:
-        static DualLedButton New(Pin pin, uint32_t shortTime, uint32_t longTime, Pin greenLedPin, Pin redLedPin);
-        DualLedButton(Pin pin, uint32_t shortTime, uint32_t longTime, Pin greenLedPin, Pin redLedPin);
+        void Init(Pin pin, float rate, Pin greenLedPin, Pin redLedPin);
+
+        void Debounce();
+        bool Pressed();
+        bool RisingEdge();
 
         void Off();
         void Red();

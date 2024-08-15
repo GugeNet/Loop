@@ -33,6 +33,7 @@ class Track {
             float *leftOut, float *rightOut, 
             float *bufferLeft, float *bufferRight);
         void Loop();
+        void Lights();
         DualLedButton *GetButton();
         void Check(bool clear, bool record);
 };

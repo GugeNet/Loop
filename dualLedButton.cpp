@@ -1,18 +1,29 @@
 #include "daisy_seed.h"
 #include "daisysp.h"
-#include "button.h"
 #include "dualLedButton.h"
 
-DualLedButton::DualLedButton(Pin pin, uint32_t shortTime, uint32_t longTime, Pin greenLedPin, Pin redLedPin)
-: Button(pin, shortTime, longTime)
+using namespace daisy;
+
+void DualLedButton::Init(Pin pin, float rate, Pin greenLedPin, Pin redLedPin)
 {
+    button.Init(pin, rate, Switch::TYPE_MOMENTARY, Switch::POLARITY_INVERTED, Switch::PULL_UP);
     redGpio.Init(redLedPin, GPIO::Mode::OUTPUT);
     greenGpio.Init(greenLedPin, GPIO::Mode::OUTPUT);
 }
 
-DualLedButton DualLedButton::New(Pin pin, uint32_t shortTime, uint32_t longTime, Pin greenLedPin, Pin redLedPin)
+void DualLedButton::Debounce()
 {
-    return DualLedButton(pin, shortTime, longTime, greenLedPin, redLedPin);
+    button.Debounce();
+}
+
+bool DualLedButton::Pressed()
+{
+    return button.Pressed();
+}
+
+bool DualLedButton::RisingEdge()
+{
+    return button.RisingEdge();
 }
 
 void DualLedButton::Off()
