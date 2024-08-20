@@ -72,8 +72,8 @@ int main(void)
 
     float samplerate = hw.AudioSampleRate();
 
-    clear.Init(D14, samplerate/48.f, Switch::TYPE_MOMENTARY, Switch::POLARITY_NORMAL, Switch::PULL_DOWN);
-    record.Init(D15, samplerate/48.f, Switch::TYPE_MOMENTARY, Switch::POLARITY_NORMAL, Switch::PULL_DOWN);
+    clear.Init(D14, samplerate/48.f, Switch::TYPE_MOMENTARY, Switch::POLARITY_INVERTED, Switch::PULL_UP);
+    record.Init(D15, samplerate/48.f, Switch::TYPE_MOMENTARY, Switch::POLARITY_INVERTED, Switch::PULL_UP);
 
     dualLedBtns[0].Init(D22, samplerate/48.f, D20, D21);
     dualLedBtns[1].Init(D24, samplerate/48.f, D25, D23);
