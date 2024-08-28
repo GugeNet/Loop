@@ -5,6 +5,11 @@
 "C4, C6",CP_Elec_4x5.4,2,10uF,C88654
 "D1, D4",D_SOD-123,2,1N5819,C5451628
 "FB1, FB2",0603,2,FerriteBead,C1002
+J13,PinHeader_1x03_P2.54mm_Vertical,1,"Audio to Daisy, connect to J13",
+J14,PinHeader_1x03_P2.54mm_Vertical,1,"Audio from Daisy, connect to J10",
+J17,PinHeader_1x03_P2.54mm_Vertical,1,"Audio output, connect to J16",
+J18,PinHeader_1x03_P2.54mm_Vertical,1,"Audio input, connect to J15",
+J6,PinHeader_2x05_P2.54mm_Vertical,1,Eurorack_Power,
 "R10, R13, R15, R17, R18, R19, R20, R6",0603,8,100K,C25803
 "R11, R14, R21, R7",0603,4,10K,C25804
 "R12, R16, R22, R8",0603,4,1K,C21190
