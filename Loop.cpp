@@ -75,14 +75,14 @@ int main(void)
     clear.Init(D14, samplerate/48.f, Switch::TYPE_MOMENTARY, Switch::POLARITY_INVERTED, Switch::PULL_UP);
     record.Init(D15, samplerate/48.f, Switch::TYPE_MOMENTARY, Switch::POLARITY_INVERTED, Switch::PULL_UP);
 
-    dualLedBtns[0].Init(D22, samplerate/48.f, D20, D21);
-    dualLedBtns[1].Init(D24, samplerate/48.f, D25, D23);
+    dualLedBtns[0].Init(D19, samplerate/48.f, D17, D18);
+    dualLedBtns[1].Init(D20, samplerate/48.f, D22, D21);
     dualLedBtns[2].Init(D27, samplerate/48.f, D26, D28);
     dualLedBtns[3].Init(D1,  samplerate/48.f, D3,  D2);
 
     memset((float*)0xC0000000, 0, 64 * 1024 * 1024);
 
-    loopTrig.Init(D15, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
+    loopTrig.Init(D16, GPIO::Mode::INPUT, GPIO::Pull::PULLDOWN);
     previousLoopTrig = loopTrig.Read();
 
     hw.SetAudioBlockSize(4);
