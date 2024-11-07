@@ -15,7 +15,7 @@ static DaisySeed hw;
 
 static float DSY_SDRAM_BSS buffer[16 * 1024 * 1024];
 
-static uint32_t head;
+static uint32_t head = 0;
 
 static Switch clear, record;
 
@@ -43,7 +43,7 @@ void Loop()
     {
         tracks[j].Loop();
     }
-    loopBlink = 480;
+    loopBlink = 64;
 }
 
 void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
@@ -115,16 +115,19 @@ int main(void)
 
         record.Debounce();
         clear.Debounce();
+
         for(int i=0; i<NUM_TRACKS; i++)
             dualLedBtns[i].Debounce();
+        
         for(int i=0; i<NUM_TRACKS; i++)
         {
             tracks[i].Check(clear.Pressed(), record.Pressed());
-            if(loopBlink > 0)
+            if(loopBlink > 0 && loopBlink % 3 == 0)
                 tracks[i].GetButton()->Color(1 + loopBlink % 2);
             else
                 tracks[i].Lights();
         }
+
         if(loopBlink > 0)
             loopBlink--;
 
