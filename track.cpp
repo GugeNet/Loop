@@ -51,7 +51,7 @@ void Track::Check(bool clear, bool record)
 {
     bool clicked = button->Pressed();
     if(clicked) {
-        if(true || (!clear && !record)) {
+        if(!clear && !record) {
             if(state == PLAYING)
                 nextState = MUTED;
             else if(state == MUTED)
@@ -65,6 +65,13 @@ void Track::Check(bool clear, bool record)
         {
             if(state != RECORDING)
                 nextState = RECORDING;
+            else
+                nextState = state;
+        }
+        else if(clear && !record)
+        {
+            if(state != RECORDING)
+                nextState = MUTED;
             else
                 nextState = state;
         }
