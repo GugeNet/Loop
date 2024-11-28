@@ -75,7 +75,7 @@ int main(void)
     clear.Init(D14, samplerate/48.f, Switch::TYPE_MOMENTARY, Switch::POLARITY_INVERTED, Switch::PULL_UP);
     record.Init(D15, samplerate/48.f, Switch::TYPE_MOMENTARY, Switch::POLARITY_INVERTED, Switch::PULL_UP);
 
-    dualLedBtns[0].Init(D19, samplerate/48.f, D17, D18);
+    dualLedBtns[0].Init(D19, samplerate/48.f, D17, D13);
     dualLedBtns[1].Init(D20, samplerate/48.f, D22, D21);
     dualLedBtns[2].Init(D27, samplerate/48.f, D26, D28);
     dualLedBtns[3].Init(D1,  samplerate/48.f, D3,  D2);
