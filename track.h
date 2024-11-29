@@ -14,6 +14,7 @@ class Track {
         MUTED,
         PLAYING,
         RECORDING,
+        MIXING,
         LOOPING,
         CLEARING,
         SUGGESTING
@@ -23,7 +24,7 @@ class Track {
         State state, nextState;
         int ordinal;
         DualLedButton *button;
-        uint heartbeat;
+        bool previousButtonState;
 
     public:
         Track(int ordinal, DualLedButton *btn);
@@ -33,7 +34,7 @@ class Track {
             float *leftOut, float *rightOut, 
             float *bufferLeft, float *bufferRight);
         void Loop();
-        void Lights();
+        void Lights(float *level);
         DualLedButton *GetButton();
         void Check(bool clear, bool record);
 };

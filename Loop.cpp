@@ -25,7 +25,9 @@ static bool previousLoopTrig;
 static const uint32_t shortClick = 10;
 static const uint32_t longClick = 800;
 
-static DualLedButton dualLedBtns[4];
+static DualLedButton dualLedBtns[NUM_TRACKS];
+
+static float level[NUM_TRACKS];
 
 static Track tracks[] = {
     Track::New(0, &dualLedBtns[0]),
@@ -52,13 +54,24 @@ void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
 {
     memcpy(out, in, sizeof(float) * size);
 
+    float sum[NUM_TRACKS]; 
+    for(int i = 0; i < NUM_TRACKS; i++)
+        sum[i] = 0;
+
     for(size_t i = 0; i < size; i += 2) {
+        out[i] = in[i];
+        out[i+1] = in[i+1];
         for(int j = 0; j < NUM_TRACKS; j++)
         {
             tracks[j].Audio(in[i], in[i+1], &out[i], &out[i+1], (float*)&buffer[head], (float*)&buffer[head+1]);
+            float combined = 0.5 * ((float)buffer[head] + (float)buffer[head+1]);
+            sum[j] += combined * combined;
             head+=2;
         }
     }
+
+    for(int j=0; j < NUM_TRACKS; j++)
+        level[j] += sqrt(sum[j]/(size/8));
 
     if(head >= 16 * 1024 * 1024)
         Loop();
@@ -69,6 +82,9 @@ int main(void)
     // Initialize Hardware
     hw.Configure();
     hw.Init();
+
+    for(int i=0; i < NUM_TRACKS; i++)
+        level[i] = 0;
 
     float samplerate = hw.AudioSampleRate();
 
@@ -125,7 +141,7 @@ int main(void)
             if(loopBlink > 0 && loopBlink % 3 == 0)
                 tracks[i].GetButton()->Color(1 + loopBlink % 2);
             else
-                tracks[i].Lights();
+                tracks[i].Lights(&level[i]);
         }
 
         if(loopBlink > 0)

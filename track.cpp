@@ -8,12 +8,8 @@ Track::Track(int o, DualLedButton *btn) {
     ordinal = o;
     button = btn;
     state = BLANK;
-    heartbeat = 0;
-
-    if(o == 0) {
-        state = BLANK;
-        nextState = RECORDING;
-    }
+    previousButtonState = false;
+    nextState = BLANK;
 }
 
 Track Track::New(int o, DualLedButton *btn) {
@@ -26,10 +22,14 @@ void Track::Audio(
     float *bufferLeft, float *bufferRight) {
 
     if(state == RECORDING) {
-        *leftOut += *bufferLeft;
-        *rightOut += *bufferRight;
         *bufferLeft = leftIn;
         *bufferRight = rightIn;
+    } 
+    else if(state == MIXING) {
+        *leftOut += *bufferLeft;
+        *rightOut += *bufferRight;
+        *bufferLeft += leftIn;
+        *bufferRight += rightIn;
     } 
     else if(state == PLAYING) {
         *leftOut += *bufferLeft;
@@ -50,40 +50,69 @@ DualLedButton *Track::GetButton() {
 void Track::Check(bool clear, bool record)
 {
     bool clicked = button->Pressed();
-    if(clicked) {
+    if(!clicked && clicked != previousButtonState) {
         if(!clear && !record) {
             if(state == PLAYING)
                 nextState = MUTED;
             else if(state == MUTED)
                 nextState = PLAYING;
             else if(state == BLANK)
-            {
                 nextState = RECORDING;
-            }
         } 
         else if(!clear && record)
         {
-            if(state != RECORDING)
+            if(state == BLANK)
                 nextState = RECORDING;
             else
-                nextState = state;
+                nextState = MIXING;
         }
         else if(clear && !record)
         {
-            if(state != RECORDING)
-                nextState = MUTED;
-            else
-                nextState = state;
+            nextState = BLANK;
+        }
+        else if(clear && record)
+        {
+            nextState = RECORDING;
         }
     }
+    previousButtonState = clicked;
 }
 
-void Track::Lights()
+#define THRESHOLD 0.5
+
+void Track::Lights(float *level)
 {
-    if(state == RECORDING || (state == BLANK && button->Pressed()))
-        button->Red();
-    if(state == MUTED || state == BLANK)
-        button->Off();
-    if(state == PLAYING)
-        button->Green();
+    switch(state)
+    {
+        case RECORDING:
+        case MIXING:
+            if(*level > THRESHOLD)
+            {
+                button -> Red();
+                *level -= THRESHOLD * 2;
+            }
+            else
+                button -> Off();
+            break;
+        case PLAYING:
+            if(*level > THRESHOLD)
+            {
+                button -> Green();
+                *level -= THRESHOLD * 2;
+            }
+            else
+                button -> Off();
+            break;
+        case BLANK:
+            button -> Off();
+            break;
+        case MUTED:
+            button -> Off();
+            break;
+        case LOOPING:
+        case CLEARING:
+        case SUGGESTING:
+            button -> Off();
+            break;
+    }
 }
