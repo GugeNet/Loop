@@ -39,7 +39,7 @@ void Track::Audio(
 
 void Track::Loop() {
     state = nextState;
-    if(state == RECORDING)
+    if(state == RECORDING || state == MIXING)
         nextState = PLAYING;
 }
 
