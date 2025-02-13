@@ -5,6 +5,8 @@ A 4 hp wide 3U Eurorack module designed to be as simple as possible, but not sim
 
 The user interface is limited but based on an idea of creating a linguistic model.
 
+Not all of the ideas are implemented yet.
+
 The commands consists of verbs: record, clear and loop. There are buttons for record and clear, a trigger input for loop.
 In most situations there is also an implicit verb, such as mute.
 The time aspect in the commands are either immidiate or suspended until loop. A short press means now, a long press means after the next loop command.
